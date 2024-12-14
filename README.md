@@ -3,6 +3,9 @@ This is a slightly modified version of Whitesur with ABTC compatability and extr
 <p align="center"><img width="45%" src="https://github.com/user-attachments/assets/0ae71497-5f04-43db-93b6-28c81e7cc4b4"></p>
 
 
+
+
+
 ## About Easonwong's Fork Of Whitesur
 
 This is an [Adaptive-Tab-Bar-Colour](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour)-compatible version of Firefox WhiteSur theme  
