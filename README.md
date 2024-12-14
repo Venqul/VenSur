@@ -1,6 +1,7 @@
 ## About This Fork
 This is a slightly modified version of Whitesur with ABTC compatability and extra features like safari homepage(credit to [neptune theme](https://github.com/yiiyahui/Neptune-Firefox)) and safari buttons. This theme is works only in dark mode  with this [theme](https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-whitesur/)
-<img width="50%" src="https://private-user-images.githubusercontent.com/76561858/395783487-82f690fa-5077-4075-be45-ee68dab1ac8f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQyMDAwMDEsIm5iZiI6MTczNDE5OTcwMSwicGF0aCI6Ii83NjU2MTg1OC8zOTU3ODM0ODctODJmNjkwZmEtNTA3Ny00MDc1LWJlNDUtZWU2OGRhYjFhYzhmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE0VDE4MDgyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTliNGQwODEzMDAxNWQyYmQ4MTVmYzVlYTU3MjlkMWY0NzkyZTBlZDUyNDc2NDUzMjBjNTQ4ZmJiMjA1NGZkNjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.XTf14qlEoZJgbLw1pIATUF36kcl6MsZkmm5zTfd-60Q"><br>
+![Untitled design(1)](https://github.com/user-attachments/assets/406d2b45-86ea-4224-a607-85ce9f1c934e)
+
 
 
 
