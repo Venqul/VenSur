@@ -1,4 +1,10 @@
 ## About This Fork
+This is a slightly modified version of Whitesur with ABTC compatability and extra features like safari homepage(credit to [neptune theme](https://github.com/yiiyahui/Neptune-Firefox)) and safari buttons. This theme is works only in dark mode  with this [theme](https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-whitesur/)
+
+
+
+
+## About This Easonwong's Fork
 
 This is an [Adaptive-Tab-Bar-Colour](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour)-compatible version of Firefox WhiteSur theme  
 To skip to the original `README.md`, please click [here](#firefox-whitesur-theme)
