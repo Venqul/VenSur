@@ -4,7 +4,7 @@ This is a slightly modified version of Whitesur with ABTC compatability and extr
 
 
 
-## About This Easonwong's Fork
+## About Easonwong's Fork Of Whitesur
 
 This is an [Adaptive-Tab-Bar-Colour](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour)-compatible version of Firefox WhiteSur theme  
 To skip to the original `README.md`, please click [here](#firefox-whitesur-theme)
