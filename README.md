@@ -1,9 +1,7 @@
 ## About This Fork
 This is a modified version of [ WhiteSur with ABTC compatability](https://github.com/easonwong-de/White-Sur-Firefox-Theme-MacOS) and [neptune](https://github.com/yiiyahui/Neptune-Firefox) with extra features like Safari homepage and buttons. 
 For dark mode, get this firefox [theme](https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-whitesur/) aswell.
-<p align="center"><img width="45%" src="https://github.com/user-attachments/assets/0ae71497-5f04-43db-93b6-28c81e7cc4b4"></p>
-
-
+<p align="center"><img width="45%" src="https://github.com/user-attachments/assets/0d548d6a-4818-42f0-b876-c79d6a470ab7"><img width="45%" src="https://github.com/user-attachments/assets/3f835b20-6dbc-4876-b856-4f11a6711112"></p>
 
 ## About Easonwong's Fork Of Whitesur
 
