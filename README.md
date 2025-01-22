@@ -1,32 +1,15 @@
-## About This Fork
-This is a modified version of [ WhiteSur with ABTC compatability](https://github.com/easonwong-de/White-Sur-Firefox-Theme-MacOS) and [neptune](https://github.com/yiiyahui/Neptune-Firefox) with extra features like Safari homepage and buttons. 
-For dark mode, get this firefox [theme](https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-whitesur/) aswell.
+## Details about this version of WhiteSur
+This is a customized version of WhiteSur, designed with [Neptune](https://github.com/yiiyahui/Neptune-Firefox) integration and [ATBC](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour) compatibility. It includes added features like a Safari-style homepage and buttons. For a seamless dark mode experience, pair it with this Firefox [theme](https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-whitesur/).
 <p align="center"><img width="45%" src="https://github.com/user-attachments/assets/ba54b08b-e259-4de1-8561-83978ee4cf68"><img width="45%" src="https://github.com/user-attachments/assets/ac27d055-4959-4285-bf8a-599fcdabf2f5"></p>
 
-## About Easonwong's Fork Of Whitesur
-
-This is an [Adaptive-Tab-Bar-Colour](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour)-compatible version of Firefox WhiteSur theme  
-To skip to the original `README.md`, please click [here](#firefox-whitesur-theme)
-
-**This CSS theme is optimised for the release version of Firefox on macOS. Compatibility with other platforms or Firefox versions may result in unexpected behaviour.**
-
-As I actively use this theme on my primary device, any graphical issues will be addressed promptly.
-
-<p align="center"><img width="45%" src="https://raw.githubusercontent.com/easonwong-de/WhiteSurFirefoxThemeMacOS/master/githubpreview/White_Sur_%26_ATBC_3.png"><img width="45%" src="https://raw.githubusercontent.com/easonwong-de/WhiteSurFirefoxThemeMacOS/master/githubpreview/White_Sur_%26_ATBC_2.png"></p>
-
+- To skip to the original `README.md`, please click [here](#firefox-whitesur-theme)
+- For Details About ATBC Compatability by Eason Wong, head [here](https://github.com/easonwong-de/White-Sur-Firefox-Theme-MacOS) 
+- For Details About Neptune, head [here](https://github.com/yiiyahui/Neptune-Firefox)
 ### Quick Link
 
 [Installation](#installation-macos)  
 ~~1. [Command](#installation-flags)~~  
 2. [Manual](#manual-installation-macos--windows)
-
-### Changes
-
--   Colours are controlled by browser theme, thus controlled by Adaptive Tab Bar Colour
--   Close tab buttons are on the left side
--   Buttons and the outline of URL field behave closer to Safari
--   Colours of button icons now follow the browser theme
--   Fixed popover menus
 
 ### Browser Configurations
 
@@ -71,6 +54,7 @@ The whole configuation list can be found under `chrome -> WhiteSur -> customs`.
 <br>
 
 Additional `README.md` ends here.
+
 
 <br><br>
 
