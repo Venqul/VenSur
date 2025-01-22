@@ -1,4 +1,4 @@
-## Details about this version of WhiteSur
+## Details about this fork of WhiteSur
 This is a customized version of WhiteSur, designed with [Neptune](https://github.com/yiiyahui/Neptune-Firefox) integration and [ATBC](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour) compatibility. It includes added features like a Safari-style homepage and buttons. For a seamless dark mode experience, pair it with this Firefox [theme](https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-whitesur/).
 <p align="center"><img width="45%" src="https://github.com/user-attachments/assets/ba54b08b-e259-4de1-8561-83978ee4cf68"><img width="45%" src="https://github.com/user-attachments/assets/ac27d055-4959-4285-bf8a-599fcdabf2f5"></p>
 
