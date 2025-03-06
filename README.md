@@ -2,6 +2,25 @@
 This is a customized version of WhiteSur, designed with [Neptune](https://github.com/yiiyahui/Neptune-Firefox) integration and [ATBC](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour) compatibility. It includes added features like a Safari-style homepage and buttons. For a seamless dark mode experience, pair it with this Firefox [theme](https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-whitesur/).
 <p align="center"><img width="45%" src="https://github.com/user-attachments/assets/ba54b08b-e259-4de1-8561-83978ee4cf68"><img width="45%" src="https://github.com/user-attachments/assets/ac27d055-4959-4285-bf8a-599fcdabf2f5"></p>
 
+
+### **Color Themes:**
+<p align="center"><img width="50%" src="https://github.com/user-attachments/assets/1e53d35a-57d6-4897-9527-cbfab1e539b8"></p>
+<p align="center">
+<a href="https://addons.mozilla.org/en-US/firefox/addon/safari-15-dark-theme/">DARK THEME 1</a>
+</p>
+
+<p align="center"><img width="50%" src="https://github.com/user-attachments/assets/ff72f684-3839-4e27-bef1-988ba713bc6b"></p>
+<p align="center">
+<a href="https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-whitesur/">DARK THEME 2</a>
+</p>
+
+<p align="center"><img width="50%" src="https://github.com/user-attachments/assets/f3ae6eea-64df-4e2e-a030-76957ae1ce52"></p>
+<p align="center">
+<a href="https://addons.mozilla.org/en-US/firefox/addon/safari-15-light-theme/">LIGHT THEME</a>
+</p>
+
+
+
 - To skip to the original `README.md`, please click [here](#firefox-whitesur-theme)
 - For Details About ATBC Compatability by Eason Wong, head [here](https://github.com/easonwong-de/White-Sur-Firefox-Theme-MacOS) 
 - For Details About Neptune, head [here](https://github.com/yiiyahui/Neptune-Firefox)
