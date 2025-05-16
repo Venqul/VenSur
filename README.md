@@ -1,5 +1,9 @@
 ## Whitesur Firefox theme ( Venqul's Fork )
-This is a customized version of WhiteSur, designed with [Neptune](https://github.com/yiiyahui/Neptune-Firefox) integration and [ATBC](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour) compatibility. It includes added features like a Safari-style homepage and buttons. For a seamless experience, pair it with one of these Firefox [themes](#Color-themes)
+This is a customized version of WhiteSur, designed with [ATBC](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour) compatibility. It includes added features like a Safari-style homepage and buttons. For a seamless experience, pair it with one of these Firefox [themes](#Color-themes)
+<p>
+This project takes inspiration from  <a href="https://github.com/yiiyahui/Neptune-Firefox">Neptune</a> and <a href="https://github.com/easonwong-de/Firefox-Adaptive-Sur-Theme">Firefox Adaptive Sur Theme</a>.
+</p>
+
 <p align="center"><img width="45%" src="https://github.com/user-attachments/assets/ba54b08b-e259-4de1-8561-83978ee4cf68"><img width="45%" src="https://github.com/user-attachments/assets/ac27d055-4959-4285-bf8a-599fcdabf2f5"></p>
 
 
