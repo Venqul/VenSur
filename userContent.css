@@ -1,6 +1,6 @@
 
-@import "neptune/colors/light.css";
-@import "neptune/colors/dark.css";
+@import "VenSur/colors/light.css";
+@import "VenSur/colors/dark.css";
 
 :root {
 	--in-content-page-background: var(--neptune-main-background) !important;
@@ -392,7 +392,7 @@
 
 		&:is(:checked, [checked="true"]) {
 			background-color: var(--theme-primary-color) !important;
-			background-image: url("neptune/icons/check.svg") !important;
+			background-image: url("VenSur/icons/check.svg") !important;
 			border: none;
 		}
 	}
@@ -408,7 +408,7 @@
 
 		&:is(:checked, [selected="true"]) {
 			background-color: var(--theme-primary-color) !important;
-			background-image: url("neptune/icons/radio.svg");
+			background-image: url("VenSur/icons/radio.svg");
 			border: none;
 		}
 	}

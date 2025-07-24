@@ -1,30 +1,30 @@
-@import "WhiteSur/parts/buttons-fixes.css";
-@import "WhiteSur/parts/buttons.css";
-@import "WhiteSur/parts/csd.css";
-@import "WhiteSur/parts/custom-icons.css";
-@import "WhiteSur/parts/entries.css";
-@import "WhiteSur/parts/findbar.css";
-@import "WhiteSur/parts/headerbar-private-urlbar.css";
-@import "WhiteSur/parts/headerbar-urlbar.css";
-@import "WhiteSur/parts/headerbar.css";
-@import "WhiteSur/parts/icons.css";
-@import "WhiteSur/parts/popups-contents.css";
-@import "WhiteSur/parts/popups.css";
-@import "WhiteSur/parts/remove-white-flash.css";
-@import "WhiteSur/parts/scrollbars.css";
-@import "WhiteSur/parts/tabsbar.css";
-@import "WhiteSur/parts/titlebutton-light.css";
-@import "WhiteSur/parts/titlebutton-dark.css";
-@import "WhiteSur/parts/toolbox.css";
-@import "WhiteSur/parts/windows.css";
-@import "WhiteSur/color.css";
+@import "VenSur/parts/buttons-fixes.css";
+@import "VenSur/parts/buttons.css";
+@import "VenSur/parts/csd.css";
+@import "VenSur/parts/custom-icons.css";
+@import "VenSur/parts/entries.css";
+@import "VenSur/parts/findbar.css";
+@import "VenSur/parts/headerbar-private-urlbar.css";
+@import "VenSur/parts/headerbar-urlbar.css";
+@import "VenSur/parts/headerbar.css";
+@import "VenSur/parts/icons.css";
+@import "VenSur/parts/popups-contents.css";
+@import "VenSur/parts/popups.css";
+@import "VenSur/parts/remove-white-flash.css";
+@import "VenSur/parts/scrollbars.css";
+@import "VenSur/parts/tabsbar.css";
+@import "VenSur/parts/titlebutton-light.css";
+@import "VenSur/parts/titlebutton-dark.css";
+@import "VenSur/parts/toolbox.css";
+@import "VenSur/parts/windows.css";
+@import "VenSur/color.css";
 
 
 /* Custom settings */
-@import "WhiteSur/customs/extension-menu-in-grid.css";
-@import "WhiteSur/customs/hide-single-tab.css";
-/* @import "WhiteSur/customs/tab-preview-on-hover.css"; */
-/* @import "WhiteSur/customs/mini-tabbar.css"; */
+@import "VenSur/customs/extension-menu-in-grid.css";
+@import "VenSur/customs/hide-single-tab.css";
+/* @import "VenSur/customs/tab-preview-on-hover.css"; */
+/* @import "VenSur/customs/mini-tabbar.css"; */
 
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
@@ -32,7 +32,7 @@
 /* Set theme version text in customization panel */
 
 #customization-footer::before {
-	content: "VenSur ver 1.0";
+	content: "VenSur theme ver 1.0";
 	padding: 9px;
 }
 
@@ -64,31 +64,31 @@
   }
 
   #email-link-button {
-    list-style-image: url("icons/share.svg") !important;
+    list-style-image: url("VenSur/icons/email-link.svg") !important;
   }
 
   #tabs-newtab-button, #new-tab-button {
-    list-style-image: url("icons/plus.svg") !important;
+    list-style-image: url("VenSur/icons/new-tab\ icon.svg") !important;
   }
 
   #downloads-indicator-anchor {
-    list-style-image: url("neptune/icons/downloads.svg") !important;
+    list-style-image: url("VenSur/icons/downloads.svg") !important;
   }
 
   #firefox-view-button {
-    list-style-image: url("icons/tabs.svg") !important;
+    list-style-image: url("VenSur/icons/Firefox-view.svg") !important;
   }
 
 	#main-window toolbox toolbar :-moz-any(#sidebar-button) .toolbarbutton-icon {
-		list-style-image: url("neptune/icons/sidebars.svg") !important;
+		list-style-image: url("VenSur/icons/sidebars.svg") !important;
 	}
 
   #PanelUI-menu-button {
-    list-style-image: url("icons/menu.svg") !important;
+    list-style-image: url("VenSur/icons/hamburger\ menu.svg") !important;
   }
 
 .tab-icon-image[src="chrome://branding/content/icon32.png"] { 
-  content: url("icons/star.svg") !important; 
+  content: url("VenSur/icons/new-tab\ favicon.svg") !important; 
 }
 
 
