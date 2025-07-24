@@ -32,7 +32,7 @@
 /* Set theme version text in customization panel */
 
 #customization-footer::before {
-	content: "WhiteSur theme (Venqul's Fork) ver. 1.2.7";
+	content: "VenSur ver 1.0";
 	padding: 9px;
 }
 
