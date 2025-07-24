@@ -1,0 +1,146 @@
+/* Header bar */
+
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/* Headerbar */
+
+#nav-bar {
+	padding: 8px 20px 15px 86px !important;
+	transition: none !important;
+	:root[inFullscreen] & {
+		padding-inline-start: var(--toolbar-start-end-padding) !important;
+	}
+}
+
+#PanelUI-menu-button,
+#nav-bar-customization-target{
+  position: relative;
+  top: 4px !important;
+}
+
+/* Headerbar CSD colors */
+
+:root #nav-bar {
+	border: none !important;
+	border-bottom: none !important;
+	box-shadow: none !important;
+}
+
+:root #nav-bar:-moz-window-inactive {
+	box-shadow: none !important;
+}
+
+/* Headerbar buttons */
+
+#nav-bar toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not(.toolbarbutton-1) {
+	appearance: none;
+	-moz-appearance: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	background: none !important;
+	border-radius: var(--macos-menu-border-radius) !important;
+	padding: 0 4px !important;
+	min-height: 26px !important;
+	min-width: 26px !important;
+	color: var(--macos-toolbar-color) !important;
+}
+
+#nav-bar panel toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not(.toolbarbutton-1) {
+	padding: 0 !important;
+}
+
+/* Hover headerbar buttons */
+
+#nav-bar toolbarbutton:not(#allTabsMenu-searchTabs):not(.all-tabs-button):not(.all-tabs-secondary-button):not([checked]):not([disabled]):hover {
+	outline: 0 !important;
+	transition: background-color 150ms linear, opacity 200ms linear;
+	background-color: var(--macos-headerbar-button-hover-background) !important;
+	opacity: 1 !important;
+}
+
+#nav-bar toolbarbutton:not(#allTabsMenu-searchTabs):not(.all-tabs-button):not(.all-tabs-secondary-button):not([checked]):not([disabled]){
+	transition: background-color 200ms linear, opacity 150ms linear;
+	opacity: 0.8 !important;
+}
+
+
+/* Active headerbar buttons */
+
+#nav-bar
+	toolbarbutton:not(#allTabsMenu-searchTabs):not(.all-tabs-button):not(.all-tabs-secondary-button):not(#urlbar-zoom-button):not([disabled]):not(
+		#hack
+	):active,
+#nav-bar
+	toolbarbutton:not(#allTabsMenu-searchTabs):not(.all-tabs-button):not(.all-tabs-secondary-button):not(#urlbar-zoom-button):not([disabled])[open],
+#nav-bar
+	toolbarbutton:not(#allTabsMenu-searchTabs):not(.all-tabs-button):not(.all-tabs-secondary-button):not(#urlbar-zoom-button):not(
+		[disabled]
+	)[checked] {
+	background-color: var(--macos-headerbar-button-active-background) !important;
+}
+
+/* Buttons with margins */
+
+#nav-bar toolbarbutton:not(#urlbar-zoom-button):not(#allTabsMenu-searchTabs) {
+	margin: 0 2px !important;
+}
+
+#nav-bar panel toolbarbutton:not(#urlbar-zoom-button):not(#allTabsMenu-searchTabs) {
+	margin: 0 !important;
+}
+
+#nav-bar #back-button:not(#hack),
+#nav-bar #forward-button:not(#hack) {
+	padding: 0 4px !important;
+	width: 32px !important;
+	min-width: 32px !important;
+}
+
+#nav-bar #forward-button:not(#hack) {
+	margin-left: 0 !important;
+}
+
+#nav-bar #back-button:not(#hack) {
+	margin-right: 1px !important;
+}
+
+/* Headerbar entries */
+
+#nav-bar #searchbar,
+#nav-bar #urlbar .urlbar-input-container {
+	appearance: none;
+	-moz-appearance: none !important;
+	background: var(--macos-urlbar-background) !important;
+	border: none !important;
+	box-shadow: inset 0 0 0 1px var(--macos-hover-urlbar-border-color) !important;
+	border-radius: var(--macos-toolbar-border-radius) !important;
+	color: var(--macos-urlbar-color) !important;
+	padding: 0 6px !important;
+	height: 30px !important;
+	max-height: 32px !important;
+	top: 1px !important;
+}
+#nav-bar #urlbar[breakout][breakout-extend] .urlbar-input-container {
+	background: var(--macos-urlbar-focus-background) !important;
+}
+
+#nav-bar-customization-target {
+	max-height: 36px !important;
+}
+
+#nav-bar #urlbar {
+	box-shadow: none !important;
+}
+
+#nav-bar #urlbar[breakout][breakout-extend] .urlbar-input-container,
+#nav-bar #urlbar[breakout][breakout-extend] .urlbar-input-container:hover {
+	box-shadow: none !important;
+	padding: 0 6px !important;
+}
+
+#nav-bar #searchbar:focus-within,
+#urlbar[focused] .urlbar-input-container {
+	border: none !important;
+	background: var(--macos-urlbar-background) !important;
+	box-shadow: inset 0 0 0 2px var(--macos-focused-urlbar-highlight-color) !important;
+}
