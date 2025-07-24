@@ -5,9 +5,7 @@ This project takes inspiration from  <a href="https://github.com/yiiyahui/Neptun
 </p>
 
 <p align="center"><img width="45%" src="https://github.com/user-attachments/assets/ba54b08b-e259-4de1-8561-83978ee4cf68"><img width="45%" src="https://github.com/user-attachments/assets/ac27d055-4959-4285-bf8a-599fcdabf2f5"></p>
-# steps to use the theme
-# [Installation Steps](#steps to use the theme)
-
+[Installation Steps](#steps to use the theme)
 
 
 ### Themes
