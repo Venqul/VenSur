@@ -1,9 +1,16 @@
-
-## VenSur
-This is a customized version of WhiteSur, designed with [ATBC](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour) compatibility. It includes added features like a Safari-style homepage and buttons. For a seamless experience, pair it with one of these Firefox [themes](#Color-themes)
-<p>
-This project takes inspiration from  <a href="https://github.com/yiiyahui/Neptune-Firefox">Neptune</a> and <a href="https://github.com/easonwong-de/Firefox-Adaptive-Sur-Theme">Firefox Adaptive Sur Theme</a>.
+<h1>
+  <p align="center">
+  <strong style="font-size: 2em;">VenSur</strong>
+  <img src="https://github.com/user-attachments/assets/40595330-c5e2-4ff5-a777-38c1aafaacbb" width="40" height="40" style="margin-left: 8px;">
 </p>
+</h1>
+
+
+This is a refined and thoughtfully enhanced version of WhiteSur — built for seamless compatibility with [ATBC](https://github.com/easonwong-de/Adaptive-Tab-Bar-Colour). It includes amazing improvements, including a Safari-inspired homepage and intuitive buttons that feel just like Safari.  
+
+For the best experience, pair it with one of my curated Firefox [color themes](#themes).  
+
+This project builds on concepts from both [Neptune](https://github.com/yiiyahui/Neptune-Firefox) and the [Firefox Adaptive Sur Theme](https://github.com/easonwong-de/Firefox-Adaptive-Sur-Theme), offering a clean and modern take on the Firefox interface.
 
 ####  Click [here](#installation-steps) or scroll to bottom for installation steps
 
