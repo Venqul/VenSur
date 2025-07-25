@@ -69,7 +69,7 @@ Download and install the **SF Pro** system font to match Safari typography.
 
 ## 🛠️ Manual Installation
 
-1. Follow the [**Required Setup**](#required-setup-before-installing) above.
+1. Follow the **Required Setup** above.
 2. Download the latest version of VenSur.
 3. Copy the `chrome` and `configuration` folders into your Firefox profile directory.  
    *(You can locate it by visiting `about:support` and opening the “Profile Folder”)*  
@@ -81,7 +81,7 @@ Download and install the **SF Pro** system font to match Safari typography.
 
 A streamlined one-click installer is in the works!
 
-> **Note**: Even when using SINE, you'll still need to complete the [**Required Setup**](#required-setup-before-installing).
+> **Note**: Even when using SINE, you'll still need to complete the **Required Setup**.
 
 ---
 ## ⚠️ Optional: Restore Hidden Icons
@@ -89,24 +89,26 @@ VenSur removes the Extensions, Hamburger Menu, and Bookmark (Star) icons for a c
 
 <details>
   <summary>Restore Extensions Icon</summary>
-```css
-#unified-extensions-button { width: 3px; padding-inline: 0 !important; }
-#unified-extensions-button > .toolbarbutton-icon { width: 0 !important; }
-````
+
+<pre><code>#unified-extensions-button { width: 3px; padding-inline: 0 !important; }
+#unified-extensions-button > .toolbarbutton-icon { width: 0 !important; }</code></pre>
 
 </details>
+
 <details>
   <summary>Restore Hamburger Menu</summary>
-```css
-#PanelUI-menu-button { display: none !important; }
-```
+
+<pre><code>#PanelUI-menu-button { display: none !important; }</code></pre>
+
 </details>
+
 <details>
   <summary>Restore Bookmark (Star) Icon</summary>
-```css
-#star-button-box { display: none !important; }
-```
+
+<pre><code>#star-button-box { display: none !important; }</code></pre>
+
 </details>
+
 
 ## 🙌 Credits
 
