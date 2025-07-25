@@ -69,7 +69,7 @@ Download and install the **SF Pro** system font to match Safari typography.
 
 ## 🛠️ Manual Installation
 
-1. Follow the **Required Setup** above.
+1. Follow the [**Required Setup**](#required-setup-before-installing) above.
 2. Download the latest version of VenSur.
 3. Copy the `chrome` and `configuration` folders into your Firefox profile directory.  
    *(You can locate it by visiting `about:support` and opening the “Profile Folder”)*  
@@ -81,7 +81,7 @@ Download and install the **SF Pro** system font to match Safari typography.
 
 A streamlined one-click installer is in the works!
 
-> **Note**: Even when using SINE, you'll still need to complete the [Required Setup](#️required-setup-before-installing).
+> **Note**: Even when using SINE, you'll still need to complete the [**Required Setup**](#required-setup-before-installing) .
 
 ---
 ## ⚠️ Optional: Restore Hidden Icons
