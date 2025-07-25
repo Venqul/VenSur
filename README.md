@@ -81,7 +81,7 @@ Download and install the **SF Pro** system font to match Safari typography.
 
 A streamlined one-click installer is in the works!
 
-> **Note**: Even when using SINE, you'll still need to complete the [**Required Setup**](#required-setup-before-installing) .
+> **Note**: Even when using SINE, you'll still need to complete the [**Required Setup**](#required-setup-before-installing).
 
 ---
 ## ⚠️ Optional: Restore Hidden Icons
