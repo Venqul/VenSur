@@ -1,16 +1,19 @@
 {
-    "id": "vensur",
-    "name": "VenSur",
-    "description": "A refined and thoughfully enhanced version of WhiteSur, which simulates the full Safari experience",
-    "homepage": "https://github.com/Venqul/VenSur",
-    "style": "https://raw.githubusercontent.com/Venqul/VenSur/main/userChrome.css",
-    "readme": "https://raw.githubusercontent.com/Venqul/VenSur/main/README.md",
-    "image": "https://raw.githubusercontent.com/Venqul/VenSur/refs/heads/main/Vensur%20icon.png",
-    "author": "Venqul",
-    "version": "1.0.0",
-    "fork": ["Firefox"],
-    "tags": [
-        "ui",
-        "customization"
-    ]
+  "id": "vensur",
+  "name": "VenSur",
+  "description": "A creative and modern rework of WhiteSur, crafted to deliver the sleekness of Safari within the flexibility of Firefox.",
+  "homepage": "https://github.com/Venqul/VenSur",
+  "style": {
+    "chrome": "https://raw.githubusercontent.com/Venqul/VenSur/main/userChrome.css",
+    "content": "https://raw.githubusercontent.com/Venqul/VenSur/main/userContent.css"
+  },
+  "readme": "https://raw.githubusercontent.com/Venqul/VenSur/main/README.md",
+  "image": "https://raw.githubusercontent.com/Venqul/VenSur/refs/heads/main/Vensur%20icon.png",
+  "author": "Venqul",
+  "version": "1.0.0",
+  "fork": ["Firefox"],
+  "tags": [
+    "ui",
+    "customization"
+  ]
 }
