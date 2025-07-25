@@ -10,7 +10,7 @@ This is a refined and thoughtfully enhanced version of WhiteSur — built for se
 
 For the best experience, pair it with one of my curated Firefox [color themes](#themes).  
 
-This project builds on concepts from both [Neptune](https://github.com/yiiyahui/Neptune-Firefox) and the [Firefox Adaptive Sur Theme](https://github.com/easonwong-de/Firefox-Adaptive-Sur-Theme), offering a clean and modern take on the Firefox interface.
+
 
 ####  Click [here](#installation-steps) or scroll to bottom for installation steps
 
@@ -87,3 +87,5 @@ The theme removes the Extension, Hamburger menu and Bookmark( Star ) icons to gi
 #star-button-box { display:none !important; }
 /* code to remove bookmark "star" icon form adressbar */
 ```
+## Credits
+Inspired by [Neptune](https://github.com/yiiyahui/Neptune-Firefox) and the [Firefox Adaptive Sur Theme](https://github.com/easonwong-de/Firefox-Adaptive-Sur-Theme).
