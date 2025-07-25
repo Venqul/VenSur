@@ -1,7 +1,7 @@
 {
-    "id": "VenSur",
+    "id": "venqul",
     "name": "VenSur",
-    "description": "This is a refined and thoughtfully enhanced version of WhiteSur — built for seamless compatibility with ATBC. It includes amazing improvements, including a Safari-inspired homepage and intuitive buttons that feel just like Safari.",
+    "description": "A refined and thoughfully enhanced version of WhiteSur, which simulates the full Safari experience",
     "homepage": "https://github.com/Venqul/VenSur",
     "style": "https://raw.githubusercontent.com/Venqul/VenSur/main/userChrome.css",
     "readme": "https://raw.githubusercontent.com/Venqul/VenSur/main/README.md",
