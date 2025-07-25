@@ -1,5 +1,5 @@
 {
-    "id": "venqul",
+    "id": "VenSur",
     "name": "VenSur",
     "description": "A refined and thoughfully enhanced version of WhiteSur, which simulates the full Safari experience",
     "homepage": "https://github.com/Venqul/VenSur",
@@ -8,7 +8,7 @@
     "image": "https://raw.githubusercontent.com/Venqul/VenSur/refs/heads/main/Vensur%20icon.png",
     "author": "Venqul",
     "version": "1.0.0",
-    "fork": ["firefox"],
+    "fork": ["Firefox"],
     "tags": [
         "ui",
         "customization"
