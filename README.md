@@ -15,10 +15,8 @@
 
 *For the best results, pair with one of the recommended [color themes](#-themes).*
 
-<p align="center">
-  <img width="45%" src="https://github.com/user-attachments/assets/ba54b08b-e259-4de1-8561-83978ee4cf68">
-  <img width="45%" src="https://github.com/user-attachments/assets/ac27d055-4959-4285-bf8a-599fcdabf2f5">
-</p>
+<img width="1949" height="618" alt="Vensur image 1" src="https://github.com/user-attachments/assets/dd6b4e81-c6ed-4113-b257-6eefd5a3f812" />
+
 
 ## 🎨 Themes
 Choose a theme that complements your setup:
