@@ -788,7 +788,7 @@
 		transform: scale(0.8) !important;
 	}
 	.top-site-outer .context-menu-button{
-		transform: scale(0.5) !important;
+		transform: scale(0) !important;
 	}
 	.top-site-outer:hover {
 		.context-menu-button {

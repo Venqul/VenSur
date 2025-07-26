@@ -46,6 +46,16 @@
 	width: 12px !important;
 	height: 12px !important;
 }
+
+/* hamburger menupopup */
+
+#appMenu-popup,
+#appMenu-popup panelview {
+  background-color: transparent !important;
+  color: var(--macos-toolbar-color) !important;
+}
+
+
 /*
 menupopup {
 	appearance: none;
@@ -87,10 +97,26 @@ menupopup, panel:not(.autoscroller, #feature-callout, #confirmation-hint) {
 	}
 }
 
+menupopup > menuitem, menupopup > menu {
+  color: var(--macos-toolbar-color) !important;
+}
+
+
+/* dropdown menu */
+
+menupopup > menuitem, menupopup > menucaption, menupopup > menu {
+	color: menutext !important;
+}
+menupopup > menuitem, menupopup > menucaption, menupopup > menu[] {
+	color: menutext !important;
+}
+
 
 menupopup menupopup {
 	margin: -5px 0 0 0 !important;
 }
+
+
 
 menubar > menu > menupopup {
 	border-top-left-radius: 0 !important;
@@ -299,6 +325,59 @@ menupopup > menuitem:where([_moz-menuactive="true"]:not([disabled="true"])) {
 	--macos-headerbar-button-hover-background: var(--macos-menu-item-hover) !important;
 	--macos-headerbar-button-active-background: var(--macos-menu-item-hover) !important;
 }
+
+menupopup > menuitem[_moz-menuactive="true"]:not(:hover),
+menupopup > menu[_moz-menuactive="true"]:not(:hover),
+.subviewbutton[aria-checked="true"],
+.subviewbutton[aria-selected="true"],
+.subviewbutton[selected],
+.subviewbutton[checked],
+.subviewbutton[open] {
+  color: menutext !important;
+}
+
+/* Tick buttton for popups */
+
+menupopup > menuitem[selected="true"],
+menupopup > menu[selected="true"],
+.subviewbutton[aria-checked="true"],
+.subviewbutton[aria-selected="true"],
+.subviewbutton[selected],
+.subviewbutton[checked],
+.subviewbutton[open] {
+  position: relative; /* Needed for absolute ::before */
+  padding-inline-start: 1.5em; /* Leave space for tick */
+}
+
+menupopup > menuitem[selected="true"]::before,
+menupopup > menu[selected="true"]::before,
+.subviewbutton[aria-checked="true"]::before,
+.subviewbutton[aria-selected="true"]::before,
+.subviewbutton[selected]::before,
+.subviewbutton[checked]::before,
+.subviewbutton[open]::before {
+  content: "";
+  position: absolute;
+  left: 0.3em; /* Align inside the padding */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center */
+  width: 1em;
+  height: 1em;
+  background-color: menutext;
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  vertical-align: middle;
+}
+
+
+menupopup > menuitem:hover::before,
+.subviewbutton:hover::before {
+  background-color: var(--macos-menu-item-hover-color) !important;
+}
+
+
 
 .bookmark-item:active,
 #nav-bar .panel-subview-body toolbarbutton:active,

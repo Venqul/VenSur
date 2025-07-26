@@ -15,14 +15,11 @@
 /* Buttons  */
 
 .subviewbutton.panel-subview-footer,
-.subviewbutton.panel-subview-footer-button,
 .panel-footer button,
 #downloadsHistory,
 #downloadsPanel-mainView .download-state .downloadButton,
 #overflowMenu-customize-button,
 #appMenu-popup .panel-banner-item,
-#appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(#appMenu-fxa-label),
-.subviewbutton-back,
 #context-navigation menuitem,
 .identity-popup-preferences-button:not(#hack),
 .findbar-container toolbarbutton,
@@ -122,14 +119,11 @@
 /* Hover buttons */
 
 .subviewbutton.panel-subview-footer:hover,
-.subviewbutton.panel-subview-footer-button:hover,
 .panel-footer button:hover,
 #downloadsHistory:hover,
 #downloadsPanel-mainView .download-state .downloadButton:hover,
 #overflowMenu-customize-button:hover,
 #appMenu-popup .panel-banner-item:hover,
-.subviewbutton-back:hover,
-#appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(#appMenu-fxa-label):not([disabled]):hover,
 #context-navigation menuitem:not([disabled]):hover,
 .identity-popup-preferences-button:not(#hack):hover,
 .findbar-container toolbarbutton:hover,
@@ -151,14 +145,11 @@ menulist:hover .menulist-label-box,
 /* Active buttons */
 
 .subviewbutton.panel-subview-footer:active,
-.subviewbutton.panel-subview-footer-button:active,
 .panel-footer button:active,
 #downloadsHistory:active,
 #downloadsPanel-mainView .download-state .downloadButton:active,
 #overflowMenu-customize-button:active,
 #appMenu-popup .panel-banner-item:active,
-.subviewbutton-back:not(#hack):active,
-#appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not([disabled]):not(#appMenu-fxa-label):active,
 #context-navigation menuitem:active:not([disabled]),
 .identity-popup-preferences-button:not(#hack):active,
 .findbar-container toolbarbutton[checked],
@@ -201,7 +192,6 @@ menupopup > menuitem[_moz-menuactive="true"]:not(:hover) {
 
 /* Disabled buttons */
 
-#appMenu-popup .toolbaritem-combined-buttons toolbarbutton[disabled],
 #context-navigation menuitem[disabled],
 #webRTC-shareDevices-notification > .popup-notification-button-container > .popup-notification-primary-button[disabled] {
 	background: var(--macos-button-disabled-background) !important;
@@ -211,14 +201,11 @@ menupopup > menuitem[_moz-menuactive="true"]:not(:hover) {
 }
 
 #nav-bar toolbarbutton:not(#urlbar-zoom-button)[disabled] image,
-#appMenu-popup .toolbaritem-combined-buttons toolbarbutton[disabled] image,
 #context-navigation menuitem[disabled] image {
 	opacity: 0.4 !important;
 }
 
-#appMenu-popup .toolbaritem-combined-buttons toolbarbutton[disabled]:hover {
-	background: var(--macos-button-disabled-background) !important;
-}
+
 
 /* Inactive window buttons */
 .findbar-container toolbarbutton:-moz-window-inactive,
@@ -308,7 +295,6 @@ menupopup > menuitem[_moz-menuactive="true"]:not(:hover) {
 
 .subviewbutton.panel-subview-footer:not(:only-of-type):not(:last-of-type),
 .panel-footer button:not(:only-of-type):not(:last-of-type),
-#appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#appMenu-zoomEnlarge-button),
 #context-navigation menuitem:not(:last-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-button:not(:last-of-type) {
@@ -318,26 +304,6 @@ menupopup > menuitem[_moz-menuactive="true"]:not(:hover) {
 	margin-right: 0 !important;
 }
 
-#appMenu-zoomReduce-button2 > .toolbarbutton-icon,
-#appMenu-zoomEnlarge-button2 > .toolbarbutton-icon,
-#appMenu-fullscreen-button2 > .toolbarbutton-icon,
-#appMenu-zoomReduce-button2:hover > .toolbarbutton-icon,
-#appMenu-zoomEnlarge-button2:hover > .toolbarbutton-icon,
-#appMenu-fullscreen-button2:hover > .toolbarbutton-icon,
-#appMenu-zoomReduce-button2:active > .toolbarbutton-icon,
-#appMenu-zoomEnlarge-button2:active > .toolbarbutton-icon,
-#appMenu-fullscreen-button2:active > .toolbarbutton-icon {
-	stroke: transparent !important;
-}
-
-#appMenu-zoomReset-button2:not([disabled]) > .toolbarbutton-text,
-#appMenu-fullscreen-button2:not([disabled]) > .toolbarbutton-icon,
-#appMenu-zoomReset-button2:not([disabled]):hover > .toolbarbutton-text,
-#appMenu-fullscreen-button2:not([disabled]):hover > .toolbarbutton-icon,
-#appMenu-zoomReset-button2:not([disabled]):active > .toolbarbutton-text,
-#appMenu-fullscreen-button2:not([disabled]):active > .toolbarbutton-icon {
-	background-color: transparent !important;
-}
 
 .subviewbutton.panel-subview-footer:not(:only-of-type):not(:first-of-type),
 .panel-footer button:not(:only-of-type):not(:first-of-type),
