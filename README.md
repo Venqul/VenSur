@@ -110,7 +110,7 @@ VenSur removes the Extensions, Hamburger Menu, and Bookmark (Star) icons for a c
 
 ## 🙌 Credits
 
-This project is inspired by [Neptune](https://github.com/yiiyahui/Neptune-Firefox) and the [Firefox Adaptive Sur Theme](https://github.com/easonwong-de/Firefox-Adaptive-Sur-Theme), but reimagined with a modern, personal touch.
+This project is inspired by [WhiteSur](https://github.com/AdamXweb/WhiteSurFirefoxThemeMacOS), [Firefox Adaptive Sur Theme](https://github.com/easonwong-de/Firefox-Adaptive-Sur-Theme) and [Neptune](https://github.com/yiiyahui/Neptune-Firefox) , but reimagined with a modern, personal touch.
 
 <p align="center"><em>Crafted with care by <strong>Venqul</strong> ✨</em></p>
 
