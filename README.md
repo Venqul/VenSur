@@ -42,25 +42,16 @@ Choose a theme that complements your setup:
 
 ## ⚙️ Required Setup (Before Installing)
 
-These steps must be done **regardless of whether you use the manual method or SINE**.
+These steps must be done **regardless of whether you use the manual method or SINE**. 
 
-### 1. 🛠️ Configure Firefox (`about:config`)
-Visit `about:config` and apply the following settings:
-
-- `toolkit.legacyUserProfileCustomizations.stylesheets` → `true`  
-- `svg.context-properties.content.enabled` → `true`  
-- `layout.css.color-mix.enabled` → `true`  
-- `layout.css.backdrop-filter.force-enabled` → `true` *(optional)*  
-- `layout.css.color-mix.color-spaces.enabled` → `true` *(optional)*  
-
-### 2. 🧩 Customize your Toolbar
+### 1. 🧩 Customize your Toolbar
 Modify your toolbar layout to look like this:  
 <img width="940" height="79" alt="toolbar layout" src="https://github.com/user-attachments/assets/45b7cc9e-a2bb-4b19-b5a2-f161341038a7" />
 
-### 3. 📦 Install Required Add-on
+### 2. 📦 Install Required Add-on
 - [Reload in Address Bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
 
-### 4. 🔤 Install SF Pro Fonts
+### 3. 🔤 Install SF Pro Fonts
 Download and install the **SF Pro** system font to match Safari typography.
 
 ---
@@ -68,10 +59,18 @@ Download and install the **SF Pro** system font to match Safari typography.
 ## 🛠️ Manual Installation
 
 1. Follow the **Required Setup** above.
-2. Download the latest version of VenSur.
-3. Copy the `chrome` and `configuration` folders into your Firefox profile directory.  
+2. 🛠️ Configure Firefox (`about:config`)
+Visit `about:config` and apply the following settings:
+
+- `toolkit.legacyUserProfileCustomizations.stylesheets` → `true`  
+- `svg.context-properties.content.enabled` → `true`  
+- `layout.css.color-mix.enabled` → `true`  
+- `layout.css.backdrop-filter.force-enabled` → `true` *(optional)*  
+- `layout.css.color-mix.color-spaces.enabled` → `true` *(optional)* 
+3. Download the latest version of VenSur.
+4. Copy the `chrome` and `configuration` folders into your Firefox profile directory.  
    *(You can locate it by visiting `about:support` and opening the “Profile Folder”)*  
-4. Restart Firefox and enjoy your new Safari-like experience!
+5. Restart Firefox and enjoy your new Safari-like experience!
 
 ---
 
