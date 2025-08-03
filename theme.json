@@ -3,6 +3,7 @@
   "name": "VenSur",
   "description": "A creative and modern rework of WhiteSur, crafted to deliver the sleekness of Safari within the flexibility of Firefox.",
   "homepage": "https://github.com/Venqul/VenSur",
+  "preferences": "https://raw.githubusercontent.com/Venqul/VenSur/main/preferences.json",
   "style": {
     "chrome": "https://raw.githubusercontent.com/Venqul/VenSur/main/userChrome.css",
     "content": "https://raw.githubusercontent.com/Venqul/VenSur/main/userContent.css"
