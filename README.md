@@ -64,7 +64,8 @@ Visit `about:config` and apply the following settings:
 
 - `toolkit.legacyUserProfileCustomizations.stylesheets` → `true`  
 - `svg.context-properties.content.enabled` → `true`  
-- `layout.css.color-mix.enabled` → `true`  
+- `layout.css.color-mix.enabled` → `true`
+- `sidebar.revamp`→ `true`
 - `layout.css.backdrop-filter.force-enabled` → `true` *(optional)*  
 - `layout.css.color-mix.color-spaces.enabled` → `true` *(optional)* 
 3. Download the latest version of VenSur.
