@@ -490,10 +490,10 @@
 @-moz-document url("about:home"), url("about:newtab"), url("about:welcome"), url("about:privatebrowsing") {
 	/*
 	body {
-		background: url("neptune/image/Orange.png") center/cover no-repeat fixed !important;
+		background: url("") center/cover no-repeat fixed !important;
 
 		@media (prefers-color-scheme: dark) {
-			background: url("neptune/image/Quail.png") center/cover no-repeat fixed !important;
+			background: url("") center/cover no-repeat fixed !important;
 		}
 	}
 	*/

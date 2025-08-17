@@ -453,7 +453,7 @@ list-style-image: url("../icons/email-link.svg") !important;
 }
 
 #tabs-newtab-button, #new-tab-button {
-list-style-image: url("../icons/new-tab\ icon.svg") !important;
+list-style-image: url("../icons/new-tab icon.svg") !important;
 }
 
 #downloads-indicator-anchor {
@@ -465,7 +465,7 @@ list-style-image: url("../icons/Firefox-view.svg") !important;
 }
 
 .tab-icon-image[src="chrome://branding/content/icon32.png"] { 
-  content: url("../icons/new-tab\ favicon.svg") !important; 
+  content: url("../icons/new-tab favicon.svg") !important; 
 }
 
 #main-window toolbox toolbar :-moz-any(#sidebar-button) .toolbarbutton-icon {
@@ -473,7 +473,7 @@ list-style-image: url("../icons/Firefox-view.svg") !important;
 }
 
 #PanelUI-menu-button {
-    list-style-image: url("../icons/hamburger\ menu.svg") !important;
+    list-style-image: url("../icons/hamburger menu.svg") !important;
 }
 
 /* Invert icons color in dark variant */
