@@ -5,17 +5,18 @@
 /* Headerbar */
 
 #nav-bar {
-	padding: 8px 20px 15px 86px !important;
+	padding: 8px 16px 11px 86px !important;
 	transition: none !important;
 	:root[inFullscreen] & {
 		padding-inline-start: var(--toolbar-start-end-padding) !important;
 	}
 }
 
+#nav-bar-overflow-button,
 #PanelUI-menu-button,
 #nav-bar-customization-target{
   position: relative;
-  top: 4px !important;
+  top: 2px !important;
 }
 
 /* Headerbar CSD colors */

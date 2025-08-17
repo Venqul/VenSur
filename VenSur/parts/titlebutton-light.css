@@ -3,7 +3,7 @@
 	background: url("../titlebuttons/titlebutton-close.svg") no-repeat;
 	background-size: 79%;
 	position: relative;
-	top: 5px;
+	top: 3px;
 	left: 3px;
 }
 
@@ -11,7 +11,7 @@
 :root #TabsToolbar #TabsToolbar-max {
 	background: url("../titlebuttons/titlebutton-maximize.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 	position: relative;
 	right: 8px;
 }
@@ -20,7 +20,7 @@
 :root #TabsToolbar #TabsToolbar-min {
 	background: url("../titlebuttons/titlebutton-minimize.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 	position: relative;
 	right: 3px;
 }
@@ -31,7 +31,7 @@
 :root[sizemode="maximized"] #TabsToolbar #TabsToolbar-max {
 	background: url("../titlebuttons/titlebutton-maximize.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 	position: relative;
 	right: 9px;
 }
@@ -40,21 +40,21 @@
 :root #TabsToolbar #TabsToolbar-close:hover {
 	background: url("../titlebuttons/titlebutton-close-hover-inactive.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 :root #TabsToolbar .titlebar-buttonbox:hover .titlebar-max,
 :root #TabsToolbar #TabsToolbar-max:hover {
 	background: url("../titlebuttons/titlebutton-maximize-hover-inactive.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 :root #TabsToolbar .titlebar-buttonbox:hover .titlebar-min,
 :root #TabsToolbar #TabsToolbar-min:hover {
 	background: url("../titlebuttons/titlebutton-minimize-hover-inactive.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 /* Windows issue #63 */
@@ -62,21 +62,21 @@
 :root #TabsToolbar #TabsToolbar-close:hover {
 	background: url("../titlebuttons/titlebutton-close-hover.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 	transition: background-size 300ms cubic-bezier(0, 0, 0.2, 1);
 }
 
 :root #TabsToolbar #TabsToolbar-max:hover {
 	background: url("../titlebuttons/titlebutton-maximize-hover.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 	transition: background-size 300ms cubic-bezier(0, 0, 0.2, 1);
 }
 
 :root #TabsToolbar #TabsToolbar-min:hover {
 	background: url("../titlebuttons/titlebutton-minimize-hover.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 	transition: background-size 300ms cubic-bezier(0, 0, 0.2, 1);
 }
 
@@ -88,27 +88,27 @@
 	background-size: 71%;
 	position: relative;
 	right: 8px;
-	top: 6px;
+	top: 4px;
 }
 
 :root #TabsToolbar .titlebar-buttonbox:hover .titlebar-close:active,
 :root #TabsToolbar #TabsToolbar-close:active {
 	background: url("../titlebuttons/titlebutton-close-active.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 :root #TabsToolbar .titlebar-buttonbox:hover .titlebar-max:active,
 :root #TabsToolbar #TabsToolbar-max:active {
 	background: url("../titlebuttons/titlebutton-maximize-active.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 :root #TabsToolbar .titlebar-buttonbox:hover .titlebar-min:active,
 :root #TabsToolbar #TabsToolbar-min:active {
 	background: url("../titlebuttons/titlebutton-minimize-active.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 :root #TabsToolbar .titlebar-buttonbox:active .titlebar-restore,
@@ -119,28 +119,28 @@
 	background-size: 71%;
 	position: relative;
 	right: 8px;
-	top: 6px;
+	top: 4px;
 }
 
 :root #TabsToolbar:-moz-window-inactive .titlebar-buttonbox .titlebar-close,
 :root #TabsToolbar:-moz-window-inactive #TabsToolbar-close {
 	background: url("../titlebuttons/titlebutton-backdrop.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 :root #TabsToolbar:-moz-window-inactive .titlebar-buttonbox .titlebar-max,
 :root #TabsToolbar:-moz-window-inactive #TabsToolbar-max {
 	background: url("../titlebuttons/titlebutton-backdrop.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 2px;
 }
 
 :root #TabsToolbar:-moz-window-inactive .titlebar-buttonbox .titlebar-min,
 :root #TabsToolbar:-moz-window-inactive #TabsToolbar-min {
 	background: url("../titlebuttons/titlebutton-backdrop.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 :root #TabsToolbar:-moz-window-inactive .titlebar-buttonbox .titlebar-restore,
@@ -149,13 +149,13 @@
 :root[sizemode="maximized"] #TabsToolbar:-moz-window-inactive #TabsToolbar-max {
 	background: url("../titlebuttons/titlebutton-backdrop.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 :root #TabsToolbar:-moz-window-inactive .titlebar-buttonbox:hover .titlebar-restore,
 :root #TabsToolbar:-moz-window-inactive #TabsToolbar-restore:hover {
 	background: url("../titlebuttons/titlebutton-unmaximize-backdrop.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 	position: relative;
 	right: 9px;
 }
@@ -165,28 +165,28 @@
 :root #TabsToolbar:-moz-window-inactive #TabsToolbar-close:hover {
 	background: url("../titlebuttons/titlebutton-close-backdrop.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 :root #TabsToolbar:-moz-window-inactive .titlebar-buttonbox:hover .titlebar-max,
 :root #TabsToolbar:-moz-window-inactive #TabsToolbar-max:hover {
 	background: url("../titlebuttons/titlebutton-maximize-backdrop.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 :root #TabsToolbar:-moz-window-inactive .titlebar-buttonbox:hover .titlebar-min,
 :root #TabsToolbar:-moz-window-inactive #TabsToolbar-min:hover {
 	background: url("../titlebuttons/titlebutton-minimize-backdrop.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 :root[sizemode="maximized"] #TabsToolbar:-moz-window-inactive .titlebar-buttonbox:hover .titlebar-max,
 :root[sizemode="maximized"] #TabsToolbar:-moz-window-inactive #TabsToolbar-max:hover {
 	background: url("../titlebuttons/titlebutton-unmaximize-backdrop.svg") no-repeat;
 	background-size: 79%;
-	top: 5px;
+	top: 3px;
 }
 
 .titlebar-buttonbox-container {

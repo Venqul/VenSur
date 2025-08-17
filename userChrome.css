@@ -32,29 +32,17 @@
 /* Set theme version text in customization panel */
 
 #customization-footer::before {
-	content: "VenSur theme ver 1.0";
+	content: "VenSur theme ver 1.1";
 	padding: 9px;
 }
 
 
-/* code to remove extensions icon */
-#unified-extensions-button{
-    width: 3px;
-    padding-inline: 0 !important
-}
-#unified-extensions-button > .toolbarbutton-icon {
-    width: 0 !important;
-}
-/* code to remove extensions icon */
+
 
 * {
     font-family: "SF Pro Text" !important;
     font-size: 100%;
  }
- /* code to remove bookmark "star" icon form adressbar */
- #star-button-box { display:none !important; }
-  /* code to remove bookmark "star" icon form adressbar */
-
 
   tab[label="New Tab"] label.tab-label {
     display: none !important;
@@ -62,45 +50,6 @@
   tab[label="New Tab"] .tab-label-container:after {
     content: 'Start Page';
   }
-
-  #email-link-button {
-    list-style-image: url("VenSur/icons/email-link.svg") !important;
-  }
-
-  #tabs-newtab-button, #new-tab-button {
-    list-style-image: url("VenSur/icons/new-tab\ icon.svg") !important;
-  }
-
-  #downloads-indicator-anchor {
-    list-style-image: url("VenSur/icons/downloads.svg") !important;
-  }
-
-  #firefox-view-button {
-    list-style-image: url("VenSur/icons/Firefox-view.svg") !important;
-  }
-
-	#main-window toolbox toolbar :-moz-any(#sidebar-button) .toolbarbutton-icon {
-		list-style-image: url("VenSur/icons/sidebars.svg") !important;
-	}
-
-  #PanelUI-menu-button {
-    list-style-image: url("VenSur/icons/hamburger\ menu.svg") !important;
-  }
-
-.tab-icon-image[src="chrome://branding/content/icon32.png"] { 
-  content: url("VenSur/icons/new-tab\ favicon.svg") !important; 
-}
-
-
-
-
-/* code to remove hamburger menu */
-#PanelUI-menu-button {
-  display: none !important;
-}
-/* code to remove hamburger menu */
-
-
 
 .browserContainer {
 	transition: padding 150ms ease-in-out;
@@ -121,3 +70,23 @@
     padding: 10px !important;
   }
 }
+
+/* code to remove extensions icon */
+#unified-extensions-button{
+  width: 3px;
+  padding-inline: 0 !important
+}
+#unified-extensions-button > .toolbarbutton-icon {
+  width: 0 !important;
+}
+/* code to remove extensions icon */
+
+/* code to remove hamburger menu */
+#PanelUI-menu-button {
+  display: none !important;
+}
+/* code to remove hamburger menu */
+
+/* code to remove bookmark "star" icon form adressbar */
+#star-button-box { display:none !important; }
+/* code to remove bookmark "star" icon form adressbar */

@@ -1021,7 +1021,7 @@
 		background-color: var(--context-menu-background) !important;
 		backdrop-filter: blur(25px) !important;
 		position: absolute !important;
-		top: -1290% !important;
+		top: -1340% !important;
 		width: 18em !important;
 		height: fit-content !important;
 		padding: 0 !important;
@@ -1033,7 +1033,47 @@
 		box-shadow: var(--neptune-small-shadow), var(--neptune-menu-shadow) !important;
 		overflow-x: hidden !important;
 		transition: .4s !important;
+		overflow: visible !important;
 	}
+
+.customize-menu::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* adjust depending on how much it should overlap */
+  right: 12px;
+  width: 18px;
+  height: 18px;
+
+
+  background: var(--context-menu-background);
+	
+  backdrop-filter: blur(25px);
+	border: var(--context-menu-outline);
+	outline: var(--context-menu-border);
+	outline-offset: -2px;
+	border-top: none;
+	border-left: none;
+
+
+
+
+  transform: rotate(45deg); /* diamond shape */
+  border-bottom-right-radius: 4px; /* reduce corner rounding for sharper point */
+  clip-path: polygon(20% 45%, 100% 0%, 100% 100%, 10% 100%);
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
 	.customize-menu.customize-animate-enter-done,
 	.customize-menu.customize-animate-enter-active {
 		transform: scale(1) !important;

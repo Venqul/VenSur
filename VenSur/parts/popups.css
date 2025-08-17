@@ -101,14 +101,15 @@ menupopup > menuitem, menupopup > menu {
   color: var(--macos-toolbar-color) !important;
 }
 
-
 /* dropdown menu */
 
 menupopup > menuitem, menupopup > menucaption, menupopup > menu {
 	color: menutext !important;
+	font-style: normal !important;
 }
 menupopup > menuitem, menupopup > menucaption, menupopup > menu[] {
 	color: menutext !important;
+	font-style: normal !important;
 }
 
 
@@ -727,3 +728,6 @@ tab-group::before,
 #urlbar .search-one-offs {
 	display: none !important;
 }
+
+
+
