@@ -426,16 +426,19 @@ button.popup-notification-primary-button.popup-notification-button:active,
   position: relative;
   bottom: 5px;
 }
-#input{
-	border: 1px solid var(--macos-urlbar-border-color) !important;
-	border-radius: var(--macos-menu-border-radius) !important;
-	background-color: var(--toolbar-field-background-color) !important;
-	background-size: 14px 14px !important;
-	min-height: fit-content !important;
-	height: 30px !important;
-	opacity: 70% !important;
-	transition: opacity 150ms linear !important;
-	width: 104% !important;
+@-moz-document regexp("^(?!about:).*")
+{
+	#input{
+		border: 1px solid var(--macos-urlbar-border-color) !important;
+		border-radius: var(--macos-menu-border-radius) !important;
+		background-color: var(--toolbar-field-background-color) !important;
+		background-size: 14px 14px !important;
+		min-height: fit-content !important;
+		height: 30px !important;
+		opacity: 70% !important;
+		transition: opacity 150ms linear !important;
+		width: 104% !important;
+}
 }
 #input:hover{
 	opacity: 100% !important;

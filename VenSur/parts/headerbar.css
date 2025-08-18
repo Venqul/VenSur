@@ -7,16 +7,17 @@
 #nav-bar {
 	padding: 8px 16px 11px 86px !important;
 	transition: none !important;
+	  position: relative;
+	top: 2px !important;
 	:root[inFullscreen] & {
 		padding-inline-start: var(--toolbar-start-end-padding) !important;
 	}
 }
 
-#nav-bar-overflow-button,
-#PanelUI-menu-button,
-#nav-bar-customization-target{
+/*
+#nav-bar{
   position: relative;
-  top: 2px !important;
+
 }
 
 /* Headerbar CSD colors */

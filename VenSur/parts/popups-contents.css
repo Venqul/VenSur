@@ -367,3 +367,8 @@
 #PlacesToolbar menupopup[placespopup="true"] menuseparator:last-of-type {
 	display: none !important;
 }
+/* font-size fix */
+#protections-popup-main-header-label,
+#sidebar-history-sort-by-heading{
+	font-size: inherit !important;
+}

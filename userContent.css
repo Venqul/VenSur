@@ -53,7 +53,7 @@
 	--theme-toolbar-alternate-hover: var(--neptune-item-active-background) !important;
 	--theme-focus-textinput-outline-color: var(--neptune-input-outline-color) !important;
 	--toolbarbutton-hover-background: var(--neptune-item-hover-background) !important;
-	--button-min-height: 22px !important;
+	/*--button-min-height: 22px !important;*/
 	--theme-toolbar-height: 22px !important;
 	--theme-arrowpanel-border-radius: 8px !important;
 	--tab-line-selected-color: transparent !important;
@@ -65,7 +65,7 @@
 	--font-size-large: 1.2rem !important;
 	--font-size-xlarge: 1.6rem !important;
 	--font-size-xxlarge: 1.92rem !important;
-	--space-xsmall: 0.32rem !important;
+	/*--space-xsmall: 0.32rem !important;*/
 }
 
 @-moz-document url-prefix(about:), url-prefix("chrome://") {

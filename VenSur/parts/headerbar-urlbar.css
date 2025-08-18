@@ -109,6 +109,7 @@
 	top: 10px !important;
 }
 #urlbar{
+	position: relative !important;
 	top: 10px !important;
 }
 #urlbar[focused] #urlbar-input {

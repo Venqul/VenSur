@@ -80,7 +80,7 @@ menupopup, panel:not(.autoscroller, #feature-callout, #confirmation-hint) {
 		appearance: menupopup !important;
 		--panel-background: Menu !important;
 		--panel-border-color: transparent !important;
-		--panel-shadow-margin: 0 !important;
+		--panel-shadow-margin: 0px  !important;
 	}
 
 	@media (-moz-platform: windows) and (not (-moz-windows-mica-popups)) {
@@ -728,6 +728,11 @@ tab-group::before,
 #urlbar .search-one-offs {
 	display: none !important;
 }
-
+/* Target all context menu dividers */
+menupopup > menuseparator {
+    height: 1px !important;                           /* thickness */                        /* spacing above/below */
+    background-color: var(--toolbar-color); /* color */
+    border: none !important;                           /* remove default border */
+}
 
 
