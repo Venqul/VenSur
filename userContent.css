@@ -1662,6 +1662,61 @@
 	display: none !important;
 }
 /* Sine styling */
+#sineMarketplaceRefreshButton{
+	border: 1px solid var(--newtab-border-color) !important;
+	background-color: color-mix(transparent, currentColor) !important;;
+  border-radius: 6px !important;
+	width: fit-content !important;
+	height: fit-content !important;
+	scale: 0.8 !important;
+	bottom: 3px !important;
+	position: relative
+}
+.sineCKSOption-input{
+	border: 1px solid var(--macos-urlbar-border-color) !important;
+	border-radius: var(--macos-menu-border-radius) !important;
+	background-color: var(--toolbar-field-background-color) !important;
+	background-size: 14px 14px !important;
+
+	opacity: 70% !important;
+	transition: opacity 150ms linear !important;
+	width: fit-content !important;
+}
+input.sineCKSOption-input:nth-child(2){
+		min-height: fit-content !important;
+	height: 15px !important;
+}
+
+
+.sineCKSOption-input:hover{
+	opacity: 100% !important;
+	transition: opacity 150ms linear !important;
+}
+.sineItem,
+button.auto-update-toggle:nth-child(3),
+
+button.sineItemConfigureButton:nth-child(1),
+.sineItemHomepageButton,
+.sineItemUninstallButton,
+.sineMarketplaceItemButton{
+	 border: 1px solid var(--newtab-border-color) !important;
+	background-color: color-mix(transparent, currentColor) !important;;
+  border-radius: 6px !important;
+}
+.manual-update{
+	height: 35px !important;
+}
+button.auto-update-toggle:nth-child(1),
+.manual-update,
+.sine-export-btn,
+.sine-import-btn,
+.sineMarketplaceOpenButton,
+#navigation-container > button:nth-child(1),
+#navigation-container > button:nth-child(2)
+{
+	  border-radius: 6px !important;
+}
+#sineInstallationHeader > button:nth-child(4),
 dialog.sineItemPreferenceDialog:nth-child(5) > div:nth-child(1) > button:nth-child(2),
 dialog.sineItemPreferenceDialog:nth-child(1) > div:nth-child(1) > button:nth-child(2){
   border: 1px solid var(--newtab-border-color) !important;
@@ -1672,6 +1727,8 @@ dialog.sineItemPreferenceDialog:nth-child(1) > div:nth-child(1) > button:nth-chi
   width: fit-content !important;
   min-width: fit-content !important;
 }
+
+.sineInstallationItem,
 .sineItemPreferenceDialog,
 dialog.sineItemPreferenceDialog:nth-child(1){
 		border-radius: var(--border-radius-medium) !important;
