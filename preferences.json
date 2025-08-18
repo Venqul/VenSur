@@ -56,44 +56,29 @@
   {
     "type": "text",
     "label": "🎨Customize",
-    "margin": "30px 0 30px 0",
+    "margin": "30px 0 10px 0",
     "size": "20px"
   },
   {
+    "type": "checkbox",
     "property": "show.extensions.button",
-    "label": "Extensions Button",
-    "type": "dropdown",
-    "placeholder": false,
-    "value": "number",
-    "default": 0,
-    "options": [
-      { "value": 0, "label": "Hidden" },
-      { "value": 1, "label": "Shown" }
-    ]
+    "label": "Star Extensions button",
+    "defaultValue": true,
+    "force": false
   },
   {
+    "type": "checkbox",
     "property": "show.panelUI.button",
-    "label": "Panel UI (Hamburger Menu) Button",
-    "type": "dropdown",
-    "placeholder": false,
-    "value": "number",
-    "default": 0,
-    "options": [
-      { "value": 0, "label": "Hidden" },
-      { "value": 1, "label": "Shown" }
-    ]
+    "label": "Show Application Menu button",
+    "defaultValue": true,
+    "force": false
   },
   {
+    "type": "checkbox",
     "property": "show.star.button",
-    "label": "Star Button in URL Bar",
-    "type": "dropdown",
-    "placeholder": false,
-    "value": "number",
-    "default": 0,
-    "options": [
-      { "value": 0, "label": "Hidden" },
-      { "value": 1, "label": "Shown" }
-    ]
+    "label": "Show Star Button in Address Bar",
+    "defaultValue": true,
+    "force": false
   },
   {
     "type": "checkbox",
