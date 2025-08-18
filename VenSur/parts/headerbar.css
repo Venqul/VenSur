@@ -5,10 +5,11 @@
 /* Headerbar */
 
 #nav-bar {
-	padding: 8px 16px 11px 86px !important;
+	padding: 8px 16px 10px 86px !important;
+	height: 51px !important;
+	position: relative;
+	top: 1px !important;
 	transition: none !important;
-	  position: relative;
-	top: 2px !important;
 	:root[inFullscreen] & {
 		padding-inline-start: var(--toolbar-start-end-padding) !important;
 	}
@@ -46,7 +47,9 @@
 	min-width: 26px !important;
 	color: var(--macos-toolbar-color) !important;
 }
-
+toolbarbutton{
+	width: 34px !important;
+}
 #nav-bar panel toolbarbutton:not(#urlbar-zoom-button):not(.subviewbutton):not(.toolbarbutton-1) {
 	padding: 0 !important;
 }
