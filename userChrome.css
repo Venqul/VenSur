@@ -18,13 +18,14 @@
 @import "VenSur/parts/toolbox.css";
 @import "VenSur/parts/windows.css";
 @import "VenSur/color.css";
+@media -moz-pref("extensions.menu.in.grid") {
+  @import "VenSur/customs/extension-menu-in-grid.css";
+}
+@media -moz-pref("hide.single.tab") {
+  @import "VenSur/customs/hide-single-tab.css";
+}
 
 
-/* Custom settings */
-@import "VenSur/customs/extension-menu-in-grid.css";
-@import "VenSur/customs/hide-single-tab.css";
-/* @import "VenSur/customs/tab-preview-on-hover.css"; */
-/* @import "VenSur/customs/mini-tabbar.css"; */
 
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
