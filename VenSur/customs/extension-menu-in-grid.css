@@ -1,3 +1,5 @@
+@media -moz-pref("extensions.menu.in.grid") {
+
 /* Minimalist style extension menu */
 
 /* Based on u/It_Was_The_Other_Guy */
@@ -106,4 +108,5 @@
 
 #unified-extensions-panel .subviewbutton {
 	margin: 0 !important;
+}
 }
