@@ -55,7 +55,7 @@
   },
   {
     "type": "text",
-    "label": "Show/Hide Buttons",
+    "label": "🎨Customize",
     "margin": "30px 0 30px 0",
     "size": "20px"
   },
@@ -94,5 +94,19 @@
       { "value": 0, "label": "Hidden" },
       { "value": 1, "label": "Shown" }
     ]
+  },
+  {
+    "type": "checkbox",
+    "property": "extensions.menu.in.grid",
+    "label": "Extensions Menu in Grid",
+    "defaultValue": true,
+    "force": false
+  },
+  {
+    "type": "checkbox",
+    "property": "hide.single.tab",
+    "label": "Hide Single Tab",
+    "defaultValue": true,
+    "force": false
   }
 ]
