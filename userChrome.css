@@ -65,28 +65,25 @@
     display: none !important;
   }
 }
+
 .customization-uidensity-menuitem {
   & > .menu-text {
     padding: 10px !important;
   }
 }
 
-/* code to remove extensions icon */
-#unified-extensions-button{
-  width: 3px;
-  padding-inline: 0 !important
+@media not -moz-pref("show.extensions.button") {
+  #unified-extensions-button{
+    display: none !important
+  }
 }
-#unified-extensions-button > .toolbarbutton-icon {
-  width: 0 !important;
-}
-/* code to remove extensions icon */
 
-/* code to remove hamburger menu */
-#PanelUI-menu-button {
-  display: none !important;
+@media not -moz-pref("show.panelUI.button") {
+  #PanelUI-menu-button {
+    display: none !important;
+  }
 }
-/* code to remove hamburger menu */
 
-/* code to remove bookmark "star" icon form adressbar */
-#star-button-box { display:none !important; }
-/* code to remove bookmark "star" icon form adressbar */
+@media not -moz-pref("show.star.button") {
+  #star-button-box { display:none !important; }
+}
