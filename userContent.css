@@ -1661,3 +1661,38 @@
 [lwt-newtab-brighttext] .shortcuts-refresh .top-site-outer .icon-pin-small {
 	display: none !important;
 }
+/* Sine styling */
+dialog.sineItemPreferenceDialog:nth-child(5) > div:nth-child(1) > button:nth-child(2),
+dialog.sineItemPreferenceDialog:nth-child(1) > div:nth-child(1) > button:nth-child(2){
+  border: 1px solid var(--newtab-border-color) !important;
+	background-color: color-mix(transparent, currentColor) !important;;
+  border-radius: 6px !important;;
+  min-height: 15px !important;
+  height: 25px !important;
+  width: fit-content !important;
+  min-width: fit-content !important;
+}
+.sineItemPreferenceDialog,
+dialog.sineItemPreferenceDialog:nth-child(1){
+		border-radius: var(--border-radius-medium) !important;
+		box-shadow: var(--neptune-small-shadow), var(--neptune-menu-shadow) !important;
+		padding: 10 !important;
+		border-radius: 6px !important;
+		border: var(--context-menu-border) !important;;
+		outline: var(--context-menu-outline) !important;;
+		font-size: 14px !important;
+		background-color: var(--context-menu-background) !important;
+		backdrop-filter: blur(25px) !important;
+}
+dialog::backdrop, #sineInstallationGroup:popover-open::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+  backdrop-filter: blur(5px) brightness(75%) !important;
+  transition: all 0.5s ease-in-out !important;
+
+}
+
+
+
