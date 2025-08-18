@@ -56,6 +56,20 @@ Download and install the **SF Pro** system font to match Safari typography.
 
 ---
 
+## 🚀 Install with *SINE*
+
+1. Complete the **Required Setup** above.  
+2. Install the latest version of [Sine](https://github.com/CosmoCreeper/Sine/releases), following all prompted instructions.  
+3. Restart Firefox.  
+4. Open **Settings** and navigate to the **SINE** tab.  
+5. Locate the **Local Installation** section (titled “Add your own locally from a GitHub repo”).  
+6. Install **Venqul/VenSur**.  
+7. Restart Firefox again.
+8. Customize the settings to match your preferences.
+9. 🎉 Enjoy your new setup!
+
+---
+
 ## 🛠️ Manual Installation
 
 1. Follow the **Required Setup** above.
@@ -75,13 +89,6 @@ Visit `about:config` and apply the following settings:
 
 ---
 
-## 🚀 Install with SINE *(Coming Soon)*
-
-A streamlined one-click installer is in the works!
-
-> **Note**: Even when using SINE, you'll still need to complete the **Required Setup**.
-
----
 ## ⚠️ Optional: Restore Hidden Icons
 VenSur removes the Extensions, Hamburger Menu, and Bookmark (Star) icons for a clean Safari-style interface. To restore them, remove these blocks from your `userChrome.css`:
 
