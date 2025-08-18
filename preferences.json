@@ -52,5 +52,29 @@
     "label": "Enable Color Mix Color Spaces (Important)",
     "defaultValue": true,
     "force": true
+  },
+      {
+    "type": "text",
+    "label": "Show/Hide Buttons",
+    "margin": "30px 0 30px 0",
+    "size": "20px"
+  },
+  {
+    "type": "checkbox",
+    "property": "show.extensions.button",
+    "label": "Show Extensions button",
+    "defaultValue": false,
+  },
+    {
+    "type": "checkbox",
+    "property": "show.panelUI.button",
+    "label": "Show Panel UI button(Hamburger menu)",
+    "defaultValue": false,
+  },
+      {
+    "type": "checkbox",
+    "property": "show.star.button",
+    "label": "Show Star button in Url bar",
+    "defaultValue": false,
   }
 ]
