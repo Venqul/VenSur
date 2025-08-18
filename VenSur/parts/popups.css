@@ -734,5 +734,10 @@ menupopup > menuseparator {
     background-color: var(--toolbar-color); /* color */
     border: none !important;                           /* remove default border */
 }
+/* Fix button width for popups */
+.subviewbutton,
+ toolbarbutton {
+  width: initial !important; 
+}
 
 
