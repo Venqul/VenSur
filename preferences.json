@@ -65,13 +65,13 @@
     "label": "Show Extensions button",
     "defaultValue": false,
   },
-    {
+  {
     "type": "checkbox",
     "property": "show.panelUI.button",
     "label": "Show Panel UI button(Hamburger menu)",
     "defaultValue": false,
   },
-      {
+  {
     "type": "checkbox",
     "property": "show.star.button",
     "label": "Show Star button in Url bar",
