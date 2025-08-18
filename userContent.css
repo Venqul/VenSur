@@ -1662,19 +1662,10 @@
 	display: none !important;
 }
 /* Sine styling */
-#sineMarketplaceRefreshButton{
-	border: 1px solid var(--newtab-border-color) !important;
-	background-color: color-mix(transparent, currentColor) !important;;
-  border-radius: 6px !important;
-	width: fit-content !important;
-	height: fit-content !important;
-	scale: 0.8 !important;
-	bottom: 3px !important;
-	position: relative
-}
+
 .sineCKSOption-input{
 	border: 1px solid var(--macos-urlbar-border-color) !important;
-	border-radius: var(--macos-menu-border-radius) !important;
+	border-radius: 6px !important;
 	background-color: var(--toolbar-field-background-color) !important;
 	background-size: 14px 14px !important;
 
@@ -1682,11 +1673,6 @@
 	transition: opacity 150ms linear !important;
 	width: fit-content !important;
 }
-input.sineCKSOption-input:nth-child(2){
-		min-height: fit-content !important;
-	height: 15px !important;
-}
-
 
 .sineCKSOption-input:hover{
 	opacity: 100% !important;
@@ -1706,6 +1692,7 @@ button.sineItemConfigureButton:nth-child(1),
 .manual-update{
 	height: 35px !important;
 }
+#sineMarketplaceRefreshButton,
 button.auto-update-toggle:nth-child(1),
 .manual-update,
 .sine-export-btn,
