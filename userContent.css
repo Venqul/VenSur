@@ -227,8 +227,6 @@
 
 	*#categories > *.category {
 		background-image: none !important;
-		padding-inline-start: 0 !important;
-		margin-inline-start: 28px !important;
 		border-radius: var(--border-radius-medium) !important;
 
 		> .category-name {
@@ -477,14 +475,7 @@
 		border-radius: var(--border-radius-small) !important;
 	}
 
-	.devtools-separator,
-	.category-icon,
-	.dialogClose,
-	.sidebar-footer-icon,
-	#formAutofillGroupBox,
-	#homeContentsGroup .checkbox-icon[src] {
-		display: none !important;
-	}
+
 }
 
 @-moz-document url("about:home"), url("about:newtab"), url("about:welcome"), url("about:privatebrowsing") {
@@ -1545,7 +1536,7 @@
 	@media not print {
 		:root {
 			background-color: var(--neptune-main-background) !important;
-			background-image: none !important;
+
 		}
 	}
 }
