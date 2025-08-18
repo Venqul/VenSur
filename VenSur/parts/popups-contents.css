@@ -368,6 +368,12 @@
 	display: none !important;
 }
 /* font-size fix */
+.panel-header h1{
+	font-size: 110% !important;
+}
+#unified-extensions-view > box:nth-child(1) > h1:nth-child(1) > span:nth-child(1){
+	font-size: 120% !important;
+}
 #protections-popup-main-header-label,
 #sidebar-history-sort-by-heading{
 	font-size: inherit !important;
