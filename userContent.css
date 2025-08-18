@@ -226,8 +226,7 @@
 	}
 
 	*#categories > *.category {
-		background-image: none !important;
-		border-radius: var(--border-radius-medium) !important;
+		border-radius: 6px !important;
 
 		> .category-name {
 			font-size: 1.12em !important;
