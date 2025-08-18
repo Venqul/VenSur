@@ -349,16 +349,10 @@
 		box-shadow: var(--neptune-menu-shadow) !important;
 	}
 
-	#downloadsListBox:focus > richlistitem[selected] {
-		background-image: none !important;
-		background-color: var(--color-accent-primary-active) !important;
-		color: #fff !important;
-		border-radius: 0 !important;
-		outline: none !important;
-	}
+
 
 	.downloadButton > .button-box {
-		border-radius: 50% !important;
+		border-radius: 500% !important;
 
 		 > .button-icon {
 			list-style-image: url("chrome://global/skin/icons/search-glass.svg") !important;
