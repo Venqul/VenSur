@@ -4,5 +4,53 @@
     "label": "⚙️ VenSur Theme Settings",
     "margin": "20px 0 25px 0",
     "size": "24px"
+  },
+    {
+    "type": "text",
+    "label": "⚠️ Important Settings, Do not turn off",
+    "margin": "30px 0 30px 0",
+    "size": "20px"
+  },
+  {
+    "type": "checkbox",
+    "property": "toolkit.legacyUserProfileCustomizations.stylesheets",
+    "label": "Enable Legacy UserChrome Customizations (Important)",
+    "defaultValue": true,
+    "force": true
+  },
+  {
+    "type": "checkbox",
+    "property": "svg.context-properties.content.enabled",
+    "label": "Enable Context Property SVGs (Important)",
+    "defaultValue": true,
+    "force": true
+  },
+  {
+    "type": "checkbox",
+    "property": "layout.css.color-mix.enabled",
+    "label": "Enable CSS color-mix (Important)",
+    "defaultValue": true,
+    "force": true
+  },
+  {
+    "type": "checkbox",
+    "property": "sidebar.revamp",
+    "label": "Enable Sidebar Revamp (Important)",
+    "defaultValue": true,
+    "force": true
+  },
+  {
+    "type": "checkbox",
+    "property": "layout.css.backdrop-filter.force-enabled",
+    "label": "Enable Backdrop Filters (Optional)",
+    "defaultValue": true,
+    "force": true
+  },
+  {
+    "type": "checkbox",
+    "property": "layout.css.color-mix.color-spaces.enabled",
+    "label": "Enable Color Mix Color Spaces (Important)",
+    "defaultValue": true,
+    "force": true
   }
 ]
