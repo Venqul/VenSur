@@ -62,7 +62,14 @@
   {
     "type": "checkbox",
     "property": "show.extensions.button",
-    "label": "Star Extensions button",
+    "label": "Show Extensions button",
+    "defaultValue": true,
+    "force": false
+  },
+  {
+    "type": "checkbox",
+    "property": "extensions.menu.in.grid",
+    "label": "Extensions Menu in Grid",
     "defaultValue": true,
     "force": false
   },
@@ -77,13 +84,6 @@
     "type": "checkbox",
     "property": "show.star.button",
     "label": "Show Star Button in Address Bar",
-    "defaultValue": true,
-    "force": false
-  },
-  {
-    "type": "checkbox",
-    "property": "extensions.menu.in.grid",
-    "label": "Extensions Menu in Grid",
     "defaultValue": true,
     "force": false
   },
