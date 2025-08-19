@@ -398,7 +398,7 @@ button.popup-notification-primary-button.popup-notification-button:active,
 	width: 16px !important;
 }
 
-/* Sidebar stuff */
+/* Sidebar stuff Venqul */
 .sidebar-panel-header > moz-button:nth-child(2),
 #sidebar-panel-header-close-button,
 #sidebar-panel-close {
@@ -486,10 +486,14 @@ sidebar-tab-row:hover {
 #fxview-tab-row-favicon{
 	scale:  10% important;
 }
+#sidebar-history-sort-by-heading{
+	position: relative;
+	left: 4px !important;
+}
 #fxview-tab-row-secondary-button{
 	scale: 0.9 !important;
 	position: relative;
-	bottom: 2px !important;
+	top: 0px !important;
 }
 #moz-card-details {
   width: 106% !important;

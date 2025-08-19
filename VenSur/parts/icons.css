@@ -144,9 +144,36 @@ treechildren::-moz-tree-twisty(selected, focus, open) {
 
 /* Menu checkbox */
 
+/* Remove the original list-style */
+menuitem[type="checkbox"] {
+    list-style: none;
+    position: relative;
+}
+
+/* Sidebar clear hisory icon */
+#sidebar-history-clear > .menu-icon{
+	   content: "";
+    display: inline-block;
+    width: 14px !important;
+    height: 14px !important;
+    margin-right: 5px;
+    vertical-align: middle;
+	position: relative;
+	bottom: 2px !important;
+
+    mask: url("chrome://global/skin/icons/delete.svg") no-repeat center;
+    mask-size: contain;
+    -webkit-mask: url("chrome://global/skin/icons/delete.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    opacity: 70% !important; /* makes it semi-transparent */
+    background-color: currentColor; /* color for unchecked checkbox */
+}
+
+/* Venqul removed
 menuitem[type="checkbox"] {
 	list-style-image: url("../icons/checkbox-symbolic.svg") !important;
 }
+*/
 
 /* menuitem[type="checkbox"][hover="true"] {
 } */
@@ -165,10 +192,11 @@ menuitem[type="checkbox"][disabled="true"] .menu-iconic-icon {
 
 /* Menu radio */
 
+/* Venqul removed
 menuitem[type="radio"] {
 	list-style-image: url("../icons/radio-symbolic.svg") !important;
 }
-
+*/
 menuitem[type="radio"][checked="true"] {
 	list-style-image: url("../icons/radio-checked-symbolic.svg") !important;
 }
