@@ -514,7 +514,8 @@ xul|*.addons-icon {
   height: 16px !important;
 }
 .category[name="extension"] {
-  background-image: url("../icons//Extensions icon settings.svg") !important;
+  background-image: url("../icons/Extensions-icon-settings.svg") !important;
+
 }
 
 /* Invert icons color in dark variant */
