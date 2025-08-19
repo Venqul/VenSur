@@ -27,7 +27,7 @@
 /* Set theme version text in customization panel */
 
 #customization-footer::before {
-	content: "VenSur theme ver 1.1";
+	content: "VenSur theme ver 1.2";
 	padding: 9px;
 }
 

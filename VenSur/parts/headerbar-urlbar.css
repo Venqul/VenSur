@@ -108,9 +108,16 @@
 #urlbar[focused]{
 	top: 10px !important;
 }
+/* Url bar positions */
+
 #urlbar{
 	position: relative !important;
 	top: 10px !important;
+}
+/* in customize menu */
+#wrapper-urlbar-container{
+	position: relative;
+	bottom: 10px !important;
 }
 #urlbar[focused] #urlbar-input {
 	transform: translateX(0);
@@ -176,6 +183,29 @@ toolbarspring {
 	mask-image: linear-gradient(to left, transparent, black 3ch);
 }
 
+
+
+/* URL Bar search engine chicklet */
+#searchmode-switcher-chicklet{
+	height: fit-content !important;
+  position: relative !important;
+  top: 2px !important;
+  border-radius: 6px !important;
+  width: fit-content !important;
+  padding-left: 30px !important;
+	right: 34px !important;
+	z-index: 0 !important;
+}
+#searchmode-switcher-close{
+	list-style-image: url("chrome://global/skin/icons/close.svg") !important;
+	scale: 0.8 !important;
+}
+#urlbar-searchmode-switcher{
+  z-index: 1 !important;
+	scale: 0.9 !important;
+	position: relative;
+	right: 4px !important;
+}
 /* URL bar results */
 
 .urlbarView {

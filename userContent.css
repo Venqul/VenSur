@@ -1047,8 +1047,13 @@
 	
 
 }
+	.wallpaper-list.category.wallpaper-list-enter-done, .wallpaper-list.category.wallpaper-list-enter-active {
+  overflow: scroll;
+}
 
-
+.theme-custom-color-picker label {
+  display: none !important;
+}
 
 
 

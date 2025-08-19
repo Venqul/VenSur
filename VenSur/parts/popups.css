@@ -74,7 +74,7 @@ menupopup {
 menupopup, panel:not(.autoscroller, #feature-callout, #confirmation-hint) {
 	--panel-padding-block: var(--panel-subview-body-padding-block) !important;
 	--panel-separator-color: var(--neptune-popover-separator-color) !important;
-	--menu-arrow-size: var(--theme-menu-icon-size) !important;
+	--menu-arrow-size: 12px !important;
 
 	@media (-moz-platform: macos) or (-moz-platform: windows) {
 		appearance: menupopup !important;
@@ -299,12 +299,11 @@ panelview {
 }
 
 /* Popover items on hover */
-
 .bookmark-item:hover,
 .bookmark-item:hover:active,
 #nav-bar .panel-subview-body toolbarbutton:hover,
 #nav-bar .panel-subview-body toolbarbutton:hover:active,
-.panel-subview-body .toolbarbutton-1:not(.subviewbutton):hover,
+.panel-subview-body .toolbarbutton-1:not(.subviewbutton):not([cui-anchorid="nav-bar-overflow-button"]):hover,
 .panel-subview-body .toolbarbutton-1:not(.subviewbutton):hover:active,
 .subviewbutton.identity-popup-security-connection:hover,
 .subviewbutton.identity-popup-security-connection:hover:active,
@@ -327,6 +326,18 @@ menupopup > menuitem:where([_moz-menuactive="true"]:not([disabled="true"])) {
 	--macos-headerbar-button-active-background: var(--macos-menu-item-hover) !important;
 }
 
+/* Overflow buttons */
+toolbarbutton.unified-extensions-item-action-button,
+toolbarbutton[cui-anchorid="nav-bar-overflow-button"]{
+	transition: all 0.3s ease-in-out !important;
+	border-radius: 8px !important;
+}
+toolbarbutton[cui-anchorid="nav-bar-overflow-button"]:hover {
+  border-radius: 8px !important; 
+}
+
+
+
 menupopup > menuitem[_moz-menuactive="true"]:not(:hover),
 menupopup > menu[_moz-menuactive="true"]:not(:hover),
 .subviewbutton[aria-checked="true"],
@@ -338,7 +349,25 @@ menupopup > menu[_moz-menuactive="true"]:not(:hover),
 }
 
 /* Tick buttton for popups */
+menupopup > menuitem,
+menupopup > menu {
+  min-width: 9em !important; /* increase width to give space */
+  padding-inline-start: 2em !important; /* space for tick */
+  box-sizing: border-box !important;
+	 padding-inline-start: 2em !important;  /* space for tick */
+  padding-inline-end: 0.5em !important;  /* optional: small right padding */
+}
+menupopup:has(menuitem[selected]) > menuitem > label,
+menupopup:has(menuitem[aria-checked="true"]) > menuitem > label,
+menupopup:has(menu[selected]) > menu > label {
+  margin-left: 1em !important; /* shift text for tick */
+}
 
+/* Keep tick position intact */
+menupopup > menuitem[selected="true"]::before,
+menupopup > menu[selected="true"]::before {
+  left: 0.3em !important;
+}
 menupopup > menuitem[selected="true"],
 menupopup > menu[selected="true"],
 .subviewbutton[aria-checked="true"],
@@ -347,7 +376,7 @@ menupopup > menu[selected="true"],
 .subviewbutton[checked],
 .subviewbutton[open] {
   position: relative; /* Needed for absolute ::before */
-  padding-inline-start: 1.5em; /* Leave space for tick */
+  padding-inline-start: 15em; /* Leave space for tick */
 }
 
 menupopup > menuitem[selected="true"]::before,
