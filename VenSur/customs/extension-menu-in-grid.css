@@ -43,13 +43,25 @@
 	filter: saturate(0%) brightness(120%) !important;
 }
 
-#widget-overflow-list > .toolbarbutton-1,
+#widget-overflow-list > .toolbarbutton-1:not[overflow],
 #widget-overflow-fixed-list > .toolbarbutton-1,
 #widget-overflow-fixed-list > .toolbaritem-combined-buttons,
 #widget-overflow-fixed-list > toolbarpaletteitem,
 #unified-extensions-panel .unified-extensions-item {
 	width: 60.6px !important;
 	height: 60.6px !important;
+	max-width: none !important;
+	max-height: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+	#widget-overflow-list > .toolbarbutton-1,
+#widget-overflow-fixed-list > .toolbarbutton-1,
+#widget-overflow-fixed-list > .toolbaritem-combined-buttons,
+#widget-overflow-fixed-list > toolbarpaletteitem,
+#unified-extensions-panel .unified-extensions-item {
+	width: 60.6px !important;
+	height: 24px !important;
 	max-width: none !important;
 	max-height: none !important;
 	padding: 0 !important;
