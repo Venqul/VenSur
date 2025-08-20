@@ -306,8 +306,43 @@ scale: 0.61 !important;
 
 /* Preferences button */
 
-#preferences-button {
+
+toolbar:not([place="palette"]) #preferences-button  {
+	list-style-image: none !important;
+}
+#preferences-button[overflowedItem],
+toolbarpaletteitem[place="palette"] #preferences-button {
 	list-style-image: url("../icons/preferences-system-symbolic.svg") !important;
+}
+toolbar:not([place="palette"])  #preferences-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/preferences-system-symbolic.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.62 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
 }
 
 /* Fullscreen button */
