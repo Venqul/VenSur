@@ -1022,15 +1022,27 @@ scale: 0.55 !important;
   -webkit-mask-position: center;
   mask-position: center;/* Clean up old property */
 }
-
-toolbar:not([place="palette"]) #downloads-indicator-anchor {
+toolbar:not([place="palette"]) 
+stack:has(#downloads-indicator-progress-inner[style*="--download-progress-pcent: 0%"])
+#downloads-indicator-anchor {
 list-style-image: none !important;
 }
 
 toolbarpaletteitem[place="palette"] #downloads-indicator-anchor {
 	list-style-image: url("../icons/new-tab icon.svg") !important;
 }
-toolbar:not([place="palette"]) #downloads-indicator-anchor::before{
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#downloads-indicator-anchor::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#downloads-indicator-anchor::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.18 !important;
+  top: 24px !important;
+}
+
+toolbar:not([place="palette"]) 
+#downloads-button:not([notification="finish"]) 
+stack:has(#downloads-indicator-progress-inner[style*="--download-progress-pcent: 0%"]) 
+> #downloads-indicator-anchor::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
   content: '' !important;
   display: block !important; /* Allows it to have a background/mask */
