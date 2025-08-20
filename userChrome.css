@@ -20,6 +20,7 @@
 @import "VenSur/color.css";
 @import "VenSur/customs/extension-menu-in-grid.css";
 @import "VenSur/customs/hide-single-tab.css";
+@import "VenSur/customs/overflow-menu.css";
 
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
@@ -27,7 +28,7 @@
 /* Set theme version text in customization panel */
 
 #customization-footer::before {
-	content: "VenSur theme ver 1.2.1";
+	content: "VenSur theme ver 1.2.2";
 	padding: 9px;
 }
 

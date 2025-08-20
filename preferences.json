@@ -55,6 +55,13 @@
   },
   {
     "type": "checkbox",
+    "property": "safari.overflow.menu",
+    "label": "Safari Overflow Menu (Visible when window is shrunk)",
+    "defaultValue": true,
+    "force": false
+  },
+  {
+    "type": "checkbox",
     "property": "extensions.menu.in.grid",
     "label": "Extensions Menu in Grid",
     "defaultValue": true,
