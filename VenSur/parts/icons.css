@@ -273,6 +273,13 @@ menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
 toolbarpaletteitem[place="palette"] #home-button  {
 	list-style-image: url("../icons/user-home-symbolic.svg") !important;
 }
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#home-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#home-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.21 !important;
+  top: 24px !important;
+}
 toolbar:not([place="palette"]) #home-button::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
   content: '' !important;
@@ -313,6 +320,13 @@ toolbar:not([place="palette"]) #preferences-button  {
 #preferences-button[overflowedItem],
 toolbarpaletteitem[place="palette"] #preferences-button {
 	list-style-image: url("../icons/preferences-system-symbolic.svg") !important;
+}
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#preferences-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#preferences-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.19 !important;
+  top: 24px !important;
 }
 toolbar:not([place="palette"])  #preferences-button::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
@@ -358,6 +372,13 @@ scale: 0.62 !important;
 #fullscreen-button[overflowedItem],
 toolbarpaletteitem[place="palette"] #fullscreen-button {
 	list-style-image: url("../icons/view-fullscreen-symbolic.svg") !important;
+}
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#fullscreen-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#fullscreen-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.2 !important;
+  top: 24px !important;
 }
 toolbar:not([place="palette"]) #fullscreen-button::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
@@ -413,6 +434,13 @@ scale: 0.61 !important;
 toolbarpaletteitem[place="palette"] #developer-button {
 	list-style-image: url("../icons/applications-engineering-symbolic.svg") !important;
 }
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#developer-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#developer-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.18 !important;
+  top: 24px !important;
+}
 toolbar:not([place="palette"]) #developer-button::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
   content: '' !important;
@@ -454,6 +482,14 @@ toolbar:not([place="palette"]) #email-link-button {
 toolbarpaletteitem[place="palette"] #email-link-button {
 	list-style-image: url("../icons/email-link.svg") !important;
 }
+
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#email-link-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#email-link-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.2 !important;
+  top: 24px !important;
+}
 toolbar:not([place="palette"])  #email-link-button::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
   content: '' !important;
@@ -469,7 +505,7 @@ toolbar:not([place="palette"])  #email-link-button::before{
   width: 100% !important;
   height: 100% !important;
 	opacity: 80% !important;
-scale: 0.62 !important;
+  scale: 0.62 !important;
   /* Keep all your original positioning styles */
   position: absolute !important;
  
@@ -484,7 +520,9 @@ scale: 0.62 !important;
   -webkit-mask-position: center;
   mask-position: center;/* Clean up old property */
 }
-
+ hbox.toolbar-items > #email-link-button{
+  scale: 0.2 !important;
+}
 /* Print button */
 
 
@@ -494,6 +532,13 @@ toolbar:not([place="palette"]) #print-button  {
 #print-button[overflowedItem],
 toolbarpaletteitem[place="palette"] #print-button {
 	list-style-image: url("../icons/printer-symbolic.svg") !important;
+}
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#print-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#print-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.2 !important;
+  top: 24px !important;
 }
 toolbar:not([place="palette"])  #print-button::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
@@ -543,6 +588,13 @@ toolbar:not([place="palette"]) #find-button  {
 toolbarpaletteitem[place="palette"] #find-button {
 	list-style-image: url("../icons/edit-find-symbolic.svg") !important;
 }
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#find-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#find-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.2 !important;
+  top: 24px !important;
+}
 toolbar:not([place="palette"])  #find-button::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
   content: '' !important;
@@ -586,6 +638,13 @@ toolbar:not([place="palette"]) #new-window-button  {
 toolbarpaletteitem[place="palette"] #new-window-button {
 	list-style-image: url("../icons/window-new-symbolic.svg") !important;
 }
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#new-window-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#new-window-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.18 !important;
+  top: 24px !important;
+}
 toolbar:not([place="palette"])  #new-window-button::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
   content: '' !important;
@@ -627,6 +686,13 @@ toolbar:not([place="palette"]) #bookmarks-menu-button {
 toolbarpaletteitem[place="palette"] #bookmarks-menu-button {
 	list-style-image: url("../icons/bookmarks-symbolic.svg") !important;
 }
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#bookmarks-menu-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#bookmarks-menu-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.18 !important;
+  top: 24px !important;
+}
 toolbar:not([place="palette"])   #bookmarks-menu-button::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
   content: '' !important;
@@ -666,6 +732,13 @@ toolbar:not([place="palette"]) #history-panelmenu   {
 #history-panelmenu[overflowedItem],
 toolbarpaletteitem[place="palette"] #history-panelmenu  {
 	list-style-image: url("../icons/preferences-system-time-symbolic.svg") !important;
+}
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#history-panelmenu::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#history-panelmenu::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.18 !important;
+  top: 24px !important;
 }
 toolbar:not([place="palette"])  #history-panelmenu::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
@@ -776,6 +849,13 @@ toolbar:not([place="palette"])  #reload-button {
 toolbarpaletteitem[place="palette"] #reload-button {
 	list-style-image:  url("../icons/view-refresh-symbolic.svg") !important;
 		animation: none !important;
+}
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#reload-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#reload-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.21 !important;
+  top: 24px !important;
 }
 toolbar:not([place="palette"])  #reload-button::before{
 		  /* 1. Make the pseudo-element an empty, styleable box. */
@@ -1050,6 +1130,13 @@ scale: 0.62 !important;
 
 toolbar:not([place="palette"])  #firefox-view-button {
 list-style-image: none !important;
+}
+toolbar:not([place="palette"]) hbox.toolbar-items > toolbarbutton#firefox-view-button::before,
+toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#firefox-view-button::before {
+  content: ""; /* required for ::before to render */
+  /* your styles here */
+  scale: 0.18 !important;
+  top: 24px !important;
 }
 #firefox-view-button[overflowedItem],
 toolbarpaletteitem[place="palette"] #firefox-view-button {
