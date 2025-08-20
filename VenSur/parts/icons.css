@@ -11,6 +11,11 @@
 	fill-opacity: 0.7 !important;
 }
 
+/* Shrink all buttons */
+#nav-bar toolbarbutton:not(#unified-extensions-button) {
+  scale: 0.9 !important;
+}
+
 /* Tabs scroll icons */
 
 #TabsToolbar .scrollbutton-up {
@@ -306,8 +311,43 @@ menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
 
 /* Email link button */
 
-#email-link-button {
-	list-style-image: url("../icons/mail-unread-symbolic.svg") !important;
+
+
+toolbar:not([place="palette"]) #email-link-button {
+	list-style-image: none !important;
+}
+toolbarpaletteitem[place="palette"] #email-link-button {
+	list-style-image: url("../icons/email-link.svg") !important;
+}
+toolbar:not([place="palette"])  #email-link-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/email-link.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.62 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
 }
 
 /* Print button */
@@ -346,6 +386,8 @@ menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
 	list-style-image: url("../icons/preferences-system-time-symbolic.svg") !important;
 }
 
+
+
 /* All tabs button */
 
 #alltabs-button {
@@ -374,8 +416,39 @@ menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
 }
 
 /* Overflow button */
-#nav-bar-overflow-button > .toolbarbutton-icon {
-    list-style-image: url("../icons/overflow.svg") !important;
+#nav-bar-overflow-button  {
+    list-style-image: none !important;
+}
+
+#nav-bar-overflow-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/overflow.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 50% !important;
+scale: 0.6 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
 }
 
 
@@ -383,11 +456,46 @@ menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
 
 /* Glitch - animations (may be possible to fix in about:config) */
 
-#reload-button {
+toolbar:not([place="palette"])  #reload-button {
 	/* Reload button */
-	list-style-image: url("../icons/view-refresh-symbolic.svg") !important;
+	list-style-image: none !important;
 	animation: none !important;
 }
+toolbarpaletteitem[place="palette"] #reload-button {
+	list-style-image:  url("../icons/view-refresh-symbolic.svg") !important;
+		animation: none !important;
+}
+toolbar:not([place="palette"])  #reload-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/view-refresh-symbolic.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.61 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
+}
+
 
 #stop-button {
 	/* Stop button */
@@ -476,34 +584,286 @@ menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
 	list-style-image: url("../icons/folder-symbolic.svg") !important;
 }
 
-#email-link-button {
-list-style-image: url("../icons/email-link.svg") !important;
+
+
+toolbar:not([place="palette"])  #tabs-newtab-button, 
+toolbar:not([place="palette"]) #new-tab-button {
+list-style-image: none !important;
+}
+toolbarpaletteitem[place="palette"] #tabs-newtab-button, 
+toolbarpaletteitem[place="palette"] #new-tab-button {
+	list-style-image: url("../icons/new-tab icon.svg") !important;
+  scale: 0.5 !important;
+}
+toolbar:not([place="palette"])  #tabs-newtab-button::before,
+toolbar:not([place="palette"])  #new-tab-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/new-tab icon.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.55 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
 }
 
-#tabs-newtab-button, #new-tab-button {
-list-style-image: url("../icons/new-tab icon.svg") !important;
+toolbar:not([place="palette"]) #downloads-indicator-anchor {
+list-style-image: none !important;
 }
+toolbarpaletteitem[place="palette"] #downloads-indicator-anchor {
+	list-style-image: url("../icons/new-tab icon.svg") !important;
+}
+toolbar:not([place="palette"]) #downloads-indicator-anchor::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
 
-#downloads-indicator-anchor {
-list-style-image: url("../icons/downloads.svg") !important;
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/downloads.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.62 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+	bottom: 0px !important;
+	left: 0px !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
 }
+/*
 #unified-extensions-button{
 	list-style-image: url("../icons/Extensions icon.svg") !important;
 }
+*/
+#nav-bar {
+  position: relative;
+}
+/* Button arrangement Venqul */
 
-#firefox-view-button {
+#sidebar-button {
+  -moz-box-ordinal-group: 1 !important; /* old XUL fallback */
+  order: -2 !important;
+}
+
+#unified-extensions-button {
+  -moz-box-ordinal-group: 2 !important; 
+  order: -1 !important;
+}
+
+
+ #unified-extensions-button {
+  position: relative !important;
+  filter: grayscale(0) brightness(160%) contrast(180%) !important;
+  scale: 0.55 !important;
+  max-width: 95px !important;
+  margin-right: -6px !important;
+  margin-left: -2px !important;
+  list-style-image: none !important;
+	right: 8px !important;
+}
+
+
+
+
+/* Icon with arrow (pure mask, no bar baked in) */
+#unified-extensions-button::after {
+  content: '';
+  display: block !important;
+  width: 22px !important;
+  height: 24px !important;
+  background-color: var(--toolbox-textcolor) !important;
+
+  mask-image:  url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg width='43' height='20' viewBox='0 4.1 20.335 9.648' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:bx='https://boxy-svg.com' preserveAspectRatio='none'%3E%3Cdefs%3E%3Cbx:export%3E%3Cbx:file format='svg' path='small arrow downwards.svg'/%3E%3C/bx:export%3E%3C/defs%3E%3Cpath opacity='0.6' d='M 9.907 11.279 C 10.157 11.279 10.348 11.189 10.551 10.986 L 13.368 8.103 C 13.516 7.958 13.582 7.787 13.582 7.58 C 13.582 7.158 13.239 6.806 12.821 6.806 C 12.614 6.806 12.418 6.892 12.258 7.06 L 9.914 9.494 L 7.559 7.06 C 7.399 6.896 7.204 6.806 6.993 6.806 C 6.575 6.806 6.231 7.158 6.231 7.58 C 6.231 7.787 6.301 7.955 6.446 8.107 L 9.266 10.986 C 9.469 11.193 9.664 11.279 9.907 11.279 Z' style='fill: currentcolor;'/%3E%3C/svg%3E");
+  
+  margin-right: -25px !important;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
+  pointer-events: none !important;
+  opacity: 1 !important;
+  position: relative !important;
+
+  left: -95% !important;
+  scale: 2 !important;
+  z-index: 2;
+}
+
+
+
+
+toolbar:not([place="palette"])  #firefox-view-button {
+list-style-image: none !important;
+}
+
+toolbarpaletteitem[place="palette"] #firefox-view-button {
 list-style-image: url("../icons/Firefox-view.svg") !important;
 }
+/* Only affect buttons inside toolbarpaletteitem with place="palette" */
+
+
+toolbar:not([place="palette"])  #firefox-view-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/Firefox-view.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 97% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.62 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
+}
+
+
+
 .tab-icon-image[src="chrome://branding/content/icon32.png"] { 
   content: url("../icons/new-tab favicon.svg") !important; 
 }
 
-#main-window toolbox toolbar :-moz-any(#sidebar-button) .toolbarbutton-icon {
-	list-style-image: url("../icons/sidebars.svg") !important;
+#main-window toolbox toolbar :-moz-any(#sidebar-button) .toolbarbutton-icon{
+	list-style-image: none !important;
+}
+toolbarpaletteitem[place="palette"] #sidebar-button{
+	list-style-image:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg width='43' height='20' viewBox='-1 -4.5 69 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:bx='https://boxy-svg.com' preserveAspectRatio='none'%3E%3Cdefs%3E%3Cbx:export%3E%3Cbx:file format='svg' path='extension button.svg'/%3E%3C/bx:export%3E%3C/defs%3E%3Cpath opacity='0.7' d='M 26.059 18.418 L 40.42 18.418 C 42.163 18.418 43.026 17.554 43.026 15.844 L 43.026 5.709 C 43.026 3.999 42.163 3.136 40.42 3.136 L 26.059 3.136 C 24.324 3.136 23.453 3.991 23.453 5.709 L 23.453 15.844 C 23.453 17.563 24.324 18.418 26.059 18.418 Z M 26.076 17.081 C 25.246 17.081 24.789 16.641 24.789 15.778 L 24.789 5.775 C 24.789 4.912 25.246 4.472 26.076 4.472 L 29.778 4.472 L 29.778 17.081 L 26.076 17.081 Z M 40.403 4.472 C 41.225 4.472 41.69 4.912 41.69 5.775 L 41.69 15.778 C 41.69 16.641 41.225 17.081 40.403 17.081 L 31.081 17.081 L 31.081 4.472 L 40.403 4.472 Z M 28.184 7.552 C 28.433 7.552 28.657 7.328 28.657 7.087 C 28.657 6.838 28.433 6.622 28.184 6.622 L 26.399 6.622 C 26.15 6.622 25.935 6.838 25.935 7.087 C 25.935 7.328 26.15 7.552 26.399 7.552 L 28.184 7.552 Z M 28.184 9.702 C 28.433 9.702 28.657 9.478 28.657 9.229 C 28.657 8.98 28.433 8.772 28.184 8.772 L 26.399 8.772 C 26.15 8.772 25.935 8.98 25.935 9.229 C 25.935 9.478 26.15 9.702 26.399 9.702 L 28.184 9.702 Z M 28.184 11.843 C 28.433 11.843 28.657 11.636 28.657 11.387 C 28.657 11.138 28.433 10.922 28.184 10.922 L 26.399 10.922 C 26.15 10.922 25.935 11.138 25.935 11.387 C 25.935 11.636 26.15 11.843 26.399 11.843 L 28.184 11.843 Z' fill='%23F1F1F1'/%3E%3C/svg%3E");!important;
+}
+
+ #sidebar-button {
+  position: relative !important; /* make it a positioning context */
+}
+
+toolbar:not([place="palette"]) #sidebar-button::after  {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: -3px; /* adjust spacing */
+  width: 1px;
+  height: 20px;
+  background-color: var(--toolbox-textcolor) !important;
+  opacity: 0.1 !important;
+  pointer-events: none;
+  z-index: 9999;
+}
+toolbar:not([place="palette"]) #sidebar-button::before {
+	  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg width='43' height='20' viewBox='-1 -4.5 69 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:bx='https://boxy-svg.com' preserveAspectRatio='none'%3E%3Cdefs%3E%3Cbx:export%3E%3Cbx:file format='svg' path='extension button.svg'/%3E%3C/bx:export%3E%3C/defs%3E%3Cpath opacity='0.7' d='M 26.059 18.418 L 40.42 18.418 C 42.163 18.418 43.026 17.554 43.026 15.844 L 43.026 5.709 C 43.026 3.999 42.163 3.136 40.42 3.136 L 26.059 3.136 C 24.324 3.136 23.453 3.991 23.453 5.709 L 23.453 15.844 C 23.453 17.563 24.324 18.418 26.059 18.418 Z M 26.076 17.081 C 25.246 17.081 24.789 16.641 24.789 15.778 L 24.789 5.775 C 24.789 4.912 25.246 4.472 26.076 4.472 L 29.778 4.472 L 29.778 17.081 L 26.076 17.081 Z M 40.403 4.472 C 41.225 4.472 41.69 4.912 41.69 5.775 L 41.69 15.778 C 41.69 16.641 41.225 17.081 40.403 17.081 L 31.081 17.081 L 31.081 4.472 L 40.403 4.472 Z M 28.184 7.552 C 28.433 7.552 28.657 7.328 28.657 7.087 C 28.657 6.838 28.433 6.622 28.184 6.622 L 26.399 6.622 C 26.15 6.622 25.935 6.838 25.935 7.087 C 25.935 7.328 26.15 7.552 26.399 7.552 L 28.184 7.552 Z M 28.184 9.702 C 28.433 9.702 28.657 9.478 28.657 9.229 C 28.657 8.98 28.433 8.772 28.184 8.772 L 26.399 8.772 C 26.15 8.772 25.935 8.98 25.935 9.229 C 25.935 9.478 26.15 9.702 26.399 9.702 L 28.184 9.702 Z M 28.184 11.843 C 28.433 11.843 28.657 11.636 28.657 11.387 C 28.657 11.138 28.433 10.922 28.184 10.922 L 26.399 10.922 C 26.15 10.922 25.935 11.138 25.935 11.387 C 25.935 11.636 26.15 11.843 26.399 11.843 L 28.184 11.843 Z' fill='%23F1F1F1'/%3E%3C/svg%3E");
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+scale: 2.14 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  fill: none !important; /* Clean up old property */
 }
 
 #PanelUI-menu-button {
-    list-style-image: url("../icons/hamburger menu.svg") !important;
+    list-style-image: none !important;
+}
+#PanelUI-menu-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/hamburger menu.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.61 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
 }
 
 /* Settings Icons */

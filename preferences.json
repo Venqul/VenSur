@@ -1,14 +1,8 @@
 [
   {
     "type": "text",
-    "label": "⚙️ VenSur Theme Settings",
-    "margin": "20px 0 25px 0",
-    "size": "24px"
-  },
-  {
-    "type": "text",
     "label": "⚠️ Important Settings, Do not turn off",
-    "margin": "30px 0 10px 0",
+    "margin": "10px 0 10px 0",
     "size": "20px"
   },
   {
@@ -58,13 +52,6 @@
     "label": "🎨Customize",
     "margin": "30px 0 10px 0",
     "size": "20px"
-  },
-  {
-    "type": "checkbox",
-    "property": "show.extensions.button",
-    "label": "Show Extensions button",
-    "defaultValue": true,
-    "force": false
   },
   {
     "type": "checkbox",

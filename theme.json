@@ -11,9 +11,9 @@
   "readme": "https://raw.githubusercontent.com/Venqul/VenSur/main/README.md",
   "image": "https://raw.githubusercontent.com/Venqul/VenSur/refs/heads/main/Vensur%20icon.png",
   "author": "Venqul",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "fork": ["Firefox"],
-  "updatedAt": "2025-08-20",
+  "updatedAt": "2025-08-21",
   "tags": [
     "ui",
     "customization"

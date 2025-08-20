@@ -27,7 +27,7 @@
 /* Set theme version text in customization panel */
 
 #customization-footer::before {
-	content: "VenSur theme ver 1.2";
+	content: "VenSur theme ver 1.2.1";
 	padding: 9px;
 }
 
@@ -61,12 +61,6 @@
 .customization-uidensity-menuitem {
   & > .menu-text {
     padding: 10px !important;
-  }
-}
-
-@media not -moz-pref("show.extensions.button") {
-  #unified-extensions-button{
-    display: none !important
   }
 }
 
