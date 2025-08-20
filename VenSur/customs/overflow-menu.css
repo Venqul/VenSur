@@ -1,4 +1,4 @@
-@media -moz-pref("safari.overflow.menu") {
+
     #widget-overflow-list > .toolbarbutton-1,
     #widget-overflow-fixed-list > .toolbarbutton-1,
     #widget-overflow-fixed-list > .toolbaritem-combined-buttons,
@@ -139,4 +139,4 @@
 
 
     }
-}
+
