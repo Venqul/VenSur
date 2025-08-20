@@ -1038,6 +1038,19 @@ toolbar:not([place="palette"]) hbox.toolbar-items toolbarbutton#downloads-indica
   scale: 0.18 !important;
   top: 24px !important;
 }
+/* Only show ::before when inside hbox.toolbar-items, progress is 0%, and notification is not finished */
+toolbar:not([place="palette"]) 
+hbox.toolbar-items 
+toolbarbutton#downloads-button:not([notification="finish"]):has(
+    stack.toolbarbutton-badge-stack > #downloads-indicator-progress-outer > #downloads-indicator-progress-inner[style*="--download-progress-pcent: 0%"]
+) 
+stack.toolbarbutton-badge-stack > #downloads-indicator-anchor::before {
+    content: ""; /* required for ::before to render */
+    transform: scale(0.8) !important;
+    top: -1px !important;
+    display: block !important;
+}
+
 
 toolbar:not([place="palette"]) 
 #downloads-button:not([notification="finish"]) 
