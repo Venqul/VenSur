@@ -10,6 +10,12 @@
         padding: 0 !important;
         margin: 0 !important;
     }
+    widget-overflow-list .subviewbutton-nav::after,
+	#widget-overflow-list toolbarbutton:not(#zoom-reset-button) > .toolbarbutton-text,
+	#widget-overflow-fixed-list toolbarbutton:not(#zoom-reset-button) > .toolbarbutton-text{
+		display: none !important;
+	}
+    
     @-moz-document url("chrome://browser/content/browser.xhtml") {
     /* ================================
         Overflow container - vertical layout
