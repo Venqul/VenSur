@@ -312,11 +312,48 @@ scale: 0.61 !important;
 
 /* Fullscreen button */
 
-#fullscreen-button,
+
 #appMenu-fullscreen-button {
 	list-style-image: url("../icons/view-fullscreen-symbolic.svg") !important;
 }
 
+#fullscreen-button {
+	list-style-image: none !important;
+}
+#fullscreen-button[overflowedItem],
+toolbarpaletteitem[place="palette"] #fullscreen-button {
+	list-style-image: url("../icons/view-fullscreen-symbolic.svg") !important;
+}
+toolbar:not([place="palette"]) #fullscreen-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/view-fullscreen-symbolic.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.61 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
+}
 /* Zoom out button */
 
 #zoom-out-button,
@@ -333,10 +370,44 @@ scale: 0.61 !important;
 
 /* Developer button */
 
-#developer-button {
+
+#developer-button{
+	list-style-image: none !important;
+}
+#developer-button[overflowedItem],
+toolbarpaletteitem[place="palette"] #developer-button {
 	list-style-image: url("../icons/applications-engineering-symbolic.svg") !important;
 }
+toolbar:not([place="palette"]) #developer-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
 
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/applications-engineering-symbolic.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.61 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
+}
 /* Email link button */
 
 
@@ -381,9 +452,46 @@ scale: 0.62 !important;
 
 /* Print button */
 
-#print-button {
+
+toolbar:not([place="palette"]) #print-button  {
+	list-style-image: none !important;
+}
+#print-button[overflowedItem],
+toolbarpaletteitem[place="palette"] #print-button {
 	list-style-image: url("../icons/printer-symbolic.svg") !important;
 }
+toolbar:not([place="palette"])  #print-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/printer-symbolic.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.62 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
+}
+
+
 
 /* Addons button */
 
@@ -393,8 +501,42 @@ scale: 0.62 !important;
 
 /* Find button */
 
-#find-button {
+toolbar:not([place="palette"]) #find-button  {
+	list-style-image: none !important;
+}
+#find-button[overflowedItem],
+toolbarpaletteitem[place="palette"] #find-button {
 	list-style-image: url("../icons/edit-find-symbolic.svg") !important;
+}
+toolbar:not([place="palette"])  #find-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/edit-find-symbolic.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.62 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
 }
 
 /* New window button */
@@ -402,19 +544,124 @@ scale: 0.62 !important;
 #new-window-button {
 	list-style-image: url("../icons/window-new-symbolic.svg") !important;
 }
+toolbar:not([place="palette"]) #new-window-button  {
+	list-style-image: none !important;
+}
+#new-window-button[overflowedItem],
+toolbarpaletteitem[place="palette"] #new-window-button {
+	list-style-image: url("../icons/window-new-symbolic.svg") !important;
+}
+toolbar:not([place="palette"])  #new-window-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/window-new-symbolic.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.62 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
+}
 
 /* Bookmarks menu button */
 
-#bookmarks-menu-button {
+
+toolbar:not([place="palette"]) #bookmarks-menu-button {
+	list-style-image: none !important;
+}
+#bookmarks-menu-button[overflowedItem],
+toolbarpaletteitem[place="palette"] #bookmarks-menu-button {
 	list-style-image: url("../icons/bookmarks-symbolic.svg") !important;
+}
+toolbar:not([place="palette"])   #bookmarks-menu-button::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
+
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/bookmarks-symbolic.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.62 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
 }
 
 /* History button */
 
-#history-panelmenu {
+toolbar:not([place="palette"]) #history-panelmenu   {
+	list-style-image: none !important;
+}
+#history-panelmenu[overflowedItem],
+toolbarpaletteitem[place="palette"] #history-panelmenu  {
 	list-style-image: url("../icons/preferences-system-time-symbolic.svg") !important;
 }
+toolbar:not([place="palette"])  #history-panelmenu::before{
+		  /* 1. Make the pseudo-element an empty, styleable box. */
+  content: '' !important;
+  display: block !important; /* Allows it to have a background/mask */
 
+  /* 2. Set the background color using your variable. This provides the icon's color. */
+  background-color: var(--toolbox-textcolor);
+
+  /* 3. Apply the icon's SHAPE as a mask. This cuts out the background color. */
+  -webkit-mask-image: url("../icons/preferences-system-time-symbolic.svg") !important;
+  /* --- Sizing and Positioning --- */
+  /* We must give the pseudo-element a size */
+  width: 100% !important;
+  height: 100% !important;
+	opacity: 80% !important;
+scale: 0.62 !important;
+  /* Keep all your original positioning styles */
+  position: absolute !important;
+ 
+
+  pointer-events: none !important;
+
+  /* --- Mask properties and cleanup --- */
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;/* Clean up old property */
+}
 
 
 /* All tabs button */
