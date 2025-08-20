@@ -46,7 +46,8 @@ These steps must be done **regardless of whether you use the manual method or SI
 
 ### 1. 🧩 Customize your Toolbar
 Modify your toolbar layout to look like this:  
-<img width="940" height="79" alt="toolbar layout" src="https://github.com/user-attachments/assets/45b7cc9e-a2bb-4b19-b5a2-f161341038a7" />
+<img width="1100" height="86" alt="image" src="https://github.com/user-attachments/assets/65ad8e2c-eb28-4dca-b4e1-4f59661164c2" />
+
 
 ### 2. 📦 Install Required Add-on
 - [Reload in Address Bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
