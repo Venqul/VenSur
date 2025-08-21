@@ -1350,13 +1350,20 @@
 		left: 10px !important;
 		display: none !important;
 	}
-.home-section .wallpapers-section {
+.home-section > div.settings-toggles{
+	background: color-mix(in srgb, var(--context-menu-background) 80%, transparent) !important;
+  padding-left: 10px !important;
+	left: -10px !important;
+	padding-bottom: 10px !important;
+	margin-bottom: -12px !important;
+}
+	.home-section .wallpapers-section {
   order: 0 !important;       /* keep after settings toggle */
   margin-left: -4px !important; /* adjust this value as needed */
 	margin-bottom: -50px !important;
 	padding-bottom: 8px;
 	padding-top: 10px !important;
-	background: color-mix(in srgb, var(--context-menu-background) 85%, transparent) !important;
+	background: color-mix(in srgb, var(--context-menu-background) 0%, transparent) !important;
 
 }
 	#settings-link{
