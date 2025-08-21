@@ -1,7 +1,45 @@
 
 @import "VenSur/colors/light.css";
 @import "VenSur/colors/dark.css";
+/* Regular */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('VenSur/fonts/SF-Pro.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
 
+/* Bold */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('VenSur/fonts/SF-Pro-Text-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('VenSur/fonts/SF-Pro-Text-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('VenSur/fonts/SF-Pro-Text-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Regular Alternate */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('VenSur/fonts/SF-Pro-Text.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
 	--in-content-page-background: var(--neptune-main-background) !important;
@@ -1077,12 +1115,12 @@
 	.customize-menu.customize-animate-enter-done{
 			transform: scale(1) !important;
 	opacity: 100% !important;
-			transition: all .2s !important;
+			transition: all 150ms ease-out !important;
 	}
 .customize-menu.customize-animate-enter-active {
 	transform: scale(1.05) !important;
 	opacity: 100% !important;
-			transition: all .3s !important;
+			transition: all 250ms ease-in-out !important;
 	}
 
 

@@ -21,6 +21,45 @@
 @import "VenSur/customs/extension-menu-in-grid.css";
 @import "VenSur/customs/hide-single-tab.css";
 @import "VenSur/customs/overflow-menu.css";
+/* Regular */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('VenSur/fonts/SF-Pro.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('VenSur/fonts/SF-Pro-Text-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('VenSur/fonts/SF-Pro-Text-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('VenSur/fonts/SF-Pro-Text-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Regular Alternate */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('VenSur/fonts/SF-Pro-Text.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
@@ -74,3 +113,4 @@
 @media not -moz-pref("show.star.button") {
   #star-button-box { display:none !important; }
 }
+
