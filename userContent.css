@@ -1132,7 +1132,7 @@
   font-family: "SF Pro Text" !important;
   width: auto !important;          /* let it take its content width */
   text-align: center !important;
-  color: inherit !important;       /* keep text color if needed */
+  color: white !important;       /* keep text color if needed */
 }
 
 	.category-list > div:last-child  > label{
@@ -1152,8 +1152,22 @@
 	left: 0px !important;
 	background: var(--context-menu-background) !important;
 	border-radius: 10px !important;
+	filter: brightness(80%) !important;
+
+}
+		.category-list > div:last-child:hover {
+	filter: none !important;
+}
+
+	@media (prefers-color-scheme: dark) {
+		.category-list > div:last-child {
+	filter: brightness(60%) !important;
+}
+				.category-list > div:last-child:hover {
 	filter: brightness(120%) !important;
 }
+
+	}
 /* Buttons with images */
 .category-list > div > button.wallpaper-input {
   width: 110px !important;
@@ -1252,7 +1266,7 @@
   order: 0 !important;       /* keep after settings toggle */
   margin-left: -4px !important; /* adjust this value as needed */
 	margin-bottom: -50px !important;
-	padding-bottom: 20px;
+	padding-bottom: 8px;
 	padding-top: 10px !important;
 	background: color-mix(in srgb, var(--context-menu-background) 85%, transparent) !important;
 
