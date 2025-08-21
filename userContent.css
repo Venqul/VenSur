@@ -1218,14 +1218,24 @@
   border-color: white !important;;      /* white check */
 }
 	}
-/* Move settings-toggles to appear first */
 .home-section .settings-toggles {
-  order: -1 !important; /* negative order moves it before others */
+  order: -1 !important;
+  position: relative !important;
+  z-index: 1 !important; /* keep it on top if needed */
+}
+
+/* Last child forced to overlap on same spot */
+.home-section > div:last-child {
+  order: -1 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 90% !important;
+  z-index: 2 !important; /* place above toggles */
 }
 
 /* Everything else (like wallpapers-section) will default to order: 0 */
 .home-section .wallpapers-section {
-  order: 0 !important;
+  order: 999 !important;
 }
 
 /* Optional: ensure dividers stay visually correct */
@@ -1235,14 +1245,19 @@
 	.home-section .wallpapers-section .category-header{
 		position: relative;
 		left: 10px !important;
+		display: none !important;
 	}
 .home-section .wallpapers-section {
   order: 0 !important;       /* keep after settings toggle */
   margin-left: -4px !important; /* adjust this value as needed */
 	margin-bottom: -50px !important;
 	padding-bottom: 20px;
+	padding-top: 10px !important;
 	background: var(--context-menu-background) !important;
 }
+	#settings-link{
+	 color:  transparent !important;
+	}
 
 /* Optional: ensure the internal content doesn't overflow */
 .home-section .wallpapers-section > div {
