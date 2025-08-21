@@ -1,45 +1,6 @@
 
 @import "VenSur/colors/light.css";
 @import "VenSur/colors/dark.css";
-/* Regular (TTF) */
-@font-face {
-  font-family: 'SF Pro';
-  src: url('VenSur/fonts/SF-Pro.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Bold (OTF) */
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url('VenSur/fonts/SF-Pro-Text-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Light (OTF) */
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url('VenSur/fonts/SF-Pro-Text-Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-/* Medium (OTF) */
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url('VenSur/fonts/SF-Pro-Text-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-/* Regular (OTF) */
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url('VenSur/fonts/SF-Pro-Text.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
 
 
 :root {
