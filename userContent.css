@@ -1132,7 +1132,12 @@
   font-family: "SF Pro Text" !important;
   width: auto !important;          /* let it take its content width */
   text-align: center !important;
+  color: transparent !important;       /* keep text color if needed */
+			transition: color 0.3s !important;
+}
+	.category-list > div:hover > label {
   color: white !important;       /* keep text color if needed */
+		transition: color 0.3s !important;
 }
 .text {
   position: relative;
