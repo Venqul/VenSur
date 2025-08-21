@@ -1385,7 +1385,7 @@
 	}
 .home-section > div.settings-toggles{
 	background: color-mix(in srgb, var(--context-menu-background) 80%, transparent) !important;
-  padding-left: 10px !important;
+  padding-left: 13px !important;
 	left: -10px !important;
 	padding-bottom: 10px !important;
 	margin-bottom: -12px !important;
