@@ -1108,7 +1108,7 @@
 /* Force internal track (the actual scrollable row) */
 .category-list::after {
   content: "" !important;
-  flex: 0 0 350px !important; /* dummy spacer so flex container extends */
+  flex: 0 0 372px !important; /* dummy spacer so flex container extends */
 }
 
 /* Each child div: do not shrink */
@@ -1125,24 +1125,24 @@
 /* Hide labels */
 .category-list > div > label {
   display: flex !important;
-  right: 80px !important;
-  position: relative;
-  width: 0px !important;
-	font-family: "SF Pro Text" !important;
+  position: absolute !important;   /* position relative to parent div */
+  top: 50% !important;             /* vertically center */
+  left: 50% !important;            /* horizontally center */
+  transform: translate(-50%, -50%) !important; /* perfect center */
+  font-family: "SF Pro Text" !important;
+  width: auto !important;          /* let it take its content width */
+  text-align: center !important;
+  color: inherit !important;       /* keep text color if needed */
 }
+
 	.category-list > div:last-child  > label{
 		color: transparent !important;
 }
-	.category-list > div:nth-child(2)  > label{
-		right: 74px !important;
-}
-		.category-list > div:nth-child(3)  > label{
-		right: 93px !important;
-}
+
 .category-list > div {
   order: 1 !important;
 	position: relative !important;
-	right: 363px !important;
+	right: 383px !important;
 }
 
 /* Move the last child (custom wallpaper) to first */
