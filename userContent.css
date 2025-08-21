@@ -1251,7 +1251,7 @@
   order: 0 !important;       /* keep after settings toggle */
   margin-left: -4px !important; /* adjust this value as needed */
 	margin-bottom: -50px !important;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	padding-top: 10px !important;
 	background: var(--context-menu-background) !important;
 }
