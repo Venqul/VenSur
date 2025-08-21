@@ -1125,10 +1125,19 @@
 /* Hide labels */
 .category-list > div > label {
   display: flex !important;
-  right: 75px !important;
+  right: 80px !important;
   position: relative;
   width: 0px !important;
-  color: transparent !important;
+	font-family: "SF Pro Text" !important;
+}
+	.category-list > div:last-child  > label{
+		color: transparent !important;
+}
+	.category-list > div:nth-child(2)  > label{
+		right: 74px !important;
+}
+		.category-list > div:nth-child(3)  > label{
+		right: 93px !important;
 }
 .category-list > div {
   order: 1 !important;
