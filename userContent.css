@@ -1152,6 +1152,7 @@
 	left: 0px !important;
 	background: var(--context-menu-background) !important;
 	border-radius: 10px !important;
+	filter: brightness(120%) !important;
 }
 /* Buttons with images */
 .category-list > div > button.wallpaper-input {
@@ -1251,9 +1252,10 @@
   order: 0 !important;       /* keep after settings toggle */
   margin-left: -4px !important; /* adjust this value as needed */
 	margin-bottom: -50px !important;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	padding-top: 10px !important;
-	background: var(--context-menu-background) !important;
+	background: color-mix(in srgb, var(--context-menu-background) 85%, transparent) !important;
+
 }
 	#settings-link{
 	 color:  transparent !important;
