@@ -1207,6 +1207,9 @@ scale: 0.62 !important;
   content: url("../icons/new-tab favicon.svg") !important; 
 }
 
+.tab-icon-image[src="chrome://mozapps/skin/extensions/extension.svg"] { 
+  content: url("../icons/Extensions icon.svg") !important; 
+}
 #main-window toolbox toolbar :-moz-any(#sidebar-button) .toolbarbutton-icon{
 	list-style-image: none !important;
 }
