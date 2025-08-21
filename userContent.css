@@ -973,12 +973,14 @@
 		transition: all .4s !important;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
 		
-		&:is(:hover, :active) {
-			background-color: var(--context-menu-background) !important;
-			opacity: 100% !important;
-			box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-			transition: all .4s !important;
-		}
+	&:is(:hover, :active) {
+		background-color: var(--context-menu-background) !important;
+		/* choose the color that has best contrast automatically */
+		opacity: 80% !important;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+		transition: all .4s !important;
+	}
+
 	}
 	.personalize-button > label{
 		opacity: 1 !important;
@@ -998,25 +1000,26 @@
 	}
 	.customize-menu {
 		padding: 4px !important;
-		border-radius: 6px !important;
+		border-radius: 12px !important;
 		border: var(--context-menu-border);
 		outline: var(--context-menu-outline);
 		font-size: 14px !important;
 		background-color: var(--context-menu-background) !important;
 		backdrop-filter: blur(25px) !important;
 		width: 18em !important;
-		height:  fit-content  !important;
+		height: fit-content !important;
 		padding: 0 !important;
-		overflow-x: hidden !important;
-    inset-block: auto calc(var(--space-large) + var(--size-item-medium) + 15px) !important;
+		inset-block: auto calc(var(--space-large) + var(--size-item-medium) + 15px) !important;
 		inset-inline-end: var(--space-large) !important;
 		box-shadow: var(--neptune-small-shadow), var(--neptune-menu-shadow) !important;
-		transform: scale(0) !important;
-		opacity: 0% !important;
 		transform-origin: bottom right !important;
 		filter: saturate(1.2);
-		transition: .4s !important;
-		overflow: visible !important;
+		transform: scale(0) !important;
+		opacity: 0% !important;
+  overflow-x: hidden !important;       /* enable horizontal scroll */
+  overflow-y: hidden !important;
+
+		transition: all .4s !important;
 
 		@media (-moz-platform: macos) {
 			width: calc(3 * 92px + 5 * var(--space-medium)) !important;
@@ -1034,11 +1037,12 @@
 			}
 		}
 	}
+	
 .customize-menu::after {
   content: "";
-  position: absolute;
-  bottom: -10px; /* adjust depending on how much it should overlap */
-  right: 12px;
+  position: fixed;
+  bottom: -100px; /* adjust depending on how much it should overlap */
+  right: 20px;
   width: 18px;
   height: 18px;
   background: var(--context-menu-background);
@@ -1052,8 +1056,11 @@
   border-bottom-right-radius: 4px; /* reduce corner rounding for sharper point */
   clip-path: polygon(20% 45%, 100% 0%, 100% 100%, 10% 100%);
 }
-	.wallpaper-list.category.wallpaper-list-enter-done, .wallpaper-list.category.wallpaper-list-enter-active {
+
+.wallpaper-list.category.wallpaper-list-enter-done,
+.wallpaper-list.category.wallpaper-list-enter-active {
   overflow: scroll;
+	border-radius: var(--border-radius-large) !important;
 }
 
 .theme-custom-color-picker label {
@@ -1063,22 +1070,188 @@
 
 
 
+/* When opening */
+	.customize-menu.customize-animate-enter-done{
+			transform: scale(1) !important;
+	opacity: 100% !important;
+			transition: all .2s !important;
+	}
+.customize-menu.customize-animate-enter-active {
+	transform: scale(1.05) !important;
+	opacity: 100% !important;
+			transition: all .3s !important;
+	}
 
 
 
+/* Container: horizontal scroll */
+.category-list {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 8px !important;
+
+  overflow-x: scroll !important;       /* enable horizontal scroll */
+  overflow-y: hidden !important;
+  -webkit-overflow-scrolling: touch !important;
+  scrollbar-width: thin !important;
+
+  width: max-content !important;            /* span full parent width */
+  max-width: max-content !important;
+  box-sizing: border-box !important;
+  padding-bottom: 10px !important;    /* avoid overlap with scrollbar */
+
+  scroll-behavior: smooth !important;
+
+}
+
+/* Force internal track (the actual scrollable row) */
+.category-list::after {
+  content: "" !important;
+  flex: 0 0 350px !important; /* dummy spacer so flex container extends */
+}
+
+/* Each child div: do not shrink */
+.category-list > div {
+  flex: 0 0 auto !important;          /* keep natural width */
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-right: 0px !important;
+  min-width: 100px !important;      
+/* ensures they take up real width */
+}
+
+/* Hide labels */
+.category-list > div > label {
+  display: flex !important;
+  right: 75px !important;
+  position: relative;
+  width: 0px !important;
+  color: transparent !important;
+}
+.category-list > div {
+  order: 1 !important;
+	position: relative !important;
+	right: 363px !important;
+}
+
+/* Move the last child (custom wallpaper) to first */
+.category-list > div:last-child {
+  order: 0 !important;
+		position: relative !important;
+	left: 0px !important;
+	background: var(--context-menu-background) !important;
+	border-radius: 10px !important;
+}
+/* Buttons with images */
+.category-list > div > button.wallpaper-input {
+  width: 110px !important;
+  height: 70px !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border: none !important;
+  border-radius: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  display: block !important;
+}
+
+/* Base button styled as checkbox */
+@-moz-document url("about:home"), url("about:newtab") {
 
 
-	.customize-menu.customize-animate-enter-done,
-	.customize-menu.customize-animate-enter-active {
-		transform: scale(1) !important;
-		opacity: 100% !important;
+.toggle-button{
+		width: 17px !important;
+		height: 17px !important;
+		border: var(--neptune-checkbox-border);
+		border-radius: 4px;
+		box-shadow: var(--neptune-checkbox-shadow);
+  border-radius: 5px !important;;       /* slightly rounded corners */
+  position: relative;
+  cursor: pointer !important;;
+  padding: 0 !important;;
+	  -moz-appearance: none !important; /* remove native toggle styling */
+  appearance: none !important;
+}
+
+	.toggle-button {
+		--toggle-dot-background-color: transparent !important;
+		--toggle-dot-background-color-on-pressed: transparent !important;
+		--toggle-border-color: var(--neptune-toolbar-border-color) !important;
+	}
+/* Checkmark using ::after */
+.toggle-button::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 10px;
+	scale: 1 !important;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+  opacity: 0;               /* hidden when unchecked */
+  transition: opacity 0.2s;
+}
+
+/* Checked state using aria-pressed */
+.toggle-button[aria-pressed="true"] {
+  background: var(--theme-primary-color) !important;;       /* checked background */
+  border-color: #3066BE !important;  /* border same as background */
+}
+
+.toggle-button[aria-pressed="true"]::after {
+  opacity: 1 !important;          /* show checkmark */
+  border-color: white !important;;      /* white check */
+}
+	}
+/* Move settings-toggles to appear first */
+.home-section .settings-toggles {
+  order: -1 !important; /* negative order moves it before others */
+}
+
+/* Everything else (like wallpapers-section) will default to order: 0 */
+.home-section .wallpapers-section {
+  order: 0 !important;
+}
+
+/* Optional: ensure dividers stay visually correct */
+.home-section .divider {
+  order: 1 !important;
+}
+	.home-section .wallpapers-section .category-header{
+		position: relative;
+		left: 10px !important;
+	}
+.home-section .wallpapers-section {
+  order: 0 !important;       /* keep after settings toggle */
+  margin-left: -4px !important; /* adjust this value as needed */
+	margin-bottom: -50px !important;
+	padding-bottom: 20px;
+	background: var(--context-menu-background) !important;
+}
+
+/* Optional: ensure the internal content doesn't overflow */
+.home-section .wallpapers-section > div {
+  overflow: visible !important;
+
+}
+	.home-section .wallpapers-section .category-list{
+		position: relative;
+		left: 7px !important;
 	}
 	.home-section {
 		grid-row-gap: 12px !important;
-		padding: 0 12px !important;
+		padding: 0px 16px 2px 4px !important;
 
 		.settings-toggles {
 			gap: 12px !important;
+			padding-top: 10px !important;
+			/*! position: absolute; */
 		}
 
 		.wallpapers-section h2 {
@@ -1134,14 +1307,15 @@
 	}
 
 	.category-list {
-		grid-auto-rows: 64px !important;
+		grid-auto-rows: 640px !important;
 		gap: 12px !important;
-		margin: auto !important;
+		margin: none !important;
 
-		label {
+		/*! transform: sca0le(0.5) !important; */
+			label {
 			font: menu !important;
 		}
-	}
+}
 
 	.wallpaper-input {
 		height: 48px !important;
