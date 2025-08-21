@@ -53,7 +53,7 @@ Modify your toolbar layout to look like this:
 - [Reload in Address Bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
 
 ### 3. 🔤 Install SF Pro Fonts
-Download and install the **SF Pro** system font to match Safari typography.
+Download and install all the  **[SF Pro and SF Pro Text](https://drive.google.com/drive/folders/1q41TS2GVQtIJu9RoXP1K0q5v2Wh8HWD_?usp=sharing)** system fonts to match Safari typography.
 
 ---
 
