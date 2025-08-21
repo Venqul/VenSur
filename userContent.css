@@ -640,7 +640,19 @@
     font-style: normal !important;
     font-family: "SF Pro Text", sans-serif !important;
     position: relative;
+ 
   }
+	  body.lightWallpaper .section-title > span,
+  body.lightWallpaper .top-sites-list-wrapper::before {
+    color: black !important;
+  }
+
+  /* Dark wallpaper → light text */
+  body.darkWallpaper .section-title > span,
+  body.darkWallpaper .top-sites-list-wrapper::before {
+    color: white !important;
+  }
+
 
   /* 🌐 Language-specific content injection */
   html[lang^="en"] .section-title > span,
@@ -831,6 +843,7 @@
 		overflow-wrap: break-word !important;
 		font-family: "SF Pro Text";
 		text-transform: capitalize;
+    color: currentColor !important;
 	}
 
 
@@ -1339,6 +1352,7 @@
 /* Everything else (like wallpapers-section) will default to order: 0 */
 .home-section .wallpapers-section {
   order: 999 !important;
+	  z-index: 9999 !important;
 }
 
 /* Optional: ensure dividers stay visually correct */
@@ -1925,6 +1939,20 @@
 	position: relative;
 	bottom: 22px !important;
 }
+ 
+/* Venqul Change color based on backgroud */
+  body.lightWallpaper .card-host-name,
+  body.lightWallpaper .card-text {
+    color: black !important;
+  }
+
+  /* Dark wallpaper → light text */
+  body.darkWallpaper .card-host-name,
+  body.darkWallpaper .card-text {
+    color: white !important;
+  }
+
+
 .card-host-name{
 	position: relative;
 	top: 22px !important;
