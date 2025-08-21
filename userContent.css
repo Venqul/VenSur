@@ -634,7 +634,7 @@
   .section-title > span,
   .top-sites-list-wrapper::before {
     display: block;
-    padding: 20px 10px !important;
+    padding: 20px 13px !important;
     font-size: 22px !important;
     font-weight: 700 !important;
     font-style: normal !important;
@@ -775,7 +775,6 @@
 	.top-site-outer {
 		width: 100px !important;
 		margin-block-end: 0 !important;
-		
 
 		.top-sites-list:not(.dnd-active) &:is(.active, :focus, :hover) {
 			background: none !important;
@@ -838,13 +837,33 @@
 		overflow: visible !important;
 		white-space: normal !important;
 		user-select: none !important;
-		font-size: 12px !important;
+		font-size: 11px !important;
 		font-weight: 500 !important;
 		overflow-wrap: break-word !important;
 		font-family: "SF Pro Text";
 		text-transform: capitalize;
     color: currentColor !important;
+			
 	}
+
+
+/* Reduce horizontal spacing below 0 */
+.discovery-stream .top-sites-list {
+  column-gap: 0px !important; /* negative space between buttons */
+}
+
+/* Reduce horizontal spacing between Top Sites buttons */
+.discovery-stream .top-sites-list > li {
+  margin-left: -4px !important; /* shrink horizontal space */
+  margin-right: -4px !important;
+	transform: scale(1.06) !important;
+}
+/* Adjust Top Sites button radius */
+.discovery-stream .top-sites-list > li .top-site-icon,
+.discovery-stream .top-sites-list > li .top-site-outer {
+  border-radius: px !important;  /* adjust to desired roundness */
+  overflow: hidden !important;      /* ensure content respects border radius */
+}
 
 
 	.top-site-outer .tile {
@@ -1924,7 +1943,7 @@
 	border-radius: 12px !important;
 	box-shadow: var(--neptune-panel-shadow) !important;
 }
-
+/* Recent Activity */
 .card-outer .context-menu-button {
 	inset-inline-end: 12.5px !important;
 	top: 2px !important;
@@ -1938,7 +1957,9 @@
 	font-weight: 500 !important;
 	position: relative;
 	bottom: 22px !important;
+  display: none !important;
 }
+
  
 /* Venqul Change color based on backgroud */
   body.lightWallpaper .card-host-name,
@@ -1953,9 +1974,35 @@
   }
 
 
+/* Move 4th card to the next row in a 4-column grid */
+.discovery-stream .sections-list .section-list > li:nth-child(4) {
+  grid-column-start: 1 !important;  /* start at first column */
+  grid-column-end: span 1 !important; /* take 1 column */
+	
+}
+
+
+/* Stretch container a bit */
+.discovery-stream .sections-list .section-list {
+  width: 97% !important; /* slightly wider than default */
+  max-width: none !important; /* allow stretching */
+}
+
+/* Center the 3 visible cards */
+.discovery-stream .sections-list .section-list > li:nth-child(-n+4) {
+  margin-left: calc(100% / 1.58) !important; /* adjust as needed */
+}
+.discovery-stream .sections-list .section-top-bar {
+  margin-left: calc(100% / 7) !important; /* same as the cards */
+}
+
+
+
+
+
 .card-host-name{
 	position: relative;
-	top: 22px !important;
+	top: 0px !important;
 }
 .card-details{
 	position: relative;
