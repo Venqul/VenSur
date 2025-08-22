@@ -21,13 +21,7 @@
 @import "VenSur/customs/extension-menu-in-grid.css";
 @import "VenSur/customs/hide-single-tab.css";
 @import "VenSur/customs/overflow-menu.css";
-@font-face {
-  font-family: "SF Pro";
-  src: url("VenSur/fonts/SF-Pro.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
 * {
   font-family: 'SF Pro' !important;
   font-size: 100%;
