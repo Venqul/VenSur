@@ -1,45 +1,12 @@
 
 @import "VenSur/colors/light.css";
 @import "VenSur/colors/dark.css";
-/* Regular */
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url('VenSur/fonts/SF-Pro.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
+
+* {
+  font-family: 'SF Pro' !important;
+  font-size: 100%;
 }
 
-/* Bold */
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url('VenSur/fonts/SF-Pro-Text-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Light */
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url('VenSur/fonts/SF-Pro-Text-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-}
-
-/* Medium */
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url('VenSur/fonts/SF-Pro-Text-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-
-/* Regular Alternate */
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url('VenSur/fonts/SF-Pro-Text.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
 
 :root {
 	--in-content-page-background: var(--neptune-main-background) !important;
@@ -161,9 +128,7 @@
 			border: none !important;
 		}
 	}
-	*{
-		font-family:  "SF Pro";
-	}
+
 	groupbox[data-category] {
 		margin-bottom: var(--space-xlarge) !important;
 
@@ -277,13 +242,11 @@
 	.face-sad::before {
 		content: "\2602" !important;
 		font-size: 1em !important;
-		font-family: "SF Pro Text";
 	}
 
 	.face-smile::before {
 		content: "\2764" !important;
 		font-size: 1em !important;
-		font-family: "SF Pro Text";
 	}
 
 	.fxaProfileImage {
@@ -639,7 +602,6 @@
     font-size: 22px !important;
     font-weight: 700 !important;
     font-style: normal !important;
-    font-family: "SF Pro Text", sans-serif !important;
     position: relative;
  
   }
@@ -841,9 +803,8 @@
 		font-size: 11px !important;
 		font-weight: 500 !important;
 		overflow-wrap: break-word !important;
-		font-family: "SF Pro Text";
 		text-transform: capitalize;
-    color: currentColor !important;
+    	color: currentColor !important;
 			
 	}
 
@@ -1024,7 +985,7 @@
 	.personalize-button {
 		position: relative;
 		content: "" !important;
-		background-color: color-mix(in srgb, var(--context-menu-background) 75%, transparent) !important;
+		background-color: var(--context-menu-background)  !important;
 		backdrop-filter: blur(15px) !important;
 		border-radius: var(--border-radius-small) !important;
 		box-shadow: var(--neptune-small-shadow), var(--neptune-menu-shadow) !important;
@@ -1039,23 +1000,13 @@
 		animation: none !important;
 		right: 0px !important;
 		font-size: 14px !important;
-		font-family: "SF Pro Text" !important;
 		font-weight: normal !important;
 		flex-shrink: 0 !important;
 		overflow: visible !important;
 		--button-collapsed-width: 0px !important;
   		--button-full-width: 0px !important;
-		opacity: 75% !important;
-		transition: all .4s !important;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px !important;
 		
-	&:is(:hover, :active) {
-		background-color: var(--context-menu-background) !important;
-		/* choose the color that has best contrast automatically */
-		opacity: 80% !important;
-		box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-		transition: all .4s !important;
-	}
 
 	}
 	.personalize-button > label{
@@ -1150,12 +1101,12 @@
 	.customize-menu.customize-animate-enter-done{
 			transform: scale(1) !important;
 	opacity: 100% !important;
-			transition: all 150ms ease-out !important;
+			transition: all 0.2s !important;
 	}
 .customize-menu.customize-animate-enter-active {
-	transform: scale(1.05) !important;
+	transform: scale(1.03) !important;
 	opacity: 100% !important;
-			transition: all 250ms ease-in-out !important;
+			transition: all 280ms !important;
 	}
 
 
@@ -1205,7 +1156,6 @@
   top: 50% !important;             /* vertically center */
   left: 50% !important;            /* horizontally center */
   transform: translate(-50%, -50%) !important; /* perfect center */
-  font-family: "SF Pro Text" !important;
   width: auto !important;          /* let it take its content width */
   text-align: center !important;
   color: transparent !important;       /* keep text color if needed */
@@ -2011,7 +1961,6 @@
 .card-details{
 	position: relative;
 	top: -8px !important;
-	font-family: "SF Pro Text";
 	text-transform: capitalize;
 	right: 11px !important;
 }
