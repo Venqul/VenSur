@@ -3,7 +3,7 @@
 @import "VenSur/colors/dark.css";
 @font-face {
   font-family: "SF Pro";
-  src: url("VenSur/fonts/SF-Pro.woff2") format("woff2");
+  src: url("VenSur/fonts/SF-Pro.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
