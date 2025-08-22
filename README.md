@@ -51,6 +51,8 @@ Modify your toolbar layout to look like this:
 
 ### 2. 📦 Install Required Add-on
 - [Reload in Address Bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
+### 3. 🔤 Install Required Fonts
+- Download and install all the  **[SF Pro and SF Pro Text](https://drive.google.com/drive/folders/1q41TS2GVQtIJu9RoXP1K0q5v2Wh8HWD_?usp=sharing)** system fonts to match Safari typography.
 
 ---
 
@@ -71,9 +73,7 @@ Modify your toolbar layout to look like this:
 ## 🛠️ Manual Installation (Updated Less Frequently)
 
 1. Follow the **Required Setup** above.
-2. 🔤 Download and install all the  **[SF Pro and SF Pro Text](https://drive.google.com/drive/folders/1q41TS2GVQtIJu9RoXP1K0q5v2Wh8HWD_?usp=sharing)** system fonts to match Safari typography.
-
-4. 🛠️ Configure Firefox (`about:config`)
+2. 🛠️ Configure Firefox (`about:config`)
 Visit `about:config` and apply the following settings:
 
 - `toolkit.legacyUserProfileCustomizations.stylesheets` → `true`  
