@@ -63,7 +63,7 @@ Modify your toolbar layout to look like this:
 3. Restart Firefox.  
 4. Open **Settings** and navigate to the **SINE** tab.  
 5. Locate the **Local Installation** section (titled “Add your own locally from a GitHub repo”).  
-6. Install **Venqul/VenSur**.  
+6. Type in: **Venqul/VenSur**.  
 7. Restart Firefox again.
 8. Customize the settings to match your preferences.
 9. 🎉 Enjoy your new setup!
@@ -91,14 +91,6 @@ Visit `about:config` and apply the following settings:
 
 ## ⚠️ Optional: Restore Hidden Icons
 VenSur removes the Extensions, Hamburger Menu, and Bookmark (Star) icons for a clean Safari-style interface. To restore them, remove these blocks from your `userChrome.css`:
-
-<details>
-  <summary>Restore Extensions Icon</summary>
-
-<pre><code>#unified-extensions-button { width: 3px; padding-inline: 0 !important; }
-#unified-extensions-button > .toolbarbutton-icon { width: 0 !important; }</code></pre>
-
-</details>
 
 <details>
   <summary>Restore Hamburger Menu</summary>
