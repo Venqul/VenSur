@@ -14,8 +14,9 @@
 - ⚙️ Lightweight and deeply customizable  
 
 *For the best results, pair with one of the recommended [color themes](#-themes).*
+<img width="1366" height="768" alt="VenSur Preview" src="https://github.com/user-attachments/assets/7c703803-173e-4816-a883-5fd32f5b8633" />
 
-<img width="1949" height="618" alt="Vensur image 1" src="https://github.com/user-attachments/assets/dd6b4e81-c6ed-4113-b257-6eefd5a3f812" />
+
 
 
 ## 🎨 Themes
