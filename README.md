@@ -44,16 +44,19 @@ Choose a theme that complements your setup:
 
 These steps must be done **regardless of whether you use the manual method or SINE**. 
 
-### 1. 🧩 Customize your Toolbar
-Modify your toolbar layout to look like this:  
+### 1. 🛠️ Set Up Your Toolbar
+Arrange your Firefox toolbar to match this layout:  
 <img width="1100" height="86" alt="image" src="https://github.com/user-attachments/assets/65ad8e2c-eb28-4dca-b4e1-4f59661164c2" />
 
 
-### 2. 📦 Install Required Add-on
-- [Reload in Address Bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/)
-### 3. 🔤 Install Required Fonts
-- Download and install all the  **[SF Pro and SF Pro Text](https://drive.google.com/drive/folders/1q41TS2GVQtIJu9RoXP1K0q5v2Wh8HWD_?usp=sharing)** system fonts to match Safari typography.
+### 2. 📥 Add the Essential Extension
+- Install [Reload in Address Bar](https://addons.mozilla.org/en-US/firefox/addon/reload-in-address-bar/) to replicate Safari’s reload button.
 
+### 3. ✒️ Install Safari Fonts
+- Download and install **[SF Pro and SF Pro Text](https://drive.google.com/drive/folders/1q41TS2GVQtIJu9RoXP1K0q5v2Wh8HWD_?usp=sharing)** for authentic Safari typography.
+
+### 4. 🖼️ Apply Safari Wallpapers
+- Choose and download from the **[Safari Wallpapers](https://drive.google.com/drive/folders/1khKVrJVDQuxpzRS0kimsEPbmxv_RsFnE?usp=sharing)** collection to complete the look.
 ---
 
 ## 🚀 Install with *SINE* (Always Up-to-Date)
