@@ -1135,8 +1135,14 @@
 /* Force internal track (the actual scrollable row) */
 .category-list::after {
   content: "" !important;
-  flex: 0 0 372px !important; /* dummy spacer so flex container extends */
+  flex: 0 0 366px !important; /* dummy spacer so flex container extends */
 }
+	.category-list > div {
+  order: 1 !important;
+	position: relative !important;
+	right: 378px !important;
+}
+
 
 /* Each child div: do not shrink */
 .category-list > div {
@@ -1212,15 +1218,10 @@
 		color: transparent !important;
 }
 
-.category-list > div {
-  order: 1 !important;
-	position: relative !important;
-	right: 383px !important;
-}
 
 /* Move the last child (custom wallpaper) to first */
 .category-list > div:last-child {
-  order: 0 !important;
+  order: -1 !important;
 		position: relative !important;
 	left: 0px !important;
 	background: var(--context-menu-background) !important;
