@@ -85,7 +85,7 @@
 :root[sizemode="maximized"] #TabsToolbar .titlebar-buttonbox:hover .titlebar-max,
 :root[sizemode="maximized"] #TabsToolbar #TabsToolbar-max:hover {
 	background: url("../titlebuttons/titlebutton-unmaximize-hover.svg") no-repeat;
-	background-size: 71%;
+	background-size: 67%;
 	position: relative;
 	right: 8px;
 	top: 4px;
@@ -133,7 +133,7 @@
 :root #TabsToolbar:-moz-window-inactive #TabsToolbar-max {
 	background: url("../titlebuttons/titlebutton-backdrop.svg") no-repeat;
 	background-size: 79%;
-	top: 2px;
+	top: 3px;
 }
 
 :root #TabsToolbar:-moz-window-inactive .titlebar-buttonbox .titlebar-min,
