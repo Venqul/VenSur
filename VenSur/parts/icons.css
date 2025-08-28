@@ -1120,7 +1120,26 @@ scale: 0.62 !important;
 }
 
 
+toolbar:not([place="palette"]):has(#sidebar-button:hover) #unified-extensions-button::before,
+toolbar:not([place="palette"]):has(#unified-extensions-button:hover) #unified-extensions-button::before{
+	opacity: 0% !important;
+	transition: opacity 0.3s !important;
+}
 
+
+#unified-extensions-button::before  {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 32px; /* adjust spacing */
+  width: 1px;
+  height: 34px;
+  background-color: var(--toolbox-textcolor) !important;
+  opacity: 0.1 !important;
+  pointer-events: none;
+  z-index: 9999;
+		transition: opacity 0.3s !important;
+}
 
 /* Icon with arrow (pure mask, no bar baked in) */
 #unified-extensions-button::after {
@@ -1221,24 +1240,7 @@ toolbarpaletteitem[place="palette"] #sidebar-button{
  #sidebar-button {
   position: relative !important; /* make it a positioning context */
 }
-toolbar:not([place="palette"]):has(#sidebar-button:hover) #sidebar-button:after,
-toolbar:not([place="palette"]):has(#unified-extensions-button:hover) #sidebar-button:after{
-	opacity: 0% !important;
-	transition: opacity 0.3s !important;
-}
-toolbar:not([place="palette"]) #sidebar-button::after  {
-  content: '';
-  position: absolute;
-  top: 8px;
-  right: -3px; /* adjust spacing */
-  width: 1px;
-  height: 20px;
-  background-color: var(--toolbox-textcolor) !important;
-  opacity: 0.1 !important;
-  pointer-events: none;
-  z-index: 9999;
-		transition: opacity 0.3s !important;
-}
+
 toolbar:not([place="palette"]) #sidebar-button::before {
 	  /* 1. Make the pseudo-element an empty, styleable box. */
   content: '' !important;
