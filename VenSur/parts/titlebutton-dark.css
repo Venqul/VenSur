@@ -169,5 +169,14 @@
 		top: 3px;
 	}
 
-
+	:root #TabsToolbar .titlebar-buttonbox:active .titlebar-restore,
+	:root #TabsToolbar #TabsToolbar-restore:active,
+	:root[sizemode="maximized"] #TabsToolbar .titlebar-buttonbox:active .titlebar-max:active,
+	:root[sizemode="maximized"] #TabsToolbar #TabsToolbar-max:active {
+		background: url("../titlebuttons/titlebutton-unmaximize-active.svg") no-repeat;
+		background-size: 67%;
+		position: relative;
+		right: 8px;
+		top: 4px;
+	}
 }
