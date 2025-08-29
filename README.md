@@ -26,15 +26,15 @@ Choose a theme that complements your setup:
   <tr>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/4ffd5506-02dd-4124-88ae-dd4ba36ea741" width="280" alt="Light Theme"/><br/>
-      <a href="https://addons.mozilla.org/en-US/firefox/addon/safari-15-light-theme/">LIGHT THEME</a>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/safari-15-light-theme/">Light Theme</a>
     </td>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/25012711-8168-46c5-8375-a34e80606c6b" width="280" alt="Dark Theme 1"/><br/>
-      <a href="https://addons.mozilla.org/en-US/firefox/addon/safari-15-dark-theme/">DARK THEME 1</a>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/safari-15-dark-theme/">Safari 15 Dark</a>
     </td>
     <td align="center">
       <img src="https://github.com/user-attachments/assets/9b4c862e-cf61-4133-ad16-7f4fdce651fa" width="280" alt="Dark Theme 2"/><br/>
-      <a href="https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-whitesur/">DARK THEME 2</a>
+      <a href="https://addons.mozilla.org/en-US/firefox/addon/dark-theme-for-vensur/">Safari Dark</a>
     </td>
   </tr>
 </table>
