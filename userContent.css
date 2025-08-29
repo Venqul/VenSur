@@ -2,10 +2,8 @@
 @import "VenSur/colors/light.css";
 @import "VenSur/colors/dark.css";
 
-* {
-  font-family: 'SF Pro','Arial' !important;
-  font-size: 100%;
-}
+
+
 
 
 :root {
@@ -476,6 +474,10 @@
 }
 
 @-moz-document url("about:home"), url("about:newtab"), url("about:welcome"), url("about:privatebrowsing") {
+	* {
+		font-family: 'SF Pro','Arial' !important;
+		font-size: 100%;
+	}
 	/*
 	body {
 		background: url("") center/cover no-repeat fixed !important;
