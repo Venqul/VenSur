@@ -118,8 +118,8 @@
 	background: url("../titlebuttons/titlebutton-unmaximize-active.svg") no-repeat;
 	background-size: 71%;
 	position: relative;
-	right: 8px;
-	top: 4px;
+	right: 9px;
+	top: 3px;
 }
 
 :root #TabsToolbar:-moz-window-inactive .titlebar-buttonbox .titlebar-close,
