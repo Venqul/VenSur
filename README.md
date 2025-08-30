@@ -60,7 +60,7 @@ Arrange your Firefox toolbar to match this layout:
 - Choose and download from the **[Safari Wallpapers](https://drive.google.com/drive/folders/1khKVrJVDQuxpzRS0kimsEPbmxv_RsFnE?usp=sharing)** collection to complete the look.
 ---
 
-## 🚀 Install with *SINE* (Always Up-to-Date)
+## 🚀 Install with *SINE* 
 
 1. Complete the **Required Setup** above.  
 2. Install the latest version of [Sine](https://github.com/CosmoCreeper/Sine/releases), following all prompted instructions.  
@@ -74,7 +74,7 @@ Arrange your Firefox toolbar to match this layout:
 
 ---
 
-## 🛠️ Manual Installation (Updated Less Frequently)
+## 🛠️ Manual Installation 
 
 1. Follow the **Required Setup** above.
 2. 🛠️ Configure Firefox (`about:config`)
@@ -86,14 +86,13 @@ Visit `about:config` and apply the following settings:
 - `sidebar.revamp`→ `true`
 - `layout.css.backdrop-filter.force-enabled` → `true` *(optional)*  
 - `layout.css.color-mix.color-spaces.enabled` → `true` *(optional)* 
-3. Download the latest version of VenSur.
+3. Download the latest release of VenSur (updated less often) or click the green Code → Download ZIP button to get the most up-to-date source code.
 4. Copy the `chrome` and `configuration` folders into your Firefox profile directory.  
    *(You can locate it by visiting `about:support` and opening the “Profile Folder”)*  
 5. Restart Firefox and enjoy your new Safari-like experience!
 
 ---
-
-## ⚠️ Optional: Restore Hidden Icons
+## 💡 Optional: Restore Hidden Icons
 VenSur removes the Extensions, Hamburger Menu, and Bookmark (Star) icons for a clean Safari-style interface. To restore them, remove these blocks from your `userChrome.css`:
 
 <details>
