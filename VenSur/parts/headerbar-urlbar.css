@@ -481,7 +481,6 @@ toolbarspring {
 
 
 /* Venqul Safari Icons */
-/* Replace tracking protection icon with a colorable SVG mask */
 #star-button{
 	list-style-image: none !important; /* remove any fallback */
   -moz-image-region: auto !important; /* ensure full image shows */
@@ -505,7 +504,7 @@ toolbarspring {
   height: 16px !important;
 }
 
-/* Make your extension the first page-action button */
+
 /* Initial state: hidden */
 #star-button-box {
     order: -1 !important;
@@ -519,6 +518,7 @@ toolbarspring {
 }
 
 /* Fully opaque when the button itself is hovered */
+#star-button-box[open],
 #star-button-box:hover {
     opacity: 1 !important;
 }
