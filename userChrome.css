@@ -72,7 +72,4 @@
   }
 }
 
-@media not -moz-pref("show.star.button") {
-  #star-button-box { display:none !important; }
-}
 

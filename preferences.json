@@ -69,13 +69,6 @@
   },
   {
     "type": "checkbox",
-    "property": "show.star.button",
-    "label": "Show Star Button in Address Bar",
-    "defaultValue": true,
-    "force": false
-  },
-  {
-    "type": "checkbox",
     "property": "hide.single.tab",
     "label": "Hide Single Tab",
     "defaultValue": true,

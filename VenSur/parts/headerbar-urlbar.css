@@ -478,3 +478,58 @@ toolbarspring {
 .urlbar-page-action {
 	padding: inherit !important;
 }
+
+
+/* Venqul Safari Icons */
+/* Replace tracking protection icon with a colorable SVG mask */
+#star-button{
+	list-style-image: none !important; /* remove any fallback */
+  -moz-image-region: auto !important; /* ensure full image shows */
+  content: url("../icons/Add-bookmark.svg") !important;
+  width: 16px !important;  /* adjust size */
+  height: 16px !important;
+}
+#page-action-buttons {
+    display: flex !important; /* make sure it’s flex */
+}
+
+#star-button-box {
+    order: -1 !important; /* moves it to the start */
+}
+
+#tracking-protection-icon {
+  list-style-image: none !important; /* remove any fallback */
+  -moz-image-region: auto !important; /* ensure full image shows */
+  content: url("../icons/Protections-icon.svg") !important;
+  width: 16px !important;  /* adjust size */
+  height: 16px !important;
+}
+
+/* Make your extension the first page-action button */
+/* Initial state: hidden */
+#star-button-box {
+    order: -1 !important;
+    opacity: 0 !important;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Base semi-transparent when URL bar is hovered */
+#urlbar:hover #star-button-box:not(:hover) {
+    opacity: 0.6 !important;
+}
+
+/* Fully opaque when the button itself is hovered */
+#star-button-box:hover {
+    opacity: 1 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
