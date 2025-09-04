@@ -496,6 +496,21 @@ toolbarspring {
     order: -1 !important; /* moves it to the start */
 }
 
+
+/* Target the inner <image> if needed */
+#pageAction-urlbar-_e1ed7a80-7c11-4f7e-968b-79b551a0067f_ > .urlbar-icon {
+	  list-style-image: none !important; /* remove any fallback */
+  -moz-image-region: auto !important; /* ensure full image shows */
+  content: url("../icons/Reload-icon.svg") !important;
+  width: 16px !important;  /* adjust size */
+  height: 16px !important;
+	
+	position: relative;
+	bottom: 1px !important;
+}
+
+
+
 #tracking-protection-icon {
   list-style-image: none !important; /* remove any fallback */
   -moz-image-region: auto !important; /* ensure full image shows */
@@ -506,22 +521,120 @@ toolbarspring {
 
 
 /* Initial state: hidden */
-#star-button-box {
+/* When it's "Add Bookmark" */
+/* Add Bookmark star button — only when URL bar is not focused */
+#urlbar:not([focused]) #star-button-box[data-l10n-id="urlbar-star-add-bookmark"] {
     order: -1 !important;
     opacity: 0 !important;
-    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    margin-inline-end: 0;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), margin-inline-end 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-/* Base semi-transparent when URL bar is hovered */
-#urlbar:hover #star-button-box:not(:hover) {
+/* Fade in slightly on URL bar hover */
+#urlbar:not([focused]):hover #star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:not(:hover) {
     opacity: 0.6 !important;
 }
 
-/* Fully opaque when the button itself is hovered */
-#star-button-box[open],
-#star-button-box:hover {
+/* Fully visible when hovered or open */
+#urlbar:not([focused]) #star-button-box[data-l10n-id="urlbar-star-add-bookmark"][open],
+#urlbar:not([focused]) #star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover {
     opacity: 1 !important;
 }
+
+/* Edit Bookmark star button — only when URL bar is not focused */
+#urlbar:not([focused]) #star-button-box[data-l10n-id="urlbar-star-edit-bookmark"] {
+    margin-inline-end: calc(-1 * var(--size-item-small) - 2 * var(--urlbar-icon-padding));
+    opacity: 0 !important;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), margin-inline-end 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none; /* make it unclickable while hidden */
+}
+
+/* Hide both stars completely when URL bar is focused */
+#urlbar[focused] #star-button-box[data-l10n-id="urlbar-star-add-bookmark"],
+#urlbar[focused] #star-button-box[data-l10n-id="urlbar-star-edit-bookmark"] {
+    display: none !important;
+}
+
+
+/* Real URL text: smooth crossfade using opacity */
+#urlbar #urlbar-input {
+    color: var(--toolbar-color) !important;
+    opacity: 1;
+}
+
+/* When overlay active, fade out the URL text smoothly */
+/* Only fade out URL input when hovering Add Bookmark in supported languages */
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(en) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(fr) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(de) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(es) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(it) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(pt) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(nl) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(pl) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ru) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ja) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(zh) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ar) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(tr) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ko) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(he) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(sv) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(da) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(no) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(fi) #urlbar-input,
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(id) #urlbar-input {
+    opacity: 0;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+
+/* Overlay pseudo-element */
+#urlbar .urlbar-input-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 8px;
+    font: inherit;
+    color: var(--toolbar-color) !important;
+    background: var(--urlbar-background) !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1); /* smooth fade */
+    z-index: 2;
+}
+/* Overlay for Add Bookmark in different languages */
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover) .urlbar-input-container::before {
+    opacity: 1;
+}
+
+
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(en)  .urlbar-input-container::before { content: "Add Bookmark"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(fr)  .urlbar-input-container::before { content: "Ajouter un marque-page"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(de)  .urlbar-input-container::before { content: "Lesezeichen hinzufügen"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(es)  .urlbar-input-container::before { content: "Agregar marcador"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(it)  .urlbar-input-container::before { content: "Aggiungi segnalibro"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(pt)  .urlbar-input-container::before { content: "Adicionar favorito"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(nl)  .urlbar-input-container::before { content: "Bladwijzer toevoegen"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(pl)  .urlbar-input-container::before { content: "Dodaj zakładkę"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ru)  .urlbar-input-container::before { content: "Добавить закладку"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ja)  .urlbar-input-container::before { content: "ブックマークに追加"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(zh)  .urlbar-input-container::before { content: "添加书签"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ar)  .urlbar-input-container::before { content: "إضافة إلى المفضلة"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(tr)  .urlbar-input-container::before { content: "Yer imi ekle"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ko)  .urlbar-input-container::before { content: "북마크 추가"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(he)  .urlbar-input-container::before { content: "הוסף למועדפים"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(sv)  .urlbar-input-container::before { content: "Lägg till bokmärke"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(da)  .urlbar-input-container::before { content: "Tilføj bogmærke"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(no)  .urlbar-input-container::before { content: "Legg til bokmerke"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(fi)  .urlbar-input-container::before { content: "Lisää kirjanmerkki"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(id)  .urlbar-input-container::before { content: "Tambahkan ke bookmark"; }
+
+
+
 
 
 
