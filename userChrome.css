@@ -72,4 +72,8 @@
   }
 }
 
+.PanelUI-subView{
+  min-width: 250px !important;
+  background: transparent !important;
+}
 
