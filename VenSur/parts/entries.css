@@ -68,7 +68,7 @@ menulist,
 }
 
 
-/* Entries hovered */
+/* Entries hovered 
 #urlbar:hover:not([focused]) > .urlbar-input-container,
 #searchbar:hover:not([focused]),
 #search-box:hover:not([focused]),
@@ -79,6 +79,7 @@ menulist,
 	outline-width: 2px !important;
 	transition: outline-color var(--macos-urlbar-border-color) 2s ease !important;
 }
+*/
 
 /* Inactive window entries */
 
