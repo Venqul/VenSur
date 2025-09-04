@@ -142,7 +142,7 @@ toolbarspring {
 	animation: none !important;
 }
 
-/* Hover animation */
+/* Hover animation 
 #nav-bar #urlbar .urlbar-input-container:hover {
 	transition: background-color 150ms linear !important;
 	#urlbar:hover > & {
@@ -155,7 +155,7 @@ toolbarspring {
 		background-color: none !important;
 	}
 }
-
+*/
 
 
 #urlbar[breakout][breakout-extend] {
