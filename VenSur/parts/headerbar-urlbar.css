@@ -523,7 +523,7 @@ toolbarspring {
 /* Initial state: hidden */
 /* When it's "Add Bookmark" */
 /* Add Bookmark star button — only when URL bar is not focused */
-#urlbar:not([focused]) #star-button-box[data-l10n-id="urlbar-star-add-bookmark"] {
+#urlbar:not([focused]) #star-button-box {
     order: -1 !important;
     opacity: 0 !important;
     margin-inline-end: 0;
@@ -531,22 +531,20 @@ toolbarspring {
 }
 
 /* Fade in slightly on URL bar hover */
-#urlbar:not([focused]):hover #star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:not(:hover) {
+#urlbar:not([focused]):hover #star-button-box:not(:hover) {
     opacity: 0.6 !important;
 }
 
 /* Fully visible when hovered or open */
-#urlbar:not([focused]) #star-button-box[data-l10n-id="urlbar-star-add-bookmark"][open],
-#urlbar:not([focused]) #star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover {
+#urlbar:not([focused]) #star-button-box[open],
+#urlbar:not([focused]) #star-button-box:hover {
     opacity: 1 !important;
 }
 
 /* Edit Bookmark star button — only when URL bar is not focused */
-#urlbar:not([focused]) #star-button-box[data-l10n-id="urlbar-star-edit-bookmark"] {
-    margin-inline-end: calc(-1 * var(--size-item-small) - 2 * var(--urlbar-icon-padding));
+#urlbar:not([focused]) #star-button-box {
     opacity: 0 !important;
-    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), margin-inline-end 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none; /* make it unclickable while hidden */
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hide both stars completely when URL bar is focused */
@@ -564,26 +562,26 @@ toolbarspring {
 
 /* When overlay active, fade out the URL text smoothly */
 /* Only fade out URL input when hovering Add Bookmark in supported languages */
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(en) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(fr) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(de) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(es) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(it) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(pt) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(nl) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(pl) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ru) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ja) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(zh) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ar) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(tr) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(ko) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(he) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(sv) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(da) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(no) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(fi) #urlbar-input,
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(id) #urlbar-input {
+#urlbar:has(#star-button-box:hover):lang(en) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(fr) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(de) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(es) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(it) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(pt) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(nl) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(pl) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(ru) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(ja) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(zh) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(ar) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(tr) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(ko) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(he) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(sv) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(da) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(no) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(fi) #urlbar-input,
+#urlbar:has(#star-button-box:hover):lang(id) #urlbar-input {
     opacity: 0;
     transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
@@ -606,8 +604,8 @@ toolbarspring {
     transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1); /* smooth fade */
     z-index: 2;
 }
-/* Overlay for Add Bookmark in different languages */
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover) .urlbar-input-container::before {
+/* Overlay for Bookmark text in different languages */
+#urlbar:has(#star-button-box:hover) .urlbar-input-container::before {
     opacity: 1;
 }
 
@@ -632,6 +630,29 @@ toolbarspring {
 #urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(no)  .urlbar-input-container::before { content: "Legg til bokmerke"; }
 #urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(fi)  .urlbar-input-container::before { content: "Lisää kirjanmerkki"; }
 #urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover):lang(id)  .urlbar-input-container::before { content: "Tambahkan ke bookmark"; }
+
+
+/* Overlay text for Edit Bookmark in different languages */
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(en)  .urlbar-input-container::before { content: "Edit Bookmark"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(fr)  .urlbar-input-container::before { content: "Modifier le marque-page"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(de)  .urlbar-input-container::before { content: "Lesezeichen bearbeiten"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(es)  .urlbar-input-container::before { content: "Editar marcador"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(it)  .urlbar-input-container::before { content: "Modifica segnalibro"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(pt)  .urlbar-input-container::before { content: "Editar favorito"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(nl)  .urlbar-input-container::before { content: "Bladwijzer bewerken"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(pl)  .urlbar-input-container::before { content: "Edytuj zakładkę"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(ru)  .urlbar-input-container::before { content: "Редактировать закладку"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(ja)  .urlbar-input-container::before { content: "ブックマークを編集"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(zh)  .urlbar-input-container::before { content: "编辑书签"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(ar)  .urlbar-input-container::before { content: "تعديل المفضلة"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(tr)  .urlbar-input-container::before { content: "Yer imi düzenle"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(ko)  .urlbar-input-container::before { content: "북마크 편집"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(he)  .urlbar-input-container::before { content: "ערוך למועדפים"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(sv)  .urlbar-input-container::before { content: "Redigera bokmärke"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(da)  .urlbar-input-container::before { content: "Rediger bogmærke"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(no)  .urlbar-input-container::before { content: "Rediger bokmerke"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(fi)  .urlbar-input-container::before { content: "Muokkaa kirjanmerkkiä"; }
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover):lang(id)  .urlbar-input-container::before { content: "Edit bookmark"; }
 
 
 
