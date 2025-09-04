@@ -38,52 +38,12 @@
 
 
 
-/* Hide original label only for supported languages */
-tab[label="New Tab"]:lang(en) label.tab-label,
-tab[label="New Tab"]:lang(fr) label.tab-label,
-tab[label="New Tab"]:lang(de) label.tab-label,
-tab[label="New Tab"]:lang(es) label.tab-label,
-tab[label="New Tab"]:lang(it) label.tab-label,
-tab[label="New Tab"]:lang(pt) label.tab-label,
-tab[label="New Tab"]:lang(nl) label.tab-label,
-tab[label="New Tab"]:lang(pl) label.tab-label,
-tab[label="New Tab"]:lang(ru) label.tab-label,
-tab[label="New Tab"]:lang(ja) label.tab-label,
-tab[label="New Tab"]:lang(zh) label.tab-label,
-tab[label="New Tab"]:lang(ar) label.tab-label,
-tab[label="New Tab"]:lang(tr) label.tab-label,
-tab[label="New Tab"]:lang(ko) label.tab-label,
-tab[label="New Tab"]:lang(he) label.tab-label,
-tab[label="New Tab"]:lang(sv) label.tab-label,
-tab[label="New Tab"]:lang(da) label.tab-label,
-tab[label="New Tab"]:lang(no) label.tab-label,
-tab[label="New Tab"]:lang(fi) label.tab-label,
-tab[label="New Tab"]:lang(id) label.tab-label {
+  tab[label="New Tab"] label.tab-label {
     display: none !important;
-}
-
-/* Add translated content using pseudo-element for supported languages */
-tab[label="New Tab"]:lang(en) .tab-label-container:after { content: 'Start Page'; }
-tab[label="New Tab"]:lang(fr) .tab-label-container:after { content: 'Page de démarrage'; }
-tab[label="New Tab"]:lang(de) .tab-label-container:after { content: 'Startseite'; }
-tab[label="New Tab"]:lang(es) .tab-label-container:after { content: 'Página de inicio'; }
-tab[label="New Tab"]:lang(it) .tab-label-container:after { content: 'Pagina iniziale'; }
-tab[label="New Tab"]:lang(pt) .tab-label-container:after { content: 'Página inicial'; }
-tab[label="New Tab"]:lang(nl) .tab-label-container:after { content: 'Startpagina'; }
-tab[label="New Tab"]:lang(pl) .tab-label-container:after { content: 'Strona startowa'; }
-tab[label="New Tab"]:lang(ru) .tab-label-container:after { content: 'Начальная страница'; }
-tab[label="New Tab"]:lang(ja) .tab-label-container:after { content: 'スタートページ'; }
-tab[label="New Tab"]:lang(zh) .tab-label-container:after { content: '起始页'; }
-tab[label="New Tab"]:lang(ar) .tab-label-container:after { content: 'الصفحة الرئيسية'; }
-tab[label="New Tab"]:lang(tr) .tab-label-container:after { content: 'Başlangıç Sayfası'; }
-tab[label="New Tab"]:lang(ko) .tab-label-container:after { content: '시작 페이지'; }
-tab[label="New Tab"]:lang(he) .tab-label-container:after { content: 'דף הבית'; }
-tab[label="New Tab"]:lang(sv) .tab-label-container:after { content: 'Startsidans flik'; }
-tab[label="New Tab"]:lang(da) .tab-label-container:after { content: 'Startside'; }
-tab[label="New Tab"]:lang(no) .tab-label-container:after { content: 'Startside'; }
-tab[label="New Tab"]:lang(fi) .tab-label-container:after { content: 'Aloitussivu'; }
-tab[label="New Tab"]:lang(id) .tab-label-container:after { content: 'Halaman Awal'; }
-
+  }
+  tab[label="New Tab"] .tab-label-container:after {
+    content: 'Start Page';
+  }
 
 .browserContainer {
 	transition: padding 150ms ease-in-out;
