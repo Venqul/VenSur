@@ -318,7 +318,7 @@
 }
 
 .panel-info-button:hover {
-	background-color: red !important;
+	background-color: var(--macos-menu-button-hover-background) !important;
 }
 
 .panel-info-button:active {
