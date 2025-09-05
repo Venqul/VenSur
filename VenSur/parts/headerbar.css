@@ -58,13 +58,13 @@ toolbarbutton{
 
 #nav-bar toolbarbutton:not(#allTabsMenu-searchTabs):not(.all-tabs-button):not(.all-tabs-secondary-button):not([checked]):not([disabled]):hover {
 	outline: 0 !important;
-	transition: background-color 150ms linear, opacity 200ms linear;
+	/*transition: background-color 150ms linear, opacity 200ms linear;*/
 	background-color: var(--macos-headerbar-button-hover-background) !important;
 	opacity: 1 !important;
 }
 
 #nav-bar toolbarbutton:not(#allTabsMenu-searchTabs):not(.all-tabs-button):not(.all-tabs-secondary-button):not([checked]):not([disabled]){
-	transition: background-color 200ms linear, opacity 150ms linear;
+	/*transition: background-color 200ms linear, opacity 150ms linear;*/
 	opacity: 0.8 !important;
 }
 
