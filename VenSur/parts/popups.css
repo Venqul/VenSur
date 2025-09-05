@@ -329,7 +329,7 @@ menupopup > menuitem:where([_moz-menuactive="true"]:not([disabled="true"])) {
 /* Overflow buttons */
 toolbarbutton.unified-extensions-item-action-button,
 toolbarbutton[cui-anchorid="nav-bar-overflow-button"]{
-	transition: all 0.3s ease-in-out !important;
+	/*transition: all 0.3s ease-in-out !important;*/
 	border-radius: 8px !important;
 }
 toolbarbutton[cui-anchorid="nav-bar-overflow-button"]:hover {
