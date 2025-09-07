@@ -586,55 +586,74 @@ toolbarspring {
     transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1); /* smooth fade */
     z-index: 2;
 }
+#urlbar .urlbar-input-container::after {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 8px;
+    font: inherit;
+    color: var(--toolbar-color) !important;
+    background: var(--urlbar-background) !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1); /* smooth fade */
+    z-index: 2;
+}
 /* Overlay for Bookmark text in different languages */
-#urlbar:has(#star-button-box:hover) .urlbar-input-container::before {
-    opacity: 1;
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover)  .urlbar-input-container::before{
+	opacity: 1;
+}
+#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]:hover)  .urlbar-input-container::after{
+	opacity: 1;
 }
 
 
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(en)  .urlbar-input-container::before { content: "Add Bookmark"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(fr)  .urlbar-input-container::before { content: "Ajouter un marque-page"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(de)  .urlbar-input-container::before { content: "Lesezeichen hinzufügen"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(es)  .urlbar-input-container::before { content: "Agregar marcador"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(it)  .urlbar-input-container::before { content: "Aggiungi segnalibro"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(pt)  .urlbar-input-container::before { content: "Adicionar favorito"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(nl)  .urlbar-input-container::before { content: "Bladwijzer toevoegen"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(pl)  .urlbar-input-container::before { content: "Dodaj zakładkę"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(ru)  .urlbar-input-container::before { content: "Добавить закладку"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(ja)  .urlbar-input-container::before { content: "ブックマークに追加"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(zh)  .urlbar-input-container::before { content: "添加书签"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(ar)  .urlbar-input-container::before { content: "إضافة إلى المفضلة"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(tr)  .urlbar-input-container::before { content: "Yer imi ekle"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(ko)  .urlbar-input-container::before { content: "북마크 추가"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(he)  .urlbar-input-container::before { content: "הוסף למועדפים"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(sv)  .urlbar-input-container::before { content: "Lägg till bokmärke"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(da)  .urlbar-input-container::before { content: "Tilføj bogmærke"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(no)  .urlbar-input-container::before { content: "Legg til bokmerke"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(fi)  .urlbar-input-container::before { content: "Lisää kirjanmerkki"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]):lang(id)  .urlbar-input-container::before { content: "Tambahkan ke bookmark"; }
+
+#urlbar:has(#star-button-box):lang(en)  .urlbar-input-container::before { content: "Add Bookmark"; }
+#urlbar:has(#star-button-box):lang(fr)  .urlbar-input-container::before { content: "Ajouter un marque-page"; }
+#urlbar:has(#star-button-box):lang(de)  .urlbar-input-container::before { content: "Lesezeichen hinzufügen"; }
+#urlbar:has(#star-button-box):lang(es)  .urlbar-input-container::before { content: "Agregar marcador"; }
+#urlbar:has(#star-button-box):lang(it)  .urlbar-input-container::before { content: "Aggiungi segnalibro"; }
+#urlbar:has(#star-button-box):lang(pt)  .urlbar-input-container::before { content: "Adicionar favorito"; }
+#urlbar:has(#star-button-box):lang(nl)  .urlbar-input-container::before { content: "Bladwijzer toevoegen"; }
+#urlbar:has(#star-button-box):lang(pl)  .urlbar-input-container::before { content: "Dodaj zakładkę"; }
+#urlbar:has(#star-button-box):lang(ru)  .urlbar-input-container::before { content: "Добавить закладку"; }
+#urlbar:has(#star-button-box):lang(ja)  .urlbar-input-container::before { content: "ブックマークに追加"; }
+#urlbar:has(#star-button-box):lang(zh)  .urlbar-input-container::before { content: "添加书签"; }
+#urlbar:has(#star-button-box):lang(ar)  .urlbar-input-container::before { content: "إضافة إلى المفضلة"; }
+#urlbar:has(#star-button-box):lang(tr)  .urlbar-input-container::before { content: "Yer imi ekle"; }
+#urlbar:has(#star-button-box):lang(ko)  .urlbar-input-container::before { content: "북마크 추가"; }
+#urlbar:has(#star-button-box):lang(he)  .urlbar-input-container::before { content: "הוסף למועדפים"; }
+#urlbar:has(#star-button-box):lang(sv)  .urlbar-input-container::before { content: "Lägg till bokmärke"; }
+#urlbar:has(#star-button-box):lang(da)  .urlbar-input-container::before { content: "Tilføj bogmærke"; }
+#urlbar:has(#star-button-box):lang(no)  .urlbar-input-container::before { content: "Legg til bokmerke"; }
+#urlbar:has(#star-button-box):lang(fi)  .urlbar-input-container::before { content: "Lisää kirjanmerkki"; }
+#urlbar:has(#star-button-box):lang(id)  .urlbar-input-container::before { content: "Tambahkan ke bookmark"; }
 
 
 /* Overlay text for Edit Bookmark in different languages */
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(en)  .urlbar-input-container::before { content: "Edit Bookmark"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(fr)  .urlbar-input-container::before { content: "Modifier le marque-page"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(de)  .urlbar-input-container::before { content: "Lesezeichen bearbeiten"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(es)  .urlbar-input-container::before { content: "Editar marcador"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(it)  .urlbar-input-container::before { content: "Modifica segnalibro"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(pt)  .urlbar-input-container::before { content: "Editar favorito"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(nl)  .urlbar-input-container::before { content: "Bladwijzer bewerken"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(pl)  .urlbar-input-container::before { content: "Edytuj zakładkę"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(ru)  .urlbar-input-container::before { content: "Редактировать закладку"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(ja)  .urlbar-input-container::before { content: "ブックマークを編集"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(zh)  .urlbar-input-container::before { content: "编辑书签"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(ar)  .urlbar-input-container::before { content: "تعديل المفضلة"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(tr)  .urlbar-input-container::before { content: "Yer imi düzenle"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(ko)  .urlbar-input-container::before { content: "북마크 편집"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(he)  .urlbar-input-container::before { content: "ערוך למועדפים"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(sv)  .urlbar-input-container::before { content: "Redigera bokmärke"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(da)  .urlbar-input-container::before { content: "Rediger bogmærke"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(no)  .urlbar-input-container::before { content: "Rediger bokmerke"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(fi)  .urlbar-input-container::before { content: "Muokkaa kirjanmerkkiä"; }
-#urlbar:has(#star-button-box[data-l10n-id="urlbar-star-edit-bookmark"]):lang(id)  .urlbar-input-container::before { content: "Edit bookmark"; }
+#urlbar:has(#star-button-box):lang(en)  .urlbar-input-container::after { content: "Edit Bookmark"; }
+#urlbar:has(#star-button-box):lang(fr)  .urlbar-input-container::after { content: "Modifier le marque-page"; }
+#urlbar:has(#star-button-box):lang(de)  .urlbar-input-container::after { content: "Lesezeichen bearbeiten"; }
+#urlbar:has(#star-button-box):lang(es)  .urlbar-input-container::after { content: "Editar marcador"; }
+#urlbar:has(#star-button-box):lang(it)  .urlbar-input-container::after { content: "Modifica segnalibro"; }
+#urlbar:has(#star-button-box):lang(pt)  .urlbar-input-container::after { content: "Editar favorito"; }
+#urlbar:has(#star-button-box):lang(nl)  .urlbar-input-container::after { content: "Bladwijzer bewerken"; }
+#urlbar:has(#star-button-box):lang(pl)  .urlbar-input-container::after { content: "Edytuj zakładkę"; }
+#urlbar:has(#star-button-box):lang(ru)  .urlbar-input-container::after { content: "Редактировать закладку"; }
+#urlbar:has(#star-button-box):lang(ja)  .urlbar-input-container::after { content: "ブックマークを編集"; }
+#urlbar:has(#star-button-box):lang(zh)  .urlbar-input-container::after { content: "编辑书签"; }
+#urlbar:has(#star-button-box):lang(ar)  .urlbar-input-container::after { content: "تعديل المفضلة"; }
+#urlbar:has(#star-button-box):lang(tr)  .urlbar-input-container::after { content: "Yer imi düzenle"; }
+#urlbar:has(#star-button-box):lang(ko)  .urlbar-input-container::after { content: "북마크 편집"; }
+#urlbar:has(#star-button-box):lang(he)  .urlbar-input-container::after { content: "ערוך למועדפים"; }
+#urlbar:has(#star-button-box):lang(sv)  .urlbar-input-container::after { content: "Redigera bokmärke"; }
+#urlbar:has(#star-button-box):lang(da)  .urlbar-input-container::after { content: "Rediger bogmærke"; }
+#urlbar:has(#star-button-box):lang(no)  .urlbar-input-container::after { content: "Rediger bokmerke"; }
+#urlbar:has(#star-button-box):lang(fi)  .urlbar-input-container::after { content: "Muokkaa kirjanmerkkiä"; }
+#urlbar:has(#star-button-box):lang(id)  .urlbar-input-container::after { content: "Edit bookmark"; }
 
 
 
