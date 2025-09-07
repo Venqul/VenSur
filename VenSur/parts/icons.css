@@ -1316,6 +1316,7 @@ xul|*.addons-icon {
 }
 
 /* Url bar */
+#identity-popup[connection="extension"] .identity-popup-security-connection,
 #identity-box[pageproxystate="valid"].extensionPage #identity-icon{
 	list-style-image: url("../icons/Extensions icon.svg") !important;
 }
