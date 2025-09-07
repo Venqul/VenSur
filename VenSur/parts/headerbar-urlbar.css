@@ -480,7 +480,11 @@ toolbarspring {
 }
 
 
-/* Venqul Safari Icons */
+/* Venqul Urlbar extra refinement */
+#identity-permission-box > #blocked-permissions-container,
+#identity-icon-box > #identity-icon-label {
+	display: none;
+}
 
 #page-action-buttons {
     display: flex !important; /* make sure it’s flex */
