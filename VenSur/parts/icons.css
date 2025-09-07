@@ -1329,6 +1329,8 @@ xul|*.addons-icon {
 	list-style-image: url("../icons/security-warning.svg") !important;
 }
 
+#identity-popup[connection="not-secure"] hbox.identity-popup-security-connection > image:nth-child(1),
+#identity-popup[connection="not-secure"] toolbarbutton.identity-popup-security-connection > image:nth-child(1),
 #identity-box[pageproxystate="valid"]:is(.notSecure, .mixedActiveContent, .httpsOnlyErrorPage) #identity-icon {
 	list-style-image: url("../icons/security-broken.svg") !important;
 }
