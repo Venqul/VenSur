@@ -1087,11 +1087,8 @@ scale: 0.62 !important;
   -webkit-mask-position: center;
   mask-position: center;/* Clean up old property */
 }
-/*
-#unified-extensions-button{
-	list-style-image: url("../icons/Extensions icon.svg") !important;
-}
-*/
+
+
 #nav-bar {
   position: relative;
 }
@@ -1319,6 +1316,10 @@ xul|*.addons-icon {
 }
 
 /* Url bar */
+#identity-box[pageproxystate="valid"].extensionPage #identity-icon{
+	list-style-image: url("../icons/Extensions icon.svg") !important;
+}
+
 #identity-box[pageproxystate="valid"]:is(.verifiedDomain, .mixedActiveBlocked) #identity-icon,
 #identity-popup[connection^=secure] .identity-popup-security-connection {
 	list-style-image: url("../icons/security.svg") !important;
