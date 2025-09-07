@@ -571,6 +571,7 @@ toolbarspring {
 
 
 /* Overlay pseudo-element */
+#urlbar .urlbar-input-container::after,
 #urlbar .urlbar-input-container::before {
     position: absolute;
     inset: 0;
@@ -586,21 +587,7 @@ toolbarspring {
     transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1); /* smooth fade */
     z-index: 2;
 }
-#urlbar .urlbar-input-container::after {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-inline: 8px;
-    font: inherit;
-    color: var(--toolbar-color) !important;
-    background: var(--urlbar-background) !important;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1); /* smooth fade */
-    z-index: 2;
-}
+
 /* Overlay for Bookmark text in different languages */
 #urlbar:has(#star-button-box[data-l10n-id="urlbar-star-add-bookmark"]:hover)  .urlbar-input-container::before{
 	opacity: 1;
