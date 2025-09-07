@@ -481,13 +481,7 @@ toolbarspring {
 
 
 /* Venqul Safari Icons */
-#star-button{
-	list-style-image: none !important; /* remove any fallback */
-  -moz-image-region: auto !important; /* ensure full image shows */
-  content: url("../icons/Add-bookmark.svg") !important;
-  width: 16px !important;  /* adjust size */
-  height: 16px !important;
-}
+
 #page-action-buttons {
     display: flex !important; /* make sure it’s flex */
 }
@@ -495,21 +489,6 @@ toolbarspring {
 #star-button-box {
     order: -1 !important; /* moves it to the start */
 }
-
-
-/* Target the inner <image> if needed */
-#pageAction-urlbar-_e1ed7a80-7c11-4f7e-968b-79b551a0067f_ > .urlbar-icon {
-	  list-style-image: none !important; /* remove any fallback */
-  -moz-image-region: auto !important; /* ensure full image shows */
-  content: url("../icons/Reload-icon.svg") !important;
-  width: 16px !important;  /* adjust size */
-  height: 16px !important;
-	
-	position: relative;
-	bottom: 1px !important;
-}
-
-
 
 #tracking-protection-icon {
   list-style-image: none !important; /* remove any fallback */

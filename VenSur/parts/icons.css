@@ -1318,6 +1318,45 @@ xul|*.addons-icon {
 
 }
 
+/* Url bar */
+#identity-box[pageproxystate="valid"]:is(.verifiedDomain, .mixedActiveBlocked) #identity-icon,
+#identity-popup[connection^=secure] .identity-popup-security-connection {
+	list-style-image: url("../icons/security.svg") !important;
+}
+
+#identity-box[pageproxystate="valid"]:is(.weakCipher, .mixedDisplayContent, .mixedDisplayContentLoadedActiveBlocked, .certUserOverridden, .certErrorPage) #identity-icon,
+#identity-popup:is([ciphers=weak], [mixedcontent~=passive-loaded][isbroken], [connection=secure-cert-user-overridden], [connection=cert-error-page]) .identity-popup-security-connection {
+	list-style-image: url("../icons/security-warning.svg") !important;
+}
+
+#identity-box[pageproxystate="valid"]:is(.notSecure, .mixedActiveContent, .httpsOnlyErrorPage) #identity-icon {
+	list-style-image: url("../icons/security-broken.svg") !important;
+}
+
+#star-button{
+	list-style-image: none !important; /* remove any fallback */
+  -moz-image-region: auto !important; /* ensure full image shows */
+  content: url("../icons/Add-bookmark.svg") !important;
+  width: 16px !important;  /* adjust size */
+  height: 16px !important;
+}
+
+/* Target the inner <image> if needed */
+#pageAction-urlbar-_e1ed7a80-7c11-4f7e-968b-79b551a0067f_ > .urlbar-icon {
+	  list-style-image: none !important; /* remove any fallback */
+  -moz-image-region: auto !important; /* ensure full image shows */
+  content: url("../icons/Reload-icon.svg") !important;
+  width: 16px !important;  /* adjust size */
+  height: 16px !important;
+	
+	position: relative;
+	bottom: 1px !important;
+}
+
+
+
+
+
 /* Invert icons color in dark variant */
 
 @media (prefers-color-scheme: dark) {
