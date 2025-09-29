@@ -1991,6 +1991,7 @@
 	position: relative;
 	right: 10px !important;
 }
+.top-site-outer .icon-pin-small,
 .shortcuts-refresh .top-site-outer .icon-pin-small,
 [lwt-newtab-brighttext] .shortcuts-refresh .top-site-outer .icon-pin-small {
 	display: none !important;
