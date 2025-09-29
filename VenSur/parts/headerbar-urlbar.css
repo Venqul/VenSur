@@ -109,7 +109,10 @@
 	top: 10px !important;
 }
 /* Url bar positions */
-
+#urlbar-container{
+	position: relative !important;
+	bottom: 10px !important;
+}
 #urlbar{
 	position: relative !important;
 	top: 10px !important;
@@ -132,7 +135,7 @@ toolbarspring {
 }
 
 /* URL bar */
-
+.urlbar-background,
 #urlbar-background {
 	outline: none !important;
 	box-shadow: none !important;

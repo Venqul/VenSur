@@ -1357,6 +1357,13 @@ xul|*.addons-icon {
 	bottom: 1px !important;
 }
 
+#taskbar-tabs-button > .urlbar-icon {
+  list-style-image: url("../icons/Add-to-taskbar.svg") !important;
+
+	:root[taskbartab] & {
+		list-style-image: url("../icons/Move-to-browser.svg") !important;
+	}
+}
 
 
 
