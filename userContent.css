@@ -977,6 +977,7 @@
 		}
 	}
 
+
 	.personalizeButtonWrapper {
 		position: fixed !important;
 		inset: unset !important;
@@ -1017,7 +1018,11 @@
 		transform: none !important;
 		margin-inline-start: 0px !important;
   		margin-inline-end: 18px !important;
-
+			min-width: fit-content !important;
+			margin-inline: auto !important;
+			opacity: unset !important;
+				transform: none !important;
+		padding-left: 18px !important;
 	}
 	.personalize-button > div > img {
 		display: none !important;
@@ -1100,18 +1105,29 @@
 
 
 /* When opening */
+	.customize-menu-animate-wrapper.customize-animate-enter-done .customize-menu,
 	.customize-menu.customize-animate-enter-done{
 			transform: scale(1) !important;
-	opacity: 100% !important;
+	    opacity: 100% !important;
 			transition: all 0.2s !important;
 	}
+.customize-menu-animate-wrapper.customize-animate-enter-active .customize-menu,
 .customize-menu.customize-animate-enter-active {
 	transform: scale(1.03) !important;
 	opacity: 100% !important;
 			transition: all 280ms !important;
 	}
 
-
+	.customize-menu-animate-wrapper.customize-animate-exit{
+			transform: scale(1.03) !important;
+	opacity: 100% !important;
+			transition: all 280ms !important;
+	}
+		.customize-menu-animate-wrapper.customize-animate-enter{
+			transform: scale(1.03) !important;
+	opacity: 100% !important;
+			transition: none !important;
+	}
 
 /* Container: horizontal scroll */
 .category-list {
@@ -1137,12 +1153,12 @@
 /* Force internal track (the actual scrollable row) */
 .category-list::after {
   content: "" !important;
-  flex: 0 0 366px !important; /* dummy spacer so flex container extends */
+  flex: 0 0 485px !important; /* dummy spacer so flex container extends */
 }
 	.category-list > div {
   order: 1 !important;
 	position: relative !important;
-	right: 378px !important;
+	right: 490px !important;
 }
 
 
@@ -1225,7 +1241,7 @@
 .category-list > div:last-child {
   order: -1 !important;
 		position: relative !important;
-	left: 0px !important;
+	left: 8px !important;
 	background: var(--context-menu-background) !important;
 	border-radius: 10px !important;
 	filter: brightness(80%) !important;
@@ -1300,7 +1316,7 @@
 
 /* Checked state using aria-pressed */
 .toggle-button[aria-pressed="true"] {
-  background: var(--theme-primary-color) !important;;       /* checked background */
+  background: var(--context-menu-hover) !important;       /* checked background */
   border-color: #3066BE !important;  /* border same as background */
 }
 
@@ -1348,17 +1364,34 @@
 }
 	.home-section .wallpapers-section {
   order: 0 !important;       /* keep after settings toggle */
-  margin-left: -4px !important; /* adjust this value as needed */
+  margin-left: -12px !important; /* adjust this value as needed */
 	margin-bottom: -50px !important;
 	padding-bottom: 8px;
 	padding-top: 10px !important;
 	background: color-mix(in srgb, var(--context-menu-background) 0%, transparent) !important;
 
 }
+	.customize-menu-animate-wrapper {
+		box-shadow: none !important;
+		width: fit-content !important;
+		height: fit-content !important;
+		padding: 0 !important;
+		border-radius: 12px !important;
+		overflow-x: hidden !important;
+		inset-block: auto  calc(var(--space-large) + var(--size-item-medium) ) !important;
+		inset-inline-end: var(--space-large) !important;
+		background-color: transparent !important;
+		margin-block-end: 10px !important;
+	}
+	
+	
 	#settings-link{
 	 color:  transparent !important;
 	}
 
+	
+
+	
 /* Optional: ensure the internal content doesn't overflow */
 .home-section .wallpapers-section > div {
   overflow: visible !important;
@@ -1847,7 +1880,7 @@
 }
 
 ::selection {
-	background-color: var(--neptune-item-selection-background) !important;
+	background-color: var(--context-menu-hover) !important;
 }
 
 .controlBar {
