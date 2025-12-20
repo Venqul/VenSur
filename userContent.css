@@ -1237,6 +1237,7 @@
 }
 
 
+
 /* Move the last child (custom wallpaper) to first */
 .category-list > div:last-child {
   order: -1 !important;
@@ -1384,11 +1385,29 @@
 		margin-block-end: 10px !important;
 	}
 	
+@media (prefers-color-scheme: light) 
+	{
+ #settings-link{
+			 fill: black !important;
+	}
+	}
+	
+@media (prefers-color-scheme: dark) 
+	{
+ #settings-link{
+			 fill: white !important;
+	}
+	}
 	
 	#settings-link{
 	 color:  transparent !important;
-	}
 
+		opacity: 0.6 !important;
+		transition: opacity 160ms linear !important;
+	}
+	#settings-link:hover{
+		opacity: 0.9 !important;
+	}
 	
 
 	
