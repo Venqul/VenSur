@@ -438,7 +438,6 @@ menuseparator {
 toolbarseparator:not([orient="vertical"]),
 menuseparator {
 	margin: 6px 8px !important;
-	border-top: 1px solid currentColor !important;
 	opacity: 0.2;
 }
 
