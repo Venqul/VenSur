@@ -189,7 +189,8 @@ toolbarspring {
 
 
 /* URL Bar search engine chicklet */
-#searchmode-switcher-chicklet{
+
+.searchmode-switcher-chicklet{
 	height: fit-content !important;
   position: relative !important;
   top: 2px !important;
@@ -199,7 +200,7 @@ toolbarspring {
 	right: 34px !important;
 	z-index: 0 !important;
 }
-#searchmode-switcher-close{
+.searchmode-switcher-close{
 	list-style-image: url("chrome://global/skin/icons/close.svg") !important;
 	scale: 0.8 !important;
 }
