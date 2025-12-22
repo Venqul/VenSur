@@ -87,9 +87,14 @@ Visit `about:config` and apply the following settings:
 - `layout.css.backdrop-filter.force-enabled` → `true` *(optional)*  
 - `layout.css.color-mix.color-spaces.enabled` → `true` *(optional)* 
 3. Download the latest release of VenSur (updated less often) or click the green Code → Download ZIP button to get the most up-to-date source code.
-4. Copy the `chrome` and `configuration` folders into your Firefox profile directory.  
-   *(You can locate it by visiting `about:support` and opening the “Profile Folder”)*  
-5. Restart Firefox and enjoy your new Safari-like experience!
+4. Locate your profile folder by typing  `about:support`  into your urlbar and opening the “Profile Folder” <img width="1460" height="62" alt="image" src="https://github.com/user-attachments/assets/c592a144-29fc-4011-9ad9-efa260859b56" />
+5. Copy the `configuration` folder into your Firefox profile directory. 
+   *(You can locate it by visiting `about:support` and clicking the **Open Folder** button next to **Profile folder**)*
+6. Open or create your `chrome` Folder in your Firefox profile directory. 
+7. Create  `userChrome.css` and  `userContent.css` files if you don't already have them in your chrome folder.
+8. Paste `@import "VenSur/main.css";` into your `userChrome.css`.
+9. Paste `@import "VenSur/content.css";` into your `userContent.css`.
+10. Restart Firefox and enjoy your new Safari-like experience!
 
 ---
 ## 💡 Optional: Restore Hidden Icons

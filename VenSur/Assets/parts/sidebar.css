@@ -45,7 +45,7 @@
 .findbar-textbox[focused],
 .findbar-textbox:focus,
 [type="text"]:focus-visible {
-	outline-color: var(--macos-focused-urlbar-border-color) !important;
+	outline-color: var(--vensur-focused-urlbar-border-color) !important;
 	outline-width: 3px !important;
 	transition: outline-color 0.3s cubic-bezier(0, 0.7, 0.3, 1), outline-width 0.3s cubic-bezier(0, 0.7, 0.3, 1) !important;
 }
@@ -57,19 +57,19 @@ moz-card {
   box-shadow: none;
   background-color: transparent !important;;
   border: none !important;
-  border-radius: var(--macos-menu-border-radius) !important;
+  border-radius: var(--vensur-menu-border-radius) !important;
 }
 sidebar-tab-row {
-  border-radius: var(--macos-menu-border-radius) !important;
+  border-radius: var(--vensur-menu-border-radius) !important;
   height: 29px !important;
 	background-size: 1% !important;
 	
 }
 sidebar-tab-row:hover {
-	color: var(--macos-menu-item-hover-color) !important;
-	background-color: var(--macos-menu-item-hover) !important;
-	--macos-headerbar-button-hover-background: var(--macos-menu-item-hover) !important;
-	--macos-headerbar-button-active-background: var(--macos-menu-item-hover) !important;
+	color: var(--vensur-menu-item-hover-color) !important;
+	background-color: var(--vensur-menu-item-hover) !important;
+	--vensur-headerbar-button-hover-background: var(--vensur-menu-item-hover) !important;
+	--vensur-headerbar-button-active-background: var(--vensur-menu-item-hover) !important;
 }
 #fxview-tab-row-favicon{
 	scale:  10% important;
@@ -94,7 +94,7 @@ sidebar-tab-row:hover {
 
 #moz-card-details > summary:nth-child(1){
 	padding-block: 0px !important;
-	border-radius: var(--macos-menu-border-radius) !important;
+	border-radius: var(--vensur-menu-border-radius) !important;
   height: 32px !important;
 }
 #heading {
@@ -123,7 +123,7 @@ button[title="Close"] .button-background {
 
 
 .button-background{
-	border-radius: var(--macos-menu-border-radius) !important;
+	border-radius: var(--vensur-menu-border-radius) !important;
 	transition: background-color 0.2s linear !important;
 	opacity: 80% !important;
 	scale: 90% !important;
@@ -152,34 +152,34 @@ button[title="Close"] .button-background {
 
 /* Change background of a bookmark row when hovered */
 #bookmarksPanel treechildren::-moz-tree-row {
-  border-radius: var(--macos-menu-border-radius) !important;  
+  border-radius: var(--vensur-menu-border-radius) !important;  
 }
 #bookmarksPanel treechildren::-moz-tree-row(hover) {
-	background-color: color-mix(in srgb, var(--macos-menu-item-hover) 70%, transparent) !important;
+	background-color: color-mix(in srgb, var(--vensur-menu-item-hover) 70%, transparent) !important;
 }
 
 
 /* Change background when selected */
 #bookmarksPanel treechildren::-moz-tree-row(selected) {
-	background-color: var(--macos-menu-item-hover) !important;
+	background-color: var(--vensur-menu-item-hover) !important;
 }
 /* ───── Bookmarks text color ───── */
 #bookmarksPanel treechildren::-moz-tree-cell-text(hover),
 #bookmarksPanel treechildren::-moz-tree-cell-text(selected) {
-  color: var(--macos-menu-item-hover-color) !important;
+  color: var(--vensur-menu-item-hover-color) !important;
 }
 
 /* ───── Bookmark icons (favicon) ───── */
 #bookmarksPanel treechildren::-moz-tree-image(hover),
 #bookmarksPanel treechildren::-moz-tree-image(selected) {
-  fill: var(--macos-menu-item-hover-color) !important;
+  fill: var(--vensur-menu-item-hover-color) !important;
   -moz-context-properties: fill !important;
 }
 
 /* ───── Dropdown arrows (twisty icons) ───── */
 #bookmarksPanel treechildren::-moz-tree-twisty(hover),
 #bookmarksPanel treechildren::-moz-tree-twisty(selected) {
-  fill: var(--macos-menu-item-hover-color) !important;
+  fill: var(--vensur-menu-item-hover-color) !important;
   -moz-context-properties: fill !important;
 }
 

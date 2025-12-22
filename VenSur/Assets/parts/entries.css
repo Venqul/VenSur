@@ -8,11 +8,11 @@
 .findbar-textbox {
 	appearance: none;
 	-moz-appearance: none !important;
-	background: var(--macos-urlbar-background) !important;
-	border: 1px solid var(--macos-urlbar-border-color) !important;
-	border-radius: var(--macos-menu-border-radius) !important;
+	background: var(--vensur-urlbar-background) !important;
+	border: 1px solid var(--vensur-urlbar-border-color) !important;
+	border-radius: var(--vensur-menu-border-radius) !important;
 	box-shadow: none !important;
-	color: var(--macos-urlbar-color) !important;
+	color: var(--vensur-urlbar-color) !important;
 	height: auto !important;
 	max-height: 28px !important;
 	padding: 2px 6px !important;
@@ -62,7 +62,7 @@ menulist,
 .findbar-textbox[focused],
 .findbar-textbox:focus,
 [type="text"]:focus-visible {
-	outline-color: var(--macos-focused-urlbar-border-color) !important;
+	outline-color: var(--vensur-focused-urlbar-border-color) !important;
 	outline-width: 3px !important;
 	transition: outline-color 0.3s cubic-bezier(0, 0.7, 0.3, 1), outline-width 0.3s cubic-bezier(0, 0.7, 0.3, 1) !important;
 }
@@ -77,7 +77,7 @@ menulist,
 [type="text"]:hover:not([focused]) {
 	outline-color: var(--toolbar-field-focus-border-color); mix-blend-mode: lighten !important;
 	outline-width: 2px !important;
-	transition: outline-color var(--macos-urlbar-border-color) 2s ease !important;
+	transition: outline-color var(--vensur-urlbar-border-color) 2s ease !important;
 }
 */
 
@@ -86,7 +86,7 @@ menulist,
 #searchbar:-moz-window-inactive,
 #search-box:-moz-window-inactive,
 .findbar-textbox:-moz-window-inactive {
-	color: var(--macos-inactive-urlbar-color) !important;
+	color: var(--vensur-inactive-urlbar-color) !important;
 }
 
 /* Entries fixes */

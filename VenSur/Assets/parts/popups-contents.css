@@ -75,12 +75,12 @@
 
 #nav-bar #allTabsMenu-allTabsView .panel-subview-body .all-tabs-item toolbarbutton.all-tabs-close-button:hover,
 #nav-bar #allTabsMenu-hiddenTabsView-tabs .panel-subview-body .all-tabs-item toolbarbutton.all-tabs-close-button:hover {
-	background-color: var(--macos-button-hover-color) !important;
+	background-color: var(--vensur-button-hover-color) !important;
 }
 
 #nav-bar #allTabsMenu-allTabsView .panel-subview-body .all-tabs-item toolbarbutton.all-tabs-close-button:active,
 #nav-bar #allTabsMenu-hiddenTabsView-tabs .panel-subview-body .all-tabs-item toolbarbutton.all-tabs-close-button:active {
-	background-color: var(--macos-button-active-color) !important;
+	background-color: var(--vensur-button-active-color) !important;
 }
 
 /* "History, bookmarks, and more" popover */
@@ -94,17 +94,17 @@
 }
 
 #downloadsPanel-mainView .download-state {
-	padding: var(--macos-menu-item-padding) !important;
+	padding: var(--vensur-menu-item-padding) !important;
 	margin: 0 !important;
 	border: var(--macos) !important;
-	border-radius: var(--macos-menu-item-border-radius) !important;
+	border-radius: var(--vensur-menu-item-border-radius) !important;
 	display: flex;
 	align-items: center;
 }
 
 #downloadsPanel-mainView .download-state:hover {
-	color: var(--macos-menu-item-hover-color) !important;
-	background-color: var(--macos-menu-item-hover) !important;
+	color: var(--vensur-menu-item-hover-color) !important;
+	background-color: var(--vensur-menu-item-hover) !important;
 }
 
 #downloadsPanel-mainView .downloadMainArea {
@@ -159,19 +159,19 @@
 }
 
 #customization-panelWrapper > .panel-arrowcontent {
-	background: var(--macos-menu-background) !important;
+	background: var(--vensur-menu-background) !important;
 }
 
 /* Confirmation Hint */
 
 #confirmation-hint .panel-arrowcontent {
-	background: var(--macos-button-suggested-action-background) !important;
-	border-color: var(--macos-button-suggested-action-border-color) !important;
+	background: var(--vensur-button-suggested-action-background) !important;
+	border-color: var(--vensur-button-suggested-action-border-color) !important;
 }
 
 #confirmation-hint .panel-arrow {
-	fill: var(--macos-button-suggested-action-border-color) !important;
-	stroke: var(--macos-button-suggested-action-border-color) !important;
+	fill: var(--vensur-button-suggested-action-border-color) !important;
+	stroke: var(--vensur-button-suggested-action-border-color) !important;
 }
 
 #confirmation-hint-message {
@@ -249,17 +249,17 @@
 	padding-bottom: 10px !important;
 }
 
-/* TODO: create custom --macos-list vars */
+/* TODO: create custom --vensur-list vars */
 
 #identity-popup-permission-list:not(:empty) {
-	border: 1px solid var(--macos-button-border-color);
+	border: 1px solid var(--vensur-button-border-color);
 	border-bottom: 0 !important;
 	padding: 0 !important;
 }
 
 .identity-popup-permission-item {
-	background: var(--macos-menu-background);
-	border-bottom: 1px solid var(--macos-button-border-color);
+	background: var(--vensur-menu-background);
+	border-bottom: 1px solid var(--vensur-button-border-color);
 	padding: 6px !important;
 	margin: 0 !important;
 }
@@ -284,8 +284,8 @@
 
 #protections-popup[hasException] #protections-popup-tp-switch-section,
 #protections-popup[hasException] #protections-popup-mainView-panel-header {
-	background: var(--macos-button-destructive-action-background) !important;
-	border-color: var(--macos-button-destructive-action-border-color) !important;
+	background: var(--vensur-button-destructive-action-background) !important;
+	border-color: var(--vensur-button-destructive-action-border-color) !important;
 }
 
 #protections-popup-no-trackers-found-description {
@@ -318,11 +318,11 @@
 }
 
 .panel-info-button:hover {
-	background-color: var(--macos-menu-button-hover-background) !important;
+	background-color: var(--vensur-menu-button-hover-background) !important;
 }
 
 .panel-info-button:active {
-	background-color: var(--macos-menu-button-active-background) !important;
+	background-color: var(--vensur-menu-button-active-background) !important;
 }
 
 /* Fix popup display*/

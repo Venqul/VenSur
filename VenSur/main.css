@@ -1,27 +1,27 @@
-@import "VenSur/parts/buttons-fixes.css";
-@import "VenSur/parts/buttons.css";
-@import "VenSur/parts/csd.css";
-@import "VenSur/parts/custom-icons.css";
-@import "VenSur/parts/entries.css";
-@import "VenSur/parts/findbar.css";
-@import "VenSur/parts/headerbar-private-urlbar.css";
-@import "VenSur/parts/headerbar-urlbar.css";
-@import "VenSur/parts/headerbar.css";
-@import "VenSur/parts/icons.css";
-@import "VenSur/parts/sidebar.css";
-@import "VenSur/parts/popups-contents.css";
-@import "VenSur/parts/popups.css";
-@import "VenSur/parts/remove-white-flash.css";
-@import "VenSur/parts/scrollbars.css";
-@import "VenSur/parts/tabsbar.css";
-@import "VenSur/parts/titlebutton-light.css";
-@import "VenSur/parts/titlebutton-dark.css";
-@import "VenSur/parts/toolbox.css";
-@import "VenSur/parts/windows.css";
-@import "VenSur/color.css";
-@import "VenSur/customs/extension-menu-in-grid.css";
-@import "VenSur/customs/hide-single-tab.css";
-@import "VenSur/customs/overflow-menu.css";
+@import "Assets/parts/buttons-fixes.css";
+@import "Assets/parts/buttons.css";
+@import "Assets/parts/csd.css";
+@import "Assets/parts/custom-icons.css";
+@import "Assets/parts/entries.css";
+@import "Assets/parts/findbar.css";
+@import "Assets/parts/headerbar-private-urlbar.css";
+@import "Assets/parts/headerbar-urlbar.css";
+@import "Assets/parts/headerbar.css";
+@import "Assets/parts/icons.css";
+@import "Assets/parts/sidebar.css";
+@import "Assets/parts/popups-contents.css";
+@import "Assets/parts/popups.css";
+@import "Assets/parts/remove-white-flash.css";
+@import "Assets/parts/scrollbars.css";
+@import "Assets/parts/tabsbar.css";
+@import "Assets/parts/titlebutton-light.css";
+@import "Assets/parts/titlebutton-dark.css";
+@import "Assets/parts/toolbox.css";
+@import "Assets/parts/windows.css";
+@import "Assets/color.css";
+@import "Assets/customs/extension-menu-in-grid.css";
+@import "Assets/customs/hide-single-tab.css";
+@import "Assets/customs/overflow-menu.css";
 
 * {
   font-family: 'SF Pro' !important;
@@ -33,7 +33,7 @@
 /* Set theme version text in customization panel */
 
 #customization-footer::before {
-	content: "VenSur theme ver 1.2.2";
+	content: "VenSur theme ver 1.2.3";
 	padding: 9px;
 }
 

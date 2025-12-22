@@ -3,34 +3,34 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 :root {
-	--macos-menu-border: 1px solid var(--macos-menu-border-color);
-	--macos-menu-outline: 1px solid var(--macos-menu-outline-color);
-	--macos-menu-padding: 4px;
-	--macos-menu-item-border-radius: 4px;
-	--macos-menu-item-padding: 3px 8px;
-	--macos-menu-item-margin: 0;
-	--macos-menu-border-radius: 8px;
-	--macos-toolbar-border-radius: 8px;
-	--panel-item-hover-bgcolor: var(--macos-menu-item-hover) !important;
-	--panel-item-active-bgcolor: var(--macos-menu-item-hover) !important;
+	--vensur-menu-border: 1px solid var(--vensur-menu-border-color);
+	--vensur-menu-outline: 1px solid var(--vensur-menu-outline-color);
+	--vensur-menu-padding: 4px;
+	--vensur-menu-item-border-radius: 4px;
+	--vensur-menu-item-padding: 3px 8px;
+	--vensur-menu-item-margin: 0;
+	--vensur-menu-border-radius: 8px;
+	--vensur-toolbar-border-radius: 8px;
+	--panel-item-hover-bgcolor: var(--vensur-menu-item-hover) !important;
+	--panel-item-active-bgcolor: var(--vensur-menu-item-hover) !important;
 
-	--arrowpanel-background: var(--macos-menu-background) !important;
-	--arrowpanel-color: var(--macos-button-menulist-color) !important;
-	--arrowpanel-border-color: var(--macos-menu-border-color) !important;
-	--arrowpanel-border-radius: var(--macos-menu-border-radius) !important;
-	--arrowpanel-padding: var(--macos-menu-padding) !important;
-	--arrowpanel-menuitem-padding: var(--macos-menu-item-padding) !important;
-	--arrowpanel-menuitem-margin: var(--macos-menu-item-margin) !important;
+	--arrowpanel-background: var(--vensur-menu-background) !important;
+	--arrowpanel-color: var(--vensur-button-menulist-color) !important;
+	--arrowpanel-border-color: var(--vensur-menu-border-color) !important;
+	--arrowpanel-border-radius: var(--vensur-menu-border-radius) !important;
+	--arrowpanel-padding: var(--vensur-menu-padding) !important;
+	--arrowpanel-menuitem-padding: var(--vensur-menu-item-padding) !important;
+	--arrowpanel-menuitem-margin: var(--vensur-menu-item-margin) !important;
 	--download-progress-fill-color: var(--theme-primary-color) !important;
 }
 
 .cui-widget-panel {
-	--arrowpanel-padding: var(--macos-menu-padding) !important;
+	--arrowpanel-padding: var(--vensur-menu-padding) !important;
 }
 
 #PopupSearchAutoComplete {
-	--panel-subview-body-padding: var(--macos-menu-padding) !important;
-	--panel-padding: var(--macos-menu-padding) !important;
+	--panel-subview-body-padding: var(--vensur-menu-padding) !important;
+	--panel-padding: var(--vensur-menu-padding) !important;
 }
 
 /* Style menus */
@@ -52,7 +52,7 @@
 #appMenu-popup,
 #appMenu-popup panelview {
   background-color: transparent !important;
-  color: var(--macos-toolbar-color) !important;
+  color: var(--vensur-toolbar-color) !important;
 }
 
 
@@ -60,14 +60,14 @@
 menupopup {
 	appearance: none;
 	-moz-appearance: none !important;
-	padding: var(--macos-menu-padding) !important;
-	border-radius: var(--macos-menu-border-radius) !important;
-	border: var(--macos-menu-border) !important;
+	padding: var(--vensur-menu-padding) !important;
+	border-radius: var(--vensur-menu-border-radius) !important;
+	border: var(--vensur-menu-border) !important;
 	border-width: 2px !important;
-	outline: var(--macos-menu-outline) !important;
+	outline: var(--vensur-menu-outline) !important;
 	outline-offset: -1px !important;
-	color: var(--macos-toolbar-color) !important;
-	background-color: var(--macos-menu-background) !important;
+	color: var(--vensur-toolbar-color) !important;
+	background-color: var(--vensur-menu-background) !important;
 }
 */
 
@@ -86,19 +86,19 @@ menupopup, panel:not(.autoscroller, #feature-callout, #confirmation-hint) {
 	@media (-moz-platform: windows) and (not (-moz-windows-mica-popups)) {
 		appearance: none;
 		-moz-appearance: none !important;
-		padding: var(--macos-menu-padding) !important;
-		border-radius: var(--macos-menu-border-radius) !important;
-		border: var(--macos-menu-border) !important;
+		padding: var(--vensur-menu-padding) !important;
+		border-radius: var(--vensur-menu-border-radius) !important;
+		border: var(--vensur-menu-border) !important;
 		border-width: 2px !important;
-		outline: var(--macos-menu-outline) !important;
+		outline: var(--vensur-menu-outline) !important;
 		outline-offset: -1px !important;
-		color: var(--macos-toolbar-color) !important;
-		background-color: var(--macos-menu-background) !important;
+		color: var(--vensur-toolbar-color) !important;
+		background-color: var(--vensur-menu-background) !important;
 	}
 }
 
 menupopup > menuitem, menupopup > menu {
-  color: var(--macos-toolbar-color) !important;
+  color: var(--vensur-toolbar-color) !important;
 }
 
 /* dropdown menu */
@@ -140,7 +140,7 @@ menuitem,
 menupopup menu {
 	appearance: none;
 	-moz-appearance: none !important;
-	padding: var(--macos-menu-item-padding) !important;
+	padding: var(--vensur-menu-item-padding) !important;
 	height: 22px !important;
 }
 
@@ -176,8 +176,8 @@ panel {
 	appearance: none !important;
 	background: transparent !important;
 	font: menu !important;
-	--panel-background: var(--macos-menu-background) !important;
-	--panel-color: var(--macos-button-menulist-color) !important;
+	--panel-background: var(--vensur-menu-background) !important;
+	--panel-color: var(--vensur-button-menulist-color) !important;
 	--panel-border-color: var(--arrowpanel-border-color) !important;
 	--panel-border-radius: var(--arrowpanel-border-radius) !important;
 	--panel-padding: var(--arrowpanel-padding) !important;
@@ -217,17 +217,17 @@ panelview {
 }
 
 .panel-arrowcontent {
-	--panel-background: var(--macos-menu-background) !important;
-	border-color: var(--macos-menu-border-color) !important;
-	border-radius: var(--macos-menu-border-radius) !important;
+	--panel-background: var(--vensur-menu-background) !important;
+	border-color: var(--vensur-menu-border-color) !important;
+	border-radius: var(--vensur-menu-border-radius) !important;
 	padding: 12px !important;
-	color: var(--macos-toolbar-color) !important;
+	color: var(--vensur-toolbar-color) !important;
 	font: inherit !important;
 }
 
 .panel-arrow {
-	fill: var(--macos-menu-background) !important;
-	stroke: var(--macos-menu-border-color) !important;
+	fill: var(--vensur-menu-background) !important;
+	stroke: var(--vensur-menu-border-color) !important;
 }
 
 .panel-header {
@@ -255,7 +255,7 @@ panelview {
 }
 
 #nav-bar .toolbarbutton-1 {
-	border-radius: var(--macos-toolbar-border-radius) !important;
+	border-radius: var(--vensur-toolbar-border-radius) !important;
 }
 
 /* Style popovers menu buttons */
@@ -264,7 +264,7 @@ panelview {
 .protections-popup-category,
 .protections-popup-category[disabled],
 .identity-popup-content-blocking-category {
-	border-radius: var(--macos-menu-item-border-radius) !important;
+	border-radius: var(--vensur-menu-item-border-radius) !important;
 	color: inherit;
 	font: menu;
 }
@@ -273,7 +273,7 @@ panelview {
 .subviewbutton:not(.subviewbutton-back):not(.toolbarbutton-1):not(.all-tabs-button):not(.all-tabs-close-button),
 .protections-popup-category,
 .identity-popup-content-blocking-category {
-	padding: var(--macos-menu-item-padding) !important;
+	padding: var(--vensur-menu-item-padding) !important;
 	margin: 0 !important;
 }
 
@@ -290,7 +290,7 @@ panelview {
 .toolbarbutton-1[disabled],
 .identity-popup-content-blocking-category[disabled] {
 	opacity: 0.5 !important;
-	color: var(--macos-inactive-toolbar-color) !important;
+	color: var(--vensur-inactive-toolbar-color) !important;
 	background: none !important;
 }
 
@@ -320,10 +320,10 @@ menupopup > menuitem[_moz-menuactive="true"]:hover,
 menupopup > menuitem[_moz-menuactive="true"]:hover:active,
 menupopup > menu:where([_moz-menuactive="true"]:not([disabled="true"])),
 menupopup > menuitem:where([_moz-menuactive="true"]:not([disabled="true"])) {
-	color: var(--macos-menu-item-hover-color) !important;
-	background-color: var(--macos-menu-item-hover) !important;
-	--macos-headerbar-button-hover-background: var(--macos-menu-item-hover) !important;
-	--macos-headerbar-button-active-background: var(--macos-menu-item-hover) !important;
+	color: var(--vensur-menu-item-hover-color) !important;
+	background-color: var(--vensur-menu-item-hover) !important;
+	--vensur-headerbar-button-hover-background: var(--vensur-menu-item-hover) !important;
+	--vensur-headerbar-button-active-background: var(--vensur-menu-item-hover) !important;
 }
 
 /* Overflow buttons */
@@ -404,7 +404,7 @@ menupopup > menu[selected="true"]::before,
 
 menupopup > menuitem:hover::before,
 .subviewbutton:hover::before {
-  background-color: var(--macos-menu-item-hover-color) !important;
+  background-color: var(--vensur-menu-item-hover-color) !important;
 }
 
 
@@ -418,21 +418,21 @@ menupopup > menuitem:hover::before,
 menupopup > menuitem:active,
 menupopup > menuitem[_moz-menuactive="true"]:active {
 	background-color: transparent !important;
-	--macos-headerbar-button-active-background: transparent !important;
+	--vensur-headerbar-button-active-background: transparent !important;
 }
 
 /* Right click menu */
 .protections-popup-category:not([disabled]):hover,
 .identity-popup-content-blocking-category:not([disabled]):hover {
-	color: var(--macos-menu-item-hover-color) !important;
-	background: var(--macos-menu-item-hover) !important;
+	color: var(--vensur-menu-item-hover-color) !important;
+	background: var(--vensur-menu-item-hover) !important;
 }
 
 /* Style popover separators */
 
 toolbarseparator,
 menuseparator {
-	border-color: var(--macos-menu-separator-color) !important;
+	border-color: var(--vensur-menu-separator-color) !important;
 }
 
 toolbarseparator:not([orient="vertical"]),
@@ -458,8 +458,8 @@ toolbarseparator[orient="vertical"] {
 /* Webchat e.g. google meet share screen display select */
 
 #webRTC-selectWindow-menulist {
-	color: var(--macos-inactive-urlbar-color) !important;
-	background: var(--macos-button-hover-background) !important;
+	color: var(--vensur-inactive-urlbar-color) !important;
+	background: var(--vensur-button-hover-background) !important;
 	border-radius: 5px;
 }
 
@@ -500,7 +500,7 @@ menuseparator {
 
 menupopup > menuitem,
 menupopup > menu {
-	padding: var(--macos-menu-item-padding) !important;
+	padding: var(--vensur-menu-item-padding) !important;
 	min-height: unset !important;
 }
 
@@ -513,7 +513,7 @@ menupopup > menu {
 #PlacesToolbar menu[_moz-menuactive],
 #PlacesToolbar menu:active,
 toolbarbutton.bookmark-item[open="true"] {
-	background-color: var(--macos-button-active-background) !important;
+	background-color: var(--vensur-button-active-background) !important;
 }
 
 .customization-uidensity-menu-arrowpanel{
@@ -524,11 +524,11 @@ toolbarbutton.bookmark-item[open="true"] {
 .menupopup-arrowscrollbox {
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
 	margin: 1 !important;
-	padding: var(--macos-menu-padding) !important;
-	border-radius: var(--macos-menu-border-radius) !important;
-	border: var(--macos-menu-border) !important;
+	padding: var(--vensur-menu-padding) !important;
+	border-radius: var(--vensur-menu-border-radius) !important;
+	border: var(--vensur-menu-border) !important;
 	max-width: 100% !important;
-	outline: var(--macos-menu-outline) !important;
+	outline: var(--vensur-menu-outline) !important;
 	outline-offset: -1px !important;
 }
 
@@ -536,36 +536,36 @@ toolbarbutton.bookmark-item[open="true"] {
 
 :root[dialogroot],
 :host(dialog) {
-	--in-content-page-background: var(--macos-menu-background) !important;
+	--in-content-page-background: var(--vensur-menu-background) !important;
 }
 
 /* Cancel or secondary */
 
 .dialog-button-box > button {
-	background-color: var(--macos-button-active-background-alt) !important;
-	border: 1px solid var(--macos-button-active-background-alt-border);
-	color: var(--macos-button-menulist-color) !important;
+	background-color: var(--vensur-button-active-background-alt) !important;
+	border: 1px solid var(--vensur-button-active-background-alt-border);
+	color: var(--vensur-button-menulist-color) !important;
 }
 
 xul|button:not([disabled="true"]):hover {
-	background-color: var(--macos-button-active-background-alt-hover) !important;
-	border: 1px solid var(--macos-button-active-background-alt-border);
-	border-color: var(--macos-button-active-border-color) !important;
-	color: var(--macos-button-menulist-color) !important;
+	background-color: var(--vensur-button-active-background-alt-hover) !important;
+	border: 1px solid var(--vensur-button-active-background-alt-border);
+	border-color: var(--vensur-button-active-border-color) !important;
+	color: var(--vensur-button-menulist-color) !important;
 }
 
 /* Quit or primary button */
 
 xul|button[default] {
-	background-color: var(--macos-button-suggested-action-background) !important;
-	border-color: var(--macos-button-suggested-action-border-color) !important;
-	color: var(--macos-button-menulist-color) !important;
+	background-color: var(--vensur-button-suggested-action-background) !important;
+	border-color: var(--vensur-button-suggested-action-border-color) !important;
+	color: var(--vensur-button-menulist-color) !important;
 }
 
 xul|button[default]:not([disabled="true"]):hover {
-	background-color: var(--macos-button-suggested-action-hover-background) !important;
-	border-color: var(--macos-button-suggested-action-border-color) !important;
-	color: var(--macos-button-menulist-color) !important;
+	background-color: var(--vensur-button-suggested-action-hover-background) !important;
+	border-color: var(--vensur-button-suggested-action-border-color) !important;
+	color: var(--vensur-button-menulist-color) !important;
 }
 
 button:focus-visible {
@@ -580,7 +580,7 @@ button:focus-visible {
 }
 
 checkbox:not([disabled="true"]):hover > .checkbox-check[checked] {
-	background-color: var(--macos-switch-active-background, color-mix(in srgb, currentColor 12.5%, var(--theme-primary-color))) !important;
+	background-color: var(--vensur-switch-active-background, color-mix(in srgb, currentColor 12.5%, var(--theme-primary-color))) !important;
 }
 
 /* Bookmark editor */
@@ -644,15 +644,15 @@ richlistbox.autocomplete-richlistbox {
 	justify-content: flex-start !important;
 	box-sizing: content-box !important;
 	min-height: 20px !important;
-	padding: var(--macos-menu-item-padding) !important;
+	padding: var(--vensur-menu-item-padding) !important;
 	background-color: transparent !important;
 	border: none !important;
-	border-radius: var(--macos-menu-item-border-radius) !important;
+	border-radius: var(--vensur-menu-item-border-radius) !important;
 }
 
 #PopupAutoComplete > richlistbox > richlistitem:hover {
-	color: var(--macos-menu-item-hover-color) !important;
-	background-color: var(--macos-menu-item-hover) !important;
+	color: var(--vensur-menu-item-hover-color) !important;
+	background-color: var(--vensur-menu-item-hover) !important;
 }
 
 .autocomplete-richlistitem[originaltype="loginsFooter"] {
@@ -669,7 +669,7 @@ richlistbox.autocomplete-richlistbox {
 	top: -6px;
 	left: 5px;
 	width: calc(100% - 10px);
-	border-top: 1px solid var(--macos-menu-separator-color);
+	border-top: 1px solid var(--vensur-menu-separator-color);
 }
 
 #PopupAutoComplete > richlistbox > richlistitem > .ac-login-item > .ac-settings-button {
@@ -689,12 +689,12 @@ richlistbox.autocomplete-richlistbox {
 /* Search bar menu */
 
 #PopupSearchAutoComplete > hbox.search-panel-header {
-	padding: var(--macos-menu-item-padding) !important;
-	border-radius: var(--macos-menu-item-border-radius) !important;
+	padding: var(--vensur-menu-item-padding) !important;
+	border-radius: var(--vensur-menu-item-border-radius) !important;
 }
 
 #PopupSearchAutoComplete > hbox.search-panel-header:hover {
-	background-color: var(--macos-menu-item-hover);
+	background-color: var(--vensur-menu-item-hover);
 }
 
 /* Tab Preview Panel */

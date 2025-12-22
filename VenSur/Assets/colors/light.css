@@ -1,0 +1,61 @@
+@media (prefers-color-scheme: light) {
+	:root {
+		/* Browser */
+		--vensur-main-background: #f6f6f6;
+		--vensur-content-background: #fff;
+		--theme-primary-color: color-mix(in srgb, accentcolor 80%, #181818);
+		--theme-primary-hover-color: color-mix(in srgb, accentcolor 85%, #262626);
+		--theme-primary-active-color: color-mix(in srgb, accentcolor 85%, #646464);
+
+		/* Toolbars */
+		--vensur-toolbar-background: var(--lwt-accent-color);
+		--vensur-toolbar-border-color: color-mix(in srgb, currentColor 20%, transparent);
+		--vensur-input-bgcolor: color-mix(in srgb, currentColor 10%, transparent);
+		--vensur-input-outline-color: color-mix(in srgb, accentcolor 50%, #f2f2f2);
+		--vensur-slider-color: #fff;
+		--vensur-slider-track-color: color-mix(in srgb, currentColor 15%, transparent);
+		--vensur-checkbox-border: 1px solid #bcbcbc;
+		--vensur-checkbox-shadow: inset 0 1px 1px #00000026;
+		--vensur-item-background: color-mix(in srgb, currentColor 10%, transparent);
+		--vensur-item-hover-background: color-mix(in srgb, currentColor 8%, transparent);
+		--vensur-item-active-background: color-mix(in srgb, currentColor 14%, transparent);
+		--vensur-item-selection-background: color-mix(in srgb, accentcolor 30%, transparent);
+		--vensur-item-selection-hover-background: color-mix(in srgb, accentcolor 15%, transparent);
+		--vensur-button-field-color: color-mix(in srgb, currentColor 60%, transparent);
+		--vensur-button-field-hover-color: color-mix(in srgb, currentColor 80%, transparent);
+
+		/* Sidebar */
+		--vensur-sidebar-box-background: color-mix(in srgb, currentColor 5%, transparent);
+		--vensur-sidebar-border-color: color-mix(in srgb, currentColor 8%, transparent);
+
+		/* Popups */
+		--vensur-menu-background: #f0f0f0;
+		--vensur-popover-background: #ececec66;
+		--vensur-popover-separator-color: color-mix(in srgb, currentColor 12%, transparent);
+		--vensur-small-shadow: 0 0 1px color-mix(in srgb, currentColor 40%, transparent);
+		--vensur-menu-shadow: 0 1px 8px #00000019, 0 5px 15px #00000016, 0 8px 20px #00000011, 0 3px 22px #00000016;
+		--vensur-menu-shadow-color: #00000026;
+		--vensur-panel-shadow: 0 1px 8px #00000019, 0 5px 15px #00000016, 0 8px 20px #00000009;
+		--vensur-panel-shadow-color: #00000016;
+
+		/* Urlbar */
+		--vensur-urlbar-background: color-mix(in srgb, currentColor 10%, transparent);
+		--vensur-urlbar-hover-background: color-mix(in srgb, currentColor 12%, transparent);
+		--vensur-urlbar-focused-background: color-mix(in srgb, currentColor 16%, transparent);
+		--vensur-urlbarView-hover-background: color-mix(in srgb, accentcolor 85%, #262626);
+		--vensur-urlbarView-button-background: color-mix(in srgb, accentcolor 70%, #939597);
+		--vensur-focused-urlbar-highlight-color: color-mix(in srgb, accentcolor 85%, #383838);
+
+		/* Tabs */
+		--vensur-tab-background: color-mix(in srgb, currentColor 10%, transparent);
+		--vensur-tab-hover-background: color-mix(in srgb, currentColor 15%, transparent);
+		--vensur-tab-active-background: color-mix(in srgb, currentColor 18%, transparent);
+		--vensur-tab-unloaded-background: color-mix(in srgb, currentColor 5%, transparent);
+		--vensur-tab-selected-background: color-mix(in srgb, accentcolor 20%, transparent);
+		--vensur-verticaltab-background: color-mix(in srgb, currentColor 2%, transparent);
+		--vensur-verticaltab-pinned-background: color-mix(in srgb, currentColor 6%, transparent);
+		--vensur-verticaltab-hover-background: color-mix(in srgb, currentColor 8%, transparent);
+		--vensur-tab-soundplaying-background: color-mix(in srgb, accentcolor 15%, transparent);
+		--vensur-verticaltab-soundplaying-background: color-mix(in srgb, accentcolor 10%, transparent);
+	}
+}
