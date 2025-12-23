@@ -323,11 +323,13 @@ toolbar .toolbarbutton-1 {
 }
 
 /* Full width tabs */
-
-.tabbrowser-tab:not([style^="max-width"]):not([pinned]),
-.tabbrowser-tab[style^="max-width: 100px !important;"]:not([pinned]) {
-	max-width: 100% !important;
+/* Only tabs outside tab groups */
+.tabbrowser-tab:not([aria-setsize]):not([style^="max-width"]):not([pinned]),
+.tabbrowser-tab:not([aria-setsize])[style^="max-width: 100px !important;"]:not([pinned]) {
+    max-width: 100% !important;
 }
+
+
 
 .tabbrowser-tab:not([style^="max-width"]):not([pinned]):not([fadein]),
 .tabbrowser-tab[style^="max-width: 100px !important;"]:not([pinned]):not([fadein]) {
@@ -546,6 +548,24 @@ toolbar .toolbarbutton-1 {
 	padding-inline-start: 0 !important;
 	margin-inline-start: 0 !important;
 }
+/* Hide tabs in collapsed tab groups */
+tab-group:has(.tab-group-label[aria-expanded="false"])
+  > tabbrowser-tab {
+  display: none !important;
+}
+
+/* Keep the selected tab visible even when group is collapsed */
+tab-group:has(.tab-group-label[aria-expanded="false"])
+  > tabbrowser-tab[selected="true"] {
+  display: -moz-box !important;
+}
+
+/* Ensure tabs are visible when the group is expanded */
+tab-group:has(.tab-group-label[aria-expanded="true"])
+  > tabbrowser-tab {
+  display: -moz-box !important;
+}
+
 
 /* Tab Seperators */
 
