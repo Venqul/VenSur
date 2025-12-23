@@ -9,11 +9,11 @@
 	}
 	
 	/* Remove bottom space */
-#unified-extensions-empty-state {
-  & > h2 {
-    display: none !important;
-  }
-}
+	#unified-extensions-empty-state {
+		& > h2 {
+			display: none !important;
+		}
+	}
 	
 	#widget-overflow-list,
 	#widget-overflow-fixed-list,
