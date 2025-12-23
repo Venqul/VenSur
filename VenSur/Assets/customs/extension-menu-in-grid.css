@@ -7,7 +7,14 @@
 	#unified-extensions-view {
 		width: fit-content !important;
 	}
-
+	
+	/* Remove bottom space */
+#unified-extensions-empty-state {
+  & > h2 {
+    display: none !important;
+  }
+}
+	
 	#widget-overflow-list,
 	#widget-overflow-fixed-list,
 	#unified-extensions-panel .panel-subview-body > * {
