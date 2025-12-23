@@ -17,9 +17,11 @@
 	min-height: 0 !important;
 }
 
-#tabbrowser-tabs tab:only-of-type {
-	display: none !important;
+#tabbrowser-tabs:not(:has(tab[pinned]))
+  tab:not([pinned]):only-of-type {
+    display: none !important;
 }
+
 
 #TabsToolbar-customization-target > toolbarbutton {
 	display: none !important;
