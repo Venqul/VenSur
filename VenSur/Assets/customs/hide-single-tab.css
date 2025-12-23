@@ -16,11 +16,14 @@
 #TabsToolbar {
 	min-height: 0 !important;
 }
+	
 
 #tabbrowser-tabs:not(:has(tab[pinned]))
+                  :not(:has(tab-group))
   tab:not([pinned]):only-of-type {
     display: none !important;
 }
+
 
 
 #TabsToolbar-customization-target > toolbarbutton {
