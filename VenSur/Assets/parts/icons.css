@@ -253,10 +253,15 @@ menuitem[type="radio"][disabled="true"] .menu-iconic-icon {
 
 /* New tab button */
 
+@media not (-mod-platform: linux)
+{
+  #TabsToolbar {
+	list-style-image: url("../icons/tab-new-symbolic.svg") !important;
+}
+}
 #new-tab-button,
 .tabs-newtab-button,
-#tabs-newtab-button,
-#TabsToolbar {
+#tabs-newtab-button{
 	list-style-image: url("../icons/tab-new-symbolic.svg") !important;
 }
 
