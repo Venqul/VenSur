@@ -209,19 +209,26 @@
 		display: none;
 	}
 }
-
- LINUX OVERRIDE 
+*/
+/* Linux Fixes */
 @media (-moz-platform: linux) {
-
-	:root #TabsToolbar .titlebar-buttonbox .titlebar-close,
-	:root #TabsToolbar #TabsToolbar-close,
-	:root #TabsToolbar .titlebar-buttonbox:hover .titlebar-close,
-	:root #TabsToolbar #TabsToolbar-close:hover,
-	:root #TabsToolbar .titlebar-buttonbox:hover .titlebar-close:active,
-	:root #TabsToolbar #TabsToolbar-close:active,
-	:root #TabsToolbar:-moz-window-inactive .titlebar-buttonbox .titlebar-close,
-	:root #TabsToolbar:-moz-window-inactive #TabsToolbar-close {
-		background-size: 100% !important;
+	
+	.titlebar-button .toolbarbutton-icon{
+	display: none !important;
+}
+	.titlebar-buttonbox-container{
+		position: relative !important;
+		left: 13px !important;
+	}
+	.titlebar-button{
+		background-size: 90% !important;
+	}
+  .titlebar-max,
+	.titlebar-restore{
+		right: 2px !important;
+	}
+	.titlebar-min{
+		right: 5px !important;
 	}
 }
 */
