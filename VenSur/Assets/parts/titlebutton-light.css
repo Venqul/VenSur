@@ -210,7 +210,7 @@
 	}
 }
 
-/* LINUX OVERRIDE */
+ LINUX OVERRIDE 
 @media (-moz-platform: linux) {
 
 	:root #TabsToolbar .titlebar-buttonbox .titlebar-close,
@@ -224,3 +224,4 @@
 		background-size: 100% !important;
 	}
 }
+*/
