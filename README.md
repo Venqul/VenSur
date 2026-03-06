@@ -80,6 +80,7 @@ Arrange your Firefox toolbar to match this layout:
 2. 🛠️ Configure Firefox (`about:config`)
 Visit `about:config` and apply the following settings:
 
+- `widget.gtk.rounded-bottom-corners.enabled` → `true` **(for linux only)**
 - `toolkit.legacyUserProfileCustomizations.stylesheets` → `true`  
 - `svg.context-properties.content.enabled` → `true`  
 - `layout.css.color-mix.enabled` → `true`
