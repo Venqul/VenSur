@@ -32,14 +32,8 @@
 	border-bottom: none !important;
 }
 
- @media not (-moz-platform: linux)
- {
-	#TabsToolbar {
-	background: var(--vensur-tabstoolbar-background) !important;
-	 }
-}
-
 #TabsToolbar {
+	background: var(--vensur-tabstoolbar-background) !important;
 	border: 0 !important;
 	border-bottom: 1px solid var(--vensur-headerbar-border-color) !important;
 }
