@@ -7,6 +7,13 @@
   },
   {
     "type": "checkbox",
+    "property": "widget.gtk.rounded-bottom-corners.enabled",
+    "label": "Enable Rounded corners (Linux)",
+    "defaultValue": true,
+    "force": true
+  },
+  {
+    "type": "checkbox",
     "property": "toolkit.legacyUserProfileCustomizations.stylesheets",
     "label": "Enable Legacy UserChrome Customizations (Important)",
     "defaultValue": true,
