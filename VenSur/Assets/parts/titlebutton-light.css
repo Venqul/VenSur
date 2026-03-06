@@ -223,12 +223,24 @@
 	.titlebar-button{
 		background-size: 90% !important;
 	}
+.titlebar-buttonbox:hover .titlebar-restore{
+		background-size: 78% !important;
+	left: 13px !important;
+	}
+	.titlebar-buttonbox{
+		display: flex !important;
+	}
   .titlebar-max,
 	.titlebar-restore{
-		right: 2px !important;
+		left: 12px !important;
+		order: 3 !important;
 	}
 	.titlebar-min{
-		right: 5px !important;
+		left: 8px !important;
+		order: 2 !important;
+	}
+	.titlebar-close{
+		margin-left: -10px !important;
+		order: 1 !important;
 	}
 }
-*/
